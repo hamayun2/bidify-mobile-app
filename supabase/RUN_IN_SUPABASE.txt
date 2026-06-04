@@ -1,0 +1,31 @@
+Bidify — Supabase SQL (single script)
+=====================================
+
+Run ONLY this file in Supabase → SQL Editor:
+
+  supabase/BIDIFY_COMPLETE_SYNC.sql
+
+Copy the entire file contents, paste, and click Run.
+
+Safe: does not drop tables or wipe wallet balances.
+
+After success:
+  1. Restart the app (logout + login)
+  2. npm run api (Stripe top-up)
+  3. Test wallet top-up, then Place Bid
+
+Do NOT run older scripts (schema.sql users table, SQL_EDITOR_BIDIFY_FIXES.sql,
+wallet_hold_lifecycle.sql alone) unless BIDIFY_COMPLETE_SYNC.sql already succeeded.
+
+Auction listing fee (Rs. 500 flat) + no-bid auto-refund on expiry:
+  1. supabase/listing_fee_500_refund.sql (if not already applied)
+  2. supabase/auction_expiry_no_bid_refund.sql
+  3. supabase/enable_pgcrypto_escrow.sql (extensions.digest for OTP hash)
+  4. Re-run FULL supabase/escrow_phase_2_resolve_auction.sql (creates auction_orders on resolve)
+  5. supabase/fix_resolve_auction_create_orders.sql (backfill + verify)
+  Quick OTP+resolve test: supabase/deploy_hash_otp_and_resolve.sql
+
+IMPORTANT: BIDIFY_COMPLETE_SYNC.sql alone installs a resolve_auction stub that does NOT
+insert into auction_orders. Always run escrow_phase_2_resolve_auction.sql for escrow/orders.
+
+My Orders RLS: supabase/fix_auction_orders_select_rls.sql

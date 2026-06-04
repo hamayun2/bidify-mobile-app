@@ -1,0 +1,62 @@
+Bidify — Admin account + Stripe test wallet setup
+================================================
+
+PART A — Supabase (SQL Editor)
+------------------------------
+1. Open https://supabase.com → your project → SQL Editor → New query.
+2. Run in order:
+   a) supabase/schema.sql          (users, listings, RLS — if not done yet)
+   b) supabase/builtin_admin.sql   (promote_builtin_admin + wallet_transactions)
+   c) supabase/SQL_EDITOR_BIDIFY_FIXES.sql (storage + optional fixes)
+
+3. Authentication → Providers → Email:
+   - For dev: turn OFF "Confirm email" OR manually confirm admin@bidify.com once.
+   - Built-in admin is created on first app launch via signUp + promote_builtin_admin.
+
+4. Settings → API → copy:
+   - Project URL → EXPO_PUBLIC_SUPABASE_URL
+   - anon public JWT (starts with eyJ…) → EXPO_PUBLIC_SUPABASE_ANON_KEY
+
+PART B — Built-in admin (app)
+-----------------------------
+Default login (change via env for production):
+  Email:    admin@bidify.com
+  Password: admin1234
+
+Optional .env:
+  EXPO_PUBLIC_BUILTIN_ADMIN_EMAIL=admin@bidify.com
+  EXPO_PUBLIC_BUILTIN_ADMIN_PASSWORD=your-secure-password
+
+- Admin cannot register from Sign Up (reserved email).
+- On login, app opens Admin Panel automatically.
+- Only users with role=admin (or reserved email) can open Admin Panel.
+
+PART C — Express API + Stripe TEST wallet
+-----------------------------------------
+1. In server/ folder create .env (see .env.example):
+   STRIPE_TEST_SECRET_KEY=sk_test_...   (Dashboard → Developers → API keys → Secret)
+   JWT_SECRET=your-long-secret
+   API_PUBLIC_URL=http://YOUR_LAN_IP:4000
+
+2. Install and start API:
+   cd server
+   npm install
+   npm start
+
+3. In app .env:
+   EXPO_PUBLIC_API_URL=http://YOUR_LAN_IP:4000/api
+   EXPO_PUBLIC_PAYMENTS_STRIPE_ENABLED=true
+
+4. Wallet → Add Money → Stripe:
+   - Opens Stripe Checkout (test cards: 4242 4242 4242 4242, any future date, any CVC).
+   - After pay, browser shows success page → Return to Bidify → pull to refresh wallet.
+
+Without STRIPE_TEST_SECRET_KEY, Stripe uses instant sandbox credit (dev only).
+
+PART D — Roles (public.users)
+-----------------------------
+  role = 'user'  → normal app
+  role = 'admin' → admin panel, full user list (RLS)
+
+Manual promote (SQL):
+  UPDATE public.users SET role = 'admin' WHERE email = 'you@example.com';

@@ -1,0 +1,53 @@
+{
+  "name": "temp_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm install --prefix server",
+    "start": "expo start --port 8086",
+    "android": "expo start --android --port 8086",
+    "ios": "expo start --ios --port 8086",
+    "web": "expo start --web --port 8086",
+    "web:dev": "expo start --web --port 8086 --clear",
+    "api": "node server/index.js",
+    "stripe:listen": "node scripts/run-stripe-listen.js",
+    "dev": "concurrently --kill-others-on-fail -n api,expo,stripe -c blue,green,magenta \"npm run api\" \"npm run start\" \"npm run stripe:listen\"",
+    "dev:api-expo": "concurrently --kill-others-on-fail -n api,expo -c blue,green \"npm run api\" \"npm run start\"",
+    "seed:demo": "node scripts/seed-demo-listings.mjs",
+    "api:win": "start \"Bidify API\" /min cmd /c server\\run-api.bat",
+    "dev:win": "npm run dev"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~6.1.2",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-native-google-signin/google-signin": "^16.1.2",
+    "@react-navigation/bottom-tabs": "^7.15.13",
+    "@react-navigation/native": "^7.2.4",
+    "@react-navigation/native-stack": "^7.14.14",
+    "@stripe/stripe-react-native": "^0.43.0",
+    "@supabase/supabase-js": "^2.105.4",
+    "axios": "^1.16.0",
+    "expo": "~54.0.33",
+    "expo-camera": "~17.0.10",
+    "expo-clipboard": "~8.0.8",
+    "expo-image-picker": "~17.0.11",
+    "expo-linear-gradient": "~15.0.8",
+    "expo-linking": "~8.0.12",
+    "expo-secure-store": "~15.0.8",
+    "expo-status-bar": "~3.0.9",
+    "expo-web-browser": "~15.0.11",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-swipe-list-view": "^3.2.9",
+    "react-native-url-polyfill": "^3.0.0",
+    "react-native-web": "^0.21.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "babel-preset-expo": "^54.0.10",
+    "concurrently": "^9.2.1"
+  }
+}

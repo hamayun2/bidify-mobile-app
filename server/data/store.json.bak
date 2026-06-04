@@ -1,0 +1,371 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@bidify.com",
+      "passwordHash": "$2a$10$gLkQ9TvzWcDMq.rKlxoIM.lkf6AmPzHEwKLgj2P3wxUW2mFZ1mhji",
+      "fullName": "Bidify Admin",
+      "role": "admin"
+    },
+    {
+      "id": "4",
+      "email": "hamayunawan2003@gmail.com",
+      "fullName": "hamayun awan",
+      "role": "user",
+      "passwordHash": "$2a$10$hhwIglWRAId3s0CYj.H8Se/uRTPcMZwsuWM8kCBp/7FQj0CxfGafi",
+      "createdAt": "2026-05-11T18:58:16.987Z"
+    },
+    {
+      "id": "5",
+      "email": "cnic_test_890197@example.com",
+      "fullName": "CNIC Test User",
+      "role": "user",
+      "phone": "03001234567",
+      "cnic": "1234567890142",
+      "cnicFrontUrl": "/uploads/cnic/1778505284686-mxr7ma-front.jpg",
+      "cnicBackUrl": "/uploads/cnic/1778505284687-ab73xz-back.jpg",
+      "cnicVerifiedAt": "2026-05-11T13:14:44.894Z",
+      "passwordHash": "$2a$10$hhwIglWRAId3s0CYj.H8Se/uRTPcMZwsuWM8kCBp/7FQj0CxfGafi",
+      "createdAt": "2026-05-11T18:58:16.990Z"
+    },
+    {
+      "id": "6",
+      "email": "cnic_profile_713694@example.com",
+      "fullName": "Profile Verify User",
+      "role": "user",
+      "phone": "03331122334",
+      "cnic": "1212121212199",
+      "cnicFrontUrl": "/uploads/cnic/1778506688394-j4eluq-profile-front.jpg",
+      "cnicBackUrl": "/uploads/cnic/1778506688395-uh9t81-profile-back.jpg",
+      "cnicVerifiedAt": "2026-05-11T13:38:08.502Z",
+      "passwordHash": "$2a$10$hhwIglWRAId3s0CYj.H8Se/uRTPcMZwsuWM8kCBp/7FQj0CxfGafi",
+      "createdAt": "2026-05-11T18:58:16.990Z"
+    },
+    {
+      "id": "7",
+      "email": "shani@gmail.com",
+      "fullName": "shani",
+      "role": "user",
+      "phone": "03006957440",
+      "cnic": "3650123031256",
+      "cnicFrontUrl": "/uploads/cnic/1778509931370-5fnv92-cnicFront.png",
+      "cnicBackUrl": "/uploads/cnic/1778509931383-mhff5n-cnicBack.png",
+      "cnicVerifiedAt": "2026-05-11T14:32:11.506Z",
+      "passwordHash": "$2a$10$hhwIglWRAId3s0CYj.H8Se/uRTPcMZwsuWM8kCBp/7FQj0CxfGafi",
+      "createdAt": "2026-05-11T18:58:16.990Z"
+    },
+    {
+      "id": "8",
+      "email": "baba@gmail.com",
+      "fullName": "baba",
+      "role": "user",
+      "phone": "03006957440",
+      "cnic": "3650123031257",
+      "cnicFrontUrl": "/uploads/cnic/1778521771379-7qb6pk-cnicFront.png",
+      "cnicBackUrl": "/uploads/cnic/1778521771381-bb00vc-cnicBack.png",
+      "cnicVerifiedAt": "2026-05-11T17:49:31.505Z",
+      "passwordHash": "$2a$10$hhwIglWRAId3s0CYj.H8Se/uRTPcMZwsuWM8kCBp/7FQj0CxfGafi",
+      "createdAt": "2026-05-11T18:58:16.990Z"
+    },
+    {
+      "id": "9",
+      "email": "hamayunawan22003@gmail.com",
+      "passwordHash": "$2a$10$1RE.ZRfzGbAGEDCED7T92u5YpcwlCTNedAbql22g0cG8H/3R0jnmW",
+      "fullName": "hamayun",
+      "phone": "03006957440",
+      "cnic": "3650123031578",
+      "cnicFrontUrl": "/uploads/cnic/1778528349771-8kb5p2-cnicFront.png",
+      "cnicBackUrl": "/uploads/cnic/1778528349778-16wzas-cnicBack.png",
+      "cnicVerifiedAt": "2026-05-11T19:39:09.894Z",
+      "role": "user"
+    },
+    {
+      "id": "10",
+      "email": "hamayunawan2004@gmail.com",
+      "passwordHash": "$2a$10$MsAHCKJnLOAHs239Z3K1UuhfeNcO653vJuSsxrtGf4lI20xNZGqsW",
+      "fullName": "hamayun",
+      "phone": "03006957440",
+      "cnic": "3650123031357",
+      "cnicFrontUrl": "/uploads/cnic/1778535825008-iy3f1x-cnicFront.png",
+      "cnicBackUrl": "/uploads/cnic/1778535825013-6d9dhg-cnicBack.png",
+      "cnicVerifiedAt": "2026-05-11T21:43:45.121Z",
+      "role": "user"
+    }
+  ],
+  "listings": [
+    {
+      "id": "101",
+      "title": "dsgjhsad",
+      "description": "shdgh",
+      "price": 1000,
+      "type": "auction",
+      "sellerId": "9",
+      "moderationStatus": "approved",
+      "status": "active",
+      "images": [
+        "[object Object]",
+        "[object Object]"
+      ],
+      "image": "[object Object]",
+      "createdAt": "2026-05-11T20:44:33.122Z",
+      "currentBid": 1000,
+      "endTime": "2026-05-14T20:44:33.122Z",
+      "rejectionReason": null,
+      "rejectedAt": null,
+      "approvedAt": "2026-05-11T20:44:57.058Z"
+    },
+    {
+      "id": "100",
+      "title": "Image Render Test",
+      "description": "verifying that uploaded images render on the app",
+      "price": 2500,
+      "type": "buynow",
+      "sellerId": "7",
+      "moderationStatus": "approved",
+      "status": "active",
+      "images": [
+        "/uploads/1778527383288-test-listing.jpg"
+      ],
+      "image": "/uploads/1778527383288-test-listing.jpg",
+      "createdAt": "2026-05-11T19:23:03.297Z",
+      "buyNowPrice": 2500,
+      "rejectionReason": null,
+      "rejectedAt": null,
+      "approvedAt": "2026-05-11T20:44:58.586Z"
+    },
+    {
+      "id": "1",
+      "title": "Vintage Rolex Submariner (seed)",
+      "description": "Sample approved listing from API seed.",
+      "price": 1000000,
+      "type": "auction",
+      "currentBid": 1000000,
+      "sellerId": "seed-seller",
+      "moderationStatus": "approved",
+      "status": "active",
+      "endTime": "2026-05-13T18:45:52.496Z",
+      "image": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80"
+      ],
+      "createdAt": "2026-05-11T18:45:52.496Z"
+    },
+    {
+      "id": "2",
+      "title": "Antique Persian Rug (seed)",
+      "description": "Hand-knotted Persian rug, approx. 8x10 ft. Sample buy-now listing from API seed.",
+      "price": 85000,
+      "buyNowPrice": 85000,
+      "type": "buynow",
+      "category": "Antiques",
+      "sellerId": "seed-seller",
+      "moderationStatus": "approved",
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=800&q=80"
+      ],
+      "createdAt": "2026-05-11T17:45:52.496Z"
+    }
+  ],
+  "paymentLog": [
+    {
+      "id": "1778532344222-e32q0et",
+      "createdAt": "2026-05-11T20:45:44.222Z",
+      "kind": "buy_now",
+      "provider": "easypaisa",
+      "listingId": "100",
+      "listingTitle": "Image Render Test",
+      "amount": 2500,
+      "walletDebited": 2500,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "1",
+      "buyerName": "Bidify Admin",
+      "status": "completed"
+    },
+    {
+      "id": "1778528396776-eucs5kg",
+      "createdAt": "2026-05-11T19:39:56.776Z",
+      "kind": "wallet_topup",
+      "provider": "easypaisa",
+      "amount": 15000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "9",
+      "buyerName": "hamayun",
+      "status": "completed"
+    },
+    {
+      "id": "1778527604923-ljsmwlw",
+      "createdAt": "2026-05-11T19:26:44.931Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "1",
+      "buyerName": "Bidify Admin",
+      "status": "completed"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "1",
+      "listingId": "1",
+      "listingTitle": "Vintage Rolex Submariner (seed)",
+      "listingImage": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80",
+      "buyerId": "1",
+      "sellerId": "seed-seller",
+      "createdAt": "2026-05-11T19:27:21.138Z"
+    },
+    {
+      "id": "2",
+      "listingId": "100",
+      "listingTitle": "Image Render Test",
+      "listingImage": "/uploads/1778527383288-test-listing.jpg",
+      "buyerId": "1",
+      "sellerId": "7",
+      "createdAt": "2026-05-11T20:45:59.971Z"
+    },
+    {
+      "id": "3",
+      "listingId": "2",
+      "listingTitle": "Antique Persian Rug (seed)",
+      "listingImage": "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=800&q=80",
+      "buyerId": "1",
+      "sellerId": "seed-seller",
+      "createdAt": "2026-05-11T21:29:22.552Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "conversationId": "1",
+      "senderId": "1",
+      "text": "sir g",
+      "imageUrl": null,
+      "createdAt": "2026-05-11T19:27:29.866Z"
+    },
+    {
+      "id": "2",
+      "conversationId": "2",
+      "senderId": "1",
+      "text": "sir",
+      "imageUrl": null,
+      "createdAt": "2026-05-11T20:46:06.712Z"
+    }
+  ],
+  "wallets": {
+    "1": {
+      "balance": 2500,
+      "transactions": [
+        {
+          "id": "3",
+          "createdAt": "2026-05-11T20:45:44.222Z",
+          "balanceAfter": 2500,
+          "kind": "token_paid",
+          "amount": 2500,
+          "listingId": "100",
+          "listingTitle": "Image Render Test",
+          "note": "Easypaisa payment for \"Image Render Test\"."
+        },
+        {
+          "id": "1",
+          "createdAt": "2026-05-11T19:26:44.923Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe wallet top-up (sandbox)."
+        }
+      ]
+    },
+    "4": {
+      "balance": 0,
+      "transactions": []
+    },
+    "5": {
+      "balance": 0,
+      "transactions": []
+    },
+    "6": {
+      "balance": 0,
+      "transactions": []
+    },
+    "7": {
+      "balance": 0,
+      "transactions": []
+    },
+    "8": {
+      "balance": 0,
+      "transactions": []
+    },
+    "9": {
+      "balance": 15000,
+      "transactions": [
+        {
+          "id": "2",
+          "createdAt": "2026-05-11T19:39:56.776Z",
+          "balanceAfter": 15000,
+          "kind": "topup",
+          "amount": 15000,
+          "provider": "easypaisa",
+          "note": "Easypaisa wallet top-up (sandbox)."
+        }
+      ]
+    }
+  },
+  "passwordOtps": {},
+  "nextUserId": 11,
+  "nextListingId": 102,
+  "nextConversationId": 4,
+  "nextMessageId": 3,
+  "nextWalletTxId": 4,
+  "paymentSessions": {
+    "STT-1-1778527604932": {
+      "id": "STT-1-1778527604932",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "due": 5000,
+      "heldCredit": 0,
+      "buyerId": "1",
+      "status": "completed",
+      "paymentId": "1778527604923-ljsmwlw",
+      "walletTxId": "1",
+      "walletBalanceAfter": 5000,
+      "createdAt": "2026-05-11T19:26:44.936Z"
+    },
+    "EAT-2-1778528396776": {
+      "id": "EAT-2-1778528396776",
+      "kind": "wallet_topup",
+      "provider": "easypaisa",
+      "amount": 15000,
+      "due": 15000,
+      "heldCredit": 0,
+      "buyerId": "9",
+      "status": "completed",
+      "paymentId": "1778528396776-eucs5kg",
+      "walletTxId": "2",
+      "walletBalanceAfter": 15000,
+      "createdAt": "2026-05-11T19:39:56.776Z"
+    },
+    "EA-3-1778532344223": {
+      "id": "EA-3-1778532344223",
+      "provider": "easypaisa",
+      "listingId": "100",
+      "listingTitle": "Image Render Test",
+      "amount": 2500,
+      "due": 2500,
+      "heldCredit": 0,
+      "buyerId": "1",
+      "status": "completed",
+      "paymentId": "1778532344222-e32q0et",
+      "createdAt": "2026-05-11T20:45:44.223Z"
+    }
+  },
+  "nextPaymentSessionId": 4,
+  "flags": {
+    "walletsResetAt": "2026-05-11T18:45:52.495Z"
+  }
+}

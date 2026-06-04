@@ -1,0 +1,4 @@
+-- Optional: relax legacy NOT NULL on listings.type if you rely only on listing_type.
+-- Prefer fixing the app (listingsService sends both type and listing_type).
+--
+-- alter table public.listings alter column type drop not null;

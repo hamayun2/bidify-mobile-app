@@ -1,0 +1,3979 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@bidify.com",
+      "passwordHash": "$2a$10$gLkQ9TvzWcDMq.rKlxoIM.lkf6AmPzHEwKLgj2P3wxUW2mFZ1mhji",
+      "fullName": "Bidify Admin",
+      "role": "admin",
+      "supabaseUserId": "443df6a6-2352-4e42-a51c-2bf635e12c10"
+    },
+    {
+      "id": "4",
+      "email": "hamayunawan2003@gmail.com",
+      "fullName": "hamayun awan",
+      "role": "user",
+      "passwordHash": "$2a$10$hhwIglWRAId3s0CYj.H8Se/uRTPcMZwsuWM8kCBp/7FQj0CxfGafi",
+      "createdAt": "2026-05-11T18:58:16.987Z",
+      "supabaseUserId": "6f6a5bbd-8e6e-47af-9033-eda6b75e6d58"
+    },
+    {
+      "id": "5",
+      "email": "cnic_test_890197@example.com",
+      "fullName": "CNIC Test User",
+      "role": "user",
+      "phone": "03001234567",
+      "cnic": "1234567890142",
+      "cnicFrontUrl": "/uploads/cnic/1778505284686-mxr7ma-front.jpg",
+      "cnicBackUrl": "/uploads/cnic/1778505284687-ab73xz-back.jpg",
+      "cnicVerifiedAt": "2026-05-11T13:14:44.894Z",
+      "passwordHash": "$2a$10$hhwIglWRAId3s0CYj.H8Se/uRTPcMZwsuWM8kCBp/7FQj0CxfGafi",
+      "createdAt": "2026-05-11T18:58:16.990Z"
+    },
+    {
+      "id": "6",
+      "email": "cnic_profile_713694@example.com",
+      "fullName": "Profile Verify User",
+      "role": "user",
+      "phone": "03331122334",
+      "cnic": "1212121212199",
+      "cnicFrontUrl": "/uploads/cnic/1778506688394-j4eluq-profile-front.jpg",
+      "cnicBackUrl": "/uploads/cnic/1778506688395-uh9t81-profile-back.jpg",
+      "cnicVerifiedAt": "2026-05-11T13:38:08.502Z",
+      "passwordHash": "$2a$10$hhwIglWRAId3s0CYj.H8Se/uRTPcMZwsuWM8kCBp/7FQj0CxfGafi",
+      "createdAt": "2026-05-11T18:58:16.990Z"
+    },
+    {
+      "id": "7",
+      "email": "shani@gmail.com",
+      "fullName": "shani",
+      "role": "user",
+      "phone": "03006957440",
+      "cnic": "3650123031256",
+      "cnicFrontUrl": "/uploads/cnic/1778509931370-5fnv92-cnicFront.png",
+      "cnicBackUrl": "/uploads/cnic/1778509931383-mhff5n-cnicBack.png",
+      "cnicVerifiedAt": "2026-05-11T14:32:11.506Z",
+      "passwordHash": "$2a$10$hhwIglWRAId3s0CYj.H8Se/uRTPcMZwsuWM8kCBp/7FQj0CxfGafi",
+      "createdAt": "2026-05-11T18:58:16.990Z"
+    },
+    {
+      "id": "8",
+      "email": "baba@gmail.com",
+      "fullName": "baba",
+      "role": "user",
+      "phone": "03006957440",
+      "cnic": "3650123031257",
+      "cnicFrontUrl": "/uploads/cnic/1778521771379-7qb6pk-cnicFront.png",
+      "cnicBackUrl": "/uploads/cnic/1778521771381-bb00vc-cnicBack.png",
+      "cnicVerifiedAt": "2026-05-11T17:49:31.505Z",
+      "passwordHash": "$2a$10$hhwIglWRAId3s0CYj.H8Se/uRTPcMZwsuWM8kCBp/7FQj0CxfGafi",
+      "createdAt": "2026-05-11T18:58:16.990Z"
+    },
+    {
+      "id": "9",
+      "email": "hamayunawan22003@gmail.com",
+      "passwordHash": "$2a$10$1RE.ZRfzGbAGEDCED7T92u5YpcwlCTNedAbql22g0cG8H/3R0jnmW",
+      "fullName": "hamayun",
+      "phone": "03006957440",
+      "cnic": "3650123031578",
+      "cnicFrontUrl": "/uploads/cnic/1778528349771-8kb5p2-cnicFront.png",
+      "cnicBackUrl": "/uploads/cnic/1778528349778-16wzas-cnicBack.png",
+      "cnicVerifiedAt": "2026-05-11T19:39:09.894Z",
+      "role": "user"
+    },
+    {
+      "id": "10",
+      "email": "hamayunawan2004@gmail.com",
+      "passwordHash": "$2a$10$MsAHCKJnLOAHs239Z3K1UuhfeNcO653vJuSsxrtGf4lI20xNZGqsW",
+      "fullName": "hamayun",
+      "phone": "03006957440",
+      "cnic": "3650123031357",
+      "cnicFrontUrl": "/uploads/cnic/1778535825008-iy3f1x-cnicFront.png",
+      "cnicBackUrl": "/uploads/cnic/1778535825013-6d9dhg-cnicBack.png",
+      "cnicVerifiedAt": "2026-05-11T21:43:45.121Z",
+      "role": "user",
+      "supabaseUserId": "960875f5-e3ed-4058-81e3-6cb51c3c8c45"
+    },
+    {
+      "id": "11",
+      "email": "hamayunawan2002@gmail.com",
+      "passwordHash": "$2a$10$tmrqpm5AtblH0SzTg4eqGOVV8FAZdNlSp/V/9uFX.sxg.O.mny6Pi",
+      "fullName": "hamayunawan2002",
+      "role": "user",
+      "createdAt": "2026-05-15T22:52:26.394Z"
+    },
+    {
+      "id": "12",
+      "email": "hamayunawan1@gmail.com",
+      "passwordHash": "$2a$10$CqI4804nhWgVIjIf3K.px.rM2KQjopRyEU1iam3/iFOO2LEvrtL/u",
+      "fullName": "Hamayun",
+      "role": "user",
+      "supabaseUserId": "fb071574-f696-466f-a3c8-780190509acf",
+      "createdAt": "2026-05-17T20:46:12.717Z"
+    },
+    {
+      "id": "13",
+      "email": "hamayunawan2@gmail.com",
+      "passwordHash": "$2a$10$N3l2WsznrcAvHRa/mbT60OVPWCTtqolRNOMgusB0B50fJTC7rD83e",
+      "fullName": "Hamayun",
+      "role": "user",
+      "supabaseUserId": "385fbc56-0cf5-40c9-9d94-65d2bd4e144b",
+      "createdAt": "2026-05-17T20:47:48.426Z"
+    },
+    {
+      "id": "14",
+      "email": "hamayunawan3@gmail.com",
+      "passwordHash": "$2a$10$jJ8TFN9MJ/7/9ImGpTbZf.d46ZFLdGr9E7cPStIj8bwmnlCb/m7HK",
+      "fullName": "Hamayun",
+      "role": "user",
+      "supabaseUserId": "a7088566-f6e3-4121-bc8e-a8bb801298bc",
+      "createdAt": "2026-05-17T21:57:47.845Z"
+    },
+    {
+      "id": "15",
+      "email": "hamayunawan11@gmail.com",
+      "passwordHash": "$2a$10$RXd1JQMJd35faFqoUAmhdO6qnUy1P7QUifX4OrtxeoL./IEASD0Py",
+      "fullName": "Hamayun",
+      "role": "user",
+      "supabaseUserId": "e7e5928c-b7c2-4a30-9027-863ffe50ad01",
+      "createdAt": "2026-05-18T23:34:43.438Z"
+    },
+    {
+      "id": "16",
+      "email": "hamayunawan12@gmail.com",
+      "passwordHash": "$2a$10$tk6GlL54TvGzu2oDGyJJLOtXvsqWqBYBqtYtl2ESQc.l6pH0Es1n.",
+      "fullName": "hamayun",
+      "role": "user",
+      "supabaseUserId": "3c5b6b56-f968-46d4-918a-4ceadeab7c34",
+      "createdAt": "2026-05-18T23:37:33.571Z"
+    },
+    {
+      "id": "17",
+      "email": "hamayunawan2001@gmail.com",
+      "passwordHash": "$2a$10$elHWgqPQWglko7z/QmMAAu9GPYz.PDU1hqpOQY1T3BGLxwEcuJLvq",
+      "fullName": "hamayun",
+      "role": "user",
+      "supabaseUserId": "c9ea4f94-4356-456c-98b9-e8ac025da565",
+      "createdAt": "2026-05-19T14:28:30.508Z"
+    },
+    {
+      "id": "18",
+      "email": "hamayunawan2009@gmail.com",
+      "passwordHash": "$2a$10$zZFktCpuZnNSMVsThBKiuuItaWCLh2AyTyKzPz2SL0Z7tSE3w5XF6",
+      "fullName": "hamayun awan",
+      "role": "user",
+      "supabaseUserId": "395e1664-d8fb-4f3a-aca7-967f57878bc5",
+      "createdAt": "2026-05-19T15:05:49.174Z"
+    },
+    {
+      "id": "19",
+      "email": "hamayun@gmail.com",
+      "passwordHash": "$2a$10$.bn7mr1eAV5154PulufGmujukQZFC0.UbmD1nYkdzOuZBcSNME4EO",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "56326579-0311-45d6-8253-aa4bfc3f8582",
+      "createdAt": "2026-05-19T21:09:04.447Z"
+    },
+    {
+      "id": "20",
+      "email": "demo@bidify.local",
+      "passwordHash": "$2a$10$FaG24ZvlzVi2bXNYkxHkT.mgjx0uFvoATS7Uwtfryg4ni4wUdkDGi",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "demo-1779232647365",
+      "createdAt": "2026-05-19T21:36:16.823Z"
+    },
+    {
+      "id": "21",
+      "email": "aaa@gmail.com",
+      "passwordHash": "$2a$10$RPbT.fGClP7dA/KJ62mWbuQKtWPC.jmrHGElyIXyijbYDr9T0bwS.",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "862a5bb1-9d1e-47ba-981c-e795fd98746c",
+      "createdAt": "2026-05-19T21:40:59.853Z"
+    },
+    {
+      "id": "22",
+      "email": "hamayun78@gmail.com",
+      "passwordHash": "$2a$10$d1MTj6EVhVMAP3.26PL63uHOIhn91QpZE8bBMqYxeXy67/htsP8Ie",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "a87779a3-ca5f-4106-9f6b-7c3d3b3d9272",
+      "createdAt": "2026-05-19T21:54:32.247Z"
+    },
+    {
+      "id": "23",
+      "email": "hamayun0@gmail.com",
+      "passwordHash": "$2a$10$EW4S46DcUj3dJTOL2Y0IsOvmGcPAiKXtan5qj9y28f27dju.0O2be",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "600002b4-1d05-41e0-ba20-827ff9e9ae67",
+      "createdAt": "2026-05-19T22:07:47.870Z"
+    },
+    {
+      "id": "24",
+      "email": "hamayunawan295@gmail.com",
+      "passwordHash": "$2a$10$t564KaHHhi/Yij/bejbd.ui8nUfqOwoJWtrxWnF.lUZSRFVBg.y3K",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "600002b4-1d05-41e0-ba20-827ff9e9ae67",
+      "createdAt": "2026-05-19T22:59:03.121Z"
+    },
+    {
+      "id": "25",
+      "email": "hamayun3@gmail.com",
+      "passwordHash": "$2a$10$LAOZGT2/myBfsm9Flu3B/uAxM2nhjw3Eyda8zpttdr85lY5CLGwNS",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "6af610de-423b-4942-aa72-c8e70f60bec0",
+      "createdAt": "2026-05-19T23:25:39.041Z"
+    },
+    {
+      "id": "26",
+      "email": "hamayunawan6@gmail.com",
+      "passwordHash": "$2a$10$LWMsveDwSBVd0gV80eTpmumIJbdgEFLrtpeIll6WyHhn8M0dxysrK",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "e98f74b0-9f6c-4f46-8d52-e7b8397f5d0a",
+      "createdAt": "2026-05-19T23:33:11.317Z"
+    },
+    {
+      "id": "27",
+      "email": "hamayunawan7@gmail.com",
+      "passwordHash": "$2a$10$WoqHurZEQ5f1lgByfP6Rn.L/z7UruzZqNv5JUMQrVpNASmXg.co/a",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "088c958b-d95e-48fb-973e-f1f3bb7729b8",
+      "createdAt": "2026-05-19T23:43:41.436Z"
+    },
+    {
+      "id": "28",
+      "email": "hamayunawan1@gmail.con",
+      "passwordHash": "$2a$10$h5x7r8nLQx3hBWr4HFh4Iedzdm66sbM5vMb/43zilKktmcOFkkgqa",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "edde6cf2-e177-4b42-aa72-d32cba6ff039",
+      "createdAt": "2026-05-19T23:52:12.417Z"
+    },
+    {
+      "id": "29",
+      "email": "haayun11@gmail.com",
+      "passwordHash": "$2a$10$gC1vW832ab.F.NFvoSHC6OwRod.af1EOVhTXtqFtm5hkovf0/fCJm",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "cd2f336b-d347-40de-ae92-8f4eef66203d",
+      "createdAt": "2026-05-20T00:11:25.277Z"
+    },
+    {
+      "id": "30",
+      "email": "hamayuno1@gmail.com",
+      "passwordHash": "$2a$10$ANqN5oTj.ldW906D5ZJgmebrw1qamy.QhreN7l2nvf2tVwq.AQ93q",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "63b245f2-36f4-4e17-9542-5544c3bc6a78",
+      "createdAt": "2026-05-20T00:16:18.248Z"
+    },
+    {
+      "id": "31",
+      "email": "hamayunawan88@gmail.com",
+      "passwordHash": "$2a$10$phBmUwI1mL2vW.mBiDjwu.dta5jPukDTKR09Nq30QrDnVoL79tUmm",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "beb2e364-3294-4c11-8162-8a65a8ab759f",
+      "createdAt": "2026-05-20T00:47:31.596Z"
+    },
+    {
+      "id": "32",
+      "email": "hamayun22@gmail.com",
+      "passwordHash": "$2a$10$SOG2Qm6FrlaOFaTV.fpwF.zKGV34FH8nin4LX4HLEAOazvBVA9YAe",
+      "fullName": "hamayun awan",
+      "role": "user",
+      "supabaseUserId": "5a487c81-93ae-4d11-8efe-23bcae702d56",
+      "createdAt": "2026-05-20T00:58:07.509Z"
+    },
+    {
+      "id": "33",
+      "email": "hamayun12@gmail.com",
+      "passwordHash": "$2a$10$q4Do47eSY1RR3pzWi8eqOOv.P4lNapx25AmDkGsc3D4yoMcLg/EFu",
+      "fullName": null,
+      "role": "user",
+      "supabaseUserId": "a1d28b31-f44b-49b7-9a89-315343760863",
+      "createdAt": "2026-05-20T01:00:25.593Z"
+    },
+    {
+      "id": "34",
+      "email": "hamayun1@gmail.com",
+      "passwordHash": "$2a$10$rkxm4Yzky88rsBPuZ1CGfu26fmjwu3nv3we3WGSkahK3Y8umWq94W",
+      "fullName": null,
+      "role": "user",
+      "supabaseUserId": "eb246361-4e8f-4c6d-b863-47aa7468fce5",
+      "createdAt": "2026-05-20T01:06:20.642Z"
+    },
+    {
+      "id": "35",
+      "email": "visha@gmail.com",
+      "passwordHash": "$2a$10$4LbcEAc2E8itxD/5J.sfdOc6eFuVJdmquPitS4aSe1/7ePhIpSbd2",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "4dc13449-c202-4262-828e-8f17f77eee9f",
+      "createdAt": "2026-05-20T01:09:18.349Z"
+    },
+    {
+      "id": "36",
+      "email": "hamayunawan2006@gmail.com",
+      "passwordHash": "$2a$10$PDeW2wn81HDL8TVC0vg6IOT0l7832cCAMS32TABbPzGzbJ.VWVTd2",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "20f46436-0b75-4e6f-842f-c6e725c8bbc9",
+      "createdAt": "2026-05-20T01:42:25.747Z"
+    },
+    {
+      "id": "37",
+      "email": "hamama@gmail.com",
+      "passwordHash": "$2a$10$UNtyAMCGe0C6L0D.Nwxsb.A768dQA0/W5/w6cZi7uC2yy7BW9Mqni",
+      "fullName": "Hamayun Awa",
+      "role": "user",
+      "supabaseUserId": "6102f4b6-6b8e-4062-a9c0-523dc02b915d",
+      "createdAt": "2026-05-20T01:53:31.320Z"
+    },
+    {
+      "id": "38",
+      "email": "hamayunawan2007@gmail.com",
+      "passwordHash": "$2a$10$orqYbKy10N00JAR9RxUqau0CDU1jE5e0Vpj1P/s3gtVv259BQIzOa",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "20558d5f-d459-4b32-8500-445ba33282a9",
+      "createdAt": "2026-05-20T02:38:02.978Z"
+    },
+    {
+      "id": "39",
+      "email": "hamayun111@gmail.com",
+      "passwordHash": "$2a$10$qHFAW95sRRLxdctKfs0zTuzSrkjeDsWaNLLi8rwvEVd6.hyiz04B6",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "1cb0b45e-3612-45ba-b4f6-dfb3a80b014b",
+      "createdAt": "2026-05-20T02:47:55.033Z"
+    },
+    {
+      "id": "40",
+      "email": "aaaa@gmail.com",
+      "passwordHash": "$2a$10$GEDAvN/4EoFr5fCaU7xhW.IETYgHwazsTpOkOGsy7u7a7EHqHRTby",
+      "fullName": "hamayun awan",
+      "role": "user",
+      "supabaseUserId": "e56cbfd2-265c-4682-a350-54a6719ba7f0",
+      "createdAt": "2026-05-20T16:59:03.671Z"
+    },
+    {
+      "id": "41",
+      "email": "hamayun89@gmail.com",
+      "passwordHash": "$2a$10$FBxse7g2Av7kpj7RfkBEdOcY5x0jjGw/xRv04hF50Vxq7Z41FVcL2",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "284bc3cf-71d5-4747-9ce8-42171fe90964",
+      "createdAt": "2026-05-20T23:47:36.454Z"
+    },
+    {
+      "id": "42",
+      "email": "hamayun88@gmail.com",
+      "passwordHash": "$2a$10$Ffe/S7YD3wE6BaW2csbtQ.jzPwWaO0CJGdA2ylFU2HDdlTacaLOCW",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "790c6adf-f969-4d66-9000-a9302028bcf5",
+      "createdAt": "2026-05-20T23:47:40.417Z"
+    },
+    {
+      "id": "43",
+      "email": "hamayunawan90@gmail.com",
+      "passwordHash": "$2a$10$nL3ygyp7oYeTsyUdjlwMOuMN/zI8Qh5iEGYAAZG4DJEGUBwlhL8rm",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "e2a33254-2b1e-4725-885a-e5f1b72c8602",
+      "createdAt": "2026-05-20T23:49:43.515Z"
+    },
+    {
+      "id": "44",
+      "email": "aqaq@gmail.com",
+      "passwordHash": "$2a$10$r63v/V4/WMlBq4lHXPo2jOJQvrWlqyiotunwR/kTg3AXu5WmbcAm.",
+      "fullName": "awan aa",
+      "role": "user",
+      "supabaseUserId": "b6b51bc1-e56a-4fb0-bba4-4babad141a6d",
+      "createdAt": "2026-05-23T17:14:00.382Z"
+    },
+    {
+      "id": "45",
+      "email": "hamayunawan2005@gmail.com",
+      "passwordHash": "$2a$10$1PIo.9SDudT0AGfTIAKpcu6d95ICiIPIa/1kPtPnY8/pB3kIfkJ1C",
+      "fullName": "hamayun aqa",
+      "role": "user",
+      "supabaseUserId": "8f512270-5de9-4524-b561-0ba0dfbbd9a0",
+      "createdAt": "2026-05-28T17:06:51.728Z"
+    },
+    {
+      "id": "46",
+      "email": "hamayunawan0@gmail.com",
+      "passwordHash": "$2a$10$vOEPIuE006TR2/FtbKsRUezIwMzkCFEYZLphBKUZyAP1rZDmOZvMm",
+      "fullName": "Hamayun Awan",
+      "role": "user",
+      "supabaseUserId": "ccf7d7f9-3189-4451-80d3-4359267e6101",
+      "createdAt": "2026-06-01T04:07:26.068Z"
+    }
+  ],
+  "listings": [
+    {
+      "id": "101",
+      "title": "dsgjhsad",
+      "description": "shdgh",
+      "price": 1000,
+      "type": "auction",
+      "sellerId": "9",
+      "moderationStatus": "approved",
+      "status": "active",
+      "images": [],
+      "image": null,
+      "createdAt": "2026-05-11T20:44:33.122Z",
+      "currentBid": 1000,
+      "endTime": "2026-05-14T20:44:33.122Z",
+      "rejectionReason": null,
+      "rejectedAt": null,
+      "approvedAt": "2026-05-11T20:44:57.058Z",
+      "settled": true,
+      "settledAt": "2026-05-19T21:54:55.118Z"
+    },
+    {
+      "id": "100",
+      "title": "Image Render Test",
+      "description": "verifying that uploaded images render on the app",
+      "price": 2500,
+      "type": "buynow",
+      "sellerId": "7",
+      "moderationStatus": "approved",
+      "status": "active",
+      "images": [
+        "/uploads/1778527383288-test-listing.jpg"
+      ],
+      "image": "/uploads/1778527383288-test-listing.jpg",
+      "createdAt": "2026-05-11T19:23:03.297Z",
+      "buyNowPrice": 2500,
+      "rejectionReason": null,
+      "rejectedAt": null,
+      "approvedAt": "2026-05-11T20:44:58.586Z"
+    },
+    {
+      "id": "1",
+      "title": "Vintage Rolex Submariner (seed)",
+      "description": "Sample approved listing from API seed.",
+      "price": 1000000,
+      "type": "auction",
+      "currentBid": 1000000,
+      "sellerId": "seed-seller",
+      "moderationStatus": "approved",
+      "status": "active",
+      "endTime": "2026-05-13T18:45:52.496Z",
+      "image": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80"
+      ],
+      "createdAt": "2026-05-11T18:45:52.496Z",
+      "settled": true,
+      "settledAt": "2026-05-19T21:54:55.118Z"
+    },
+    {
+      "id": "2",
+      "title": "Antique Persian Rug (seed)",
+      "description": "Hand-knotted Persian rug, approx. 8x10 ft. Sample buy-now listing from API seed.",
+      "price": 85000,
+      "buyNowPrice": 85000,
+      "type": "buynow",
+      "category": "Antiques",
+      "sellerId": "seed-seller",
+      "moderationStatus": "approved",
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=800&q=80"
+      ],
+      "createdAt": "2026-05-11T17:45:52.496Z"
+    }
+  ],
+  "paymentLog": [
+    {
+      "id": "1780320702236-cxlakwh",
+      "createdAt": "2026-06-01T13:31:42.237Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 100000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "960875f5-e3ed-4058-81e3-6cb51c3c8c45",
+      "status": "completed",
+      "stripePaymentId": "pi_3TdVwOFFNTyYdDlu1bnpMWBa"
+    },
+    {
+      "id": "1779994287652-rtwgoul",
+      "createdAt": "2026-05-28T18:51:27.652Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "8f512270-5de9-4524-b561-0ba0dfbbd9a0",
+      "status": "completed",
+      "stripePaymentId": "pi_3Tc91fFFNTyYdDlu0ozfxJe7"
+    },
+    {
+      "id": "1779988059609-0jetaov",
+      "createdAt": "2026-05-28T17:07:39.610Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "8f512270-5de9-4524-b561-0ba0dfbbd9a0",
+      "status": "completed",
+      "stripePaymentId": "pi_3Tc7PDFFNTyYdDlu1pCb0cFy"
+    },
+    {
+      "id": "1779977937140-6kr1z8z",
+      "createdAt": "2026-05-28T14:18:57.140Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "ebfacd33-8676-4d7a-9cfb-fcedd93c2d03",
+      "status": "completed",
+      "stripePaymentId": "pi_3Tc4lwFFNTyYdDlu19D3kAPe"
+    },
+    {
+      "id": "1779975409542-p0mvd5o",
+      "createdAt": "2026-05-28T13:36:49.542Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "6f6a5bbd-8e6e-47af-9033-eda6b75e6d58",
+      "status": "completed",
+      "stripePaymentId": "pi_3Tc47BFFNTyYdDlu0Sl0yxza"
+    },
+    {
+      "id": "1779822262633-jwpihjo",
+      "createdAt": "2026-05-26T19:04:22.634Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "960875f5-e3ed-4058-81e3-6cb51c3c8c45",
+      "status": "completed",
+      "stripePaymentId": "pi_3TbQH2FFNTyYdDlu1M4uAXnt"
+    },
+    {
+      "id": "1779566085732-23dbywz",
+      "createdAt": "2026-05-23T19:54:45.732Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "960875f5-e3ed-4058-81e3-6cb51c3c8c45",
+      "status": "completed",
+      "stripePaymentId": "pi_3TaLd8FFNTyYdDlu0pMu1mrm"
+    },
+    {
+      "id": "1779566049809-jnsjtmo",
+      "createdAt": "2026-05-23T19:54:09.810Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "6f6a5bbd-8e6e-47af-9033-eda6b75e6d58",
+      "status": "completed",
+      "stripePaymentId": "pi_3TaLcXFFNTyYdDlu0IlSTFgc"
+    },
+    {
+      "id": "1779446302720-nii1tzn",
+      "createdAt": "2026-05-22T10:38:22.721Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "40",
+      "status": "completed",
+      "stripePaymentId": "pi_3TZqT9FFNTyYdDlu1sUqIiM3"
+    },
+    {
+      "id": "1779411013242-l2oab59",
+      "createdAt": "2026-05-22T00:50:13.242Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "43",
+      "status": "completed",
+      "stripePaymentId": "pi_3TZhHyFFNTyYdDlu11wlS27l"
+    },
+    {
+      "id": "1779324545962-30qtqy7",
+      "createdAt": "2026-05-21T00:49:05.962Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "41",
+      "status": "completed",
+      "stripePaymentId": "pi_3TZKnKFFNTyYdDlu0eFk82vk"
+    },
+    {
+      "id": "1779315474969-mjayox8",
+      "createdAt": "2026-05-20T22:17:54.969Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "40",
+      "status": "completed",
+      "stripePaymentId": "pi_3TZIR1FFNTyYdDlu17mtAjIy"
+    },
+    {
+      "id": "1779244967977-9ntlmqk",
+      "createdAt": "2026-05-20T02:42:47.977Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "37",
+      "status": "completed",
+      "stripePaymentId": "pi_3TZ05oFFNTyYdDlu0pBOwZFX"
+    },
+    {
+      "id": "1779153923787-42kt06g",
+      "createdAt": "2026-05-19T01:25:23.787Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "4",
+      "status": "completed",
+      "stripePaymentId": "pi_3TYcPMFFNTyYdDlu0vEpa0oU"
+    },
+    {
+      "id": "1779153717513-v26kty3",
+      "createdAt": "2026-05-19T01:21:57.513Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 50000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "15",
+      "status": "completed",
+      "stripePaymentId": "pi_3TYcM1FFNTyYdDlu0B3qfiXe"
+    },
+    {
+      "id": "1779147501895-hmid3ms",
+      "createdAt": "2026-05-18T23:38:21.895Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "16",
+      "status": "completed",
+      "stripePaymentId": "pi_3TYajmFFNTyYdDlu0g6JeWmA"
+    },
+    {
+      "id": "1779147326597-dveahxc",
+      "createdAt": "2026-05-18T23:35:26.597Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "15",
+      "status": "completed",
+      "stripePaymentId": "pi_3TYagwFFNTyYdDlu002JicB4"
+    },
+    {
+      "id": "1779146805749-1026sze",
+      "createdAt": "2026-05-18T23:26:45.749Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "12",
+      "status": "completed",
+      "stripePaymentId": "pi_3TYaYYFFNTyYdDlu1rT1W1b9"
+    },
+    {
+      "id": "1779146747629-ypdphrn",
+      "createdAt": "2026-05-18T23:25:47.629Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "4",
+      "status": "completed",
+      "stripePaymentId": "pi_3TYaXbFFNTyYdDlu0MiNM30h"
+    },
+    {
+      "id": "1779057649690-kda94od",
+      "createdAt": "2026-05-17T22:40:49.690Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "13",
+      "status": "completed",
+      "stripePaymentId": "pi_3TYDMZFFNTyYdDlu1MmKRfJu"
+    },
+    {
+      "id": "1779050988739-u6ifvy2",
+      "createdAt": "2026-05-17T20:49:48.739Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "12",
+      "status": "completed",
+      "stripePaymentId": "pi_3TYBd8FFNTyYdDlu01utkvPI"
+    },
+    {
+      "id": "1779046951376-2os7g4j",
+      "createdAt": "2026-05-17T19:42:31.376Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "10",
+      "status": "completed",
+      "stripePaymentId": "pi_3TYAa1FFNTyYdDlu11vT8I7Y"
+    },
+    {
+      "id": "1779011335864-a20cw6d",
+      "createdAt": "2026-05-17T09:48:55.864Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "4",
+      "status": "completed",
+      "stripePaymentId": "pi_3TY1JYFFNTyYdDlu0EeFbeHp"
+    },
+    {
+      "id": "1778975657222-0kxnu3o",
+      "createdAt": "2026-05-16T23:54:17.222Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "4",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXs27FFNTyYdDlu1hLILcMX"
+    },
+    {
+      "id": "1778975590508-0ta3xf9",
+      "createdAt": "2026-05-16T23:53:10.508Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "4",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXs12FFNTyYdDlu0J9Bz7Fj"
+    },
+    {
+      "id": "1778967187316-6dtvlx5",
+      "createdAt": "2026-05-16T21:33:07.316Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "4",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe"
+    },
+    {
+      "id": "1778967185162-jjvfmbk",
+      "createdAt": "2026-05-16T21:33:05.162Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "4",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe"
+    },
+    {
+      "id": "1778958894173-x0szbbp",
+      "createdAt": "2026-05-16T19:14:54.173Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 15000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "4",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXnfiFFNTyYdDlu0R94H7m4"
+    },
+    {
+      "id": "1778946671684-vg2scdv",
+      "createdAt": "2026-05-16T15:51:11.684Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "10",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXkUbFFNTyYdDlu0zR3uBAL"
+    },
+    {
+      "id": "1778945553955-6tmukcm",
+      "createdAt": "2026-05-16T15:32:33.955Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "10",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXkCWFFNTyYdDlu1hbLxJAm"
+    },
+    {
+      "id": "1778945552494-5zie7lk",
+      "createdAt": "2026-05-16T15:32:32.494Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "10",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXkCWFFNTyYdDlu1hbLxJAm"
+    },
+    {
+      "id": "1778933072451-m7gaa5s",
+      "createdAt": "2026-05-16T12:04:32.451Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "10",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXgx4FFNTyYdDlu1h6THUJT"
+    },
+    {
+      "id": "1778931841339-gj955lq",
+      "createdAt": "2026-05-16T11:44:01.339Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 15000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "10",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXgdOFFNTyYdDlu0Kj0MpAt"
+    },
+    {
+      "id": "1778930591998-laz8job",
+      "createdAt": "2026-05-16T11:23:12.001Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "10",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXgJFFFNTyYdDlu0NhnRZKi"
+    },
+    {
+      "id": "1778891151064-namdzvv",
+      "createdAt": "2026-05-16T00:25:51.067Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 15000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "4",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXW35FFNTyYdDlu13OKbzNi"
+    },
+    {
+      "id": "1778889432049-3qnqicl",
+      "createdAt": "2026-05-15T23:57:12.051Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "10",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXVbLFFNTyYdDlu0FUjlq8U"
+    },
+    {
+      "id": "1778885679078-gf39wd9",
+      "createdAt": "2026-05-15T22:54:39.079Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "11",
+      "status": "completed",
+      "stripePaymentId": "pi_3TXUcoFFNTyYdDlu1ZSh0o7n"
+    },
+    {
+      "id": "1778532344222-e32q0et",
+      "createdAt": "2026-05-11T20:45:44.222Z",
+      "kind": "buy_now",
+      "provider": "easypaisa",
+      "listingId": "100",
+      "listingTitle": "Image Render Test",
+      "amount": 2500,
+      "walletDebited": 2500,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "1",
+      "buyerName": "Bidify Admin",
+      "status": "completed"
+    },
+    {
+      "id": "1778528396776-eucs5kg",
+      "createdAt": "2026-05-11T19:39:56.776Z",
+      "kind": "wallet_topup",
+      "provider": "easypaisa",
+      "amount": 15000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "9",
+      "buyerName": "hamayun",
+      "status": "completed"
+    },
+    {
+      "id": "1778527604923-ljsmwlw",
+      "createdAt": "2026-05-11T19:26:44.931Z",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "walletDebited": 0,
+      "bidTokenCreditUsed": 0,
+      "buyerId": "1",
+      "buyerName": "Bidify Admin",
+      "status": "completed"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "1",
+      "listingId": "1",
+      "listingTitle": "Vintage Rolex Submariner (seed)",
+      "listingImage": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80",
+      "buyerId": "1",
+      "sellerId": "seed-seller",
+      "createdAt": "2026-05-11T19:27:21.138Z"
+    },
+    {
+      "id": "2",
+      "listingId": "100",
+      "listingTitle": "Image Render Test",
+      "listingImage": "/uploads/1778527383288-test-listing.jpg",
+      "buyerId": "1",
+      "sellerId": "7",
+      "createdAt": "2026-05-11T20:45:59.971Z"
+    },
+    {
+      "id": "3",
+      "listingId": "2",
+      "listingTitle": "Antique Persian Rug (seed)",
+      "listingImage": "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=800&q=80",
+      "buyerId": "1",
+      "sellerId": "seed-seller",
+      "createdAt": "2026-05-11T21:29:22.552Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "conversationId": "1",
+      "senderId": "1",
+      "text": "sir g",
+      "imageUrl": null,
+      "createdAt": "2026-05-11T19:27:29.866Z"
+    },
+    {
+      "id": "2",
+      "conversationId": "2",
+      "senderId": "1",
+      "text": "sir",
+      "imageUrl": null,
+      "createdAt": "2026-05-11T20:46:06.712Z"
+    }
+  ],
+  "wallets": {
+    "1": {
+      "balance": 2500,
+      "transactions": [
+        {
+          "id": "3",
+          "createdAt": "2026-05-11T20:45:44.222Z",
+          "balanceAfter": 2500,
+          "kind": "token_paid",
+          "amount": 2500,
+          "listingId": "100",
+          "listingTitle": "Image Render Test",
+          "note": "Easypaisa payment for \"Image Render Test\"."
+        },
+        {
+          "id": "1",
+          "createdAt": "2026-05-11T19:26:44.923Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe wallet top-up (sandbox)."
+        }
+      ]
+    },
+    "4": {
+      "balance": 65000,
+      "transactions": [
+        {
+          "id": "27",
+          "createdAt": "2026-05-19T01:25:23.787Z",
+          "balanceAfter": 65000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1Q0EL0qRedcdJqEQwIYhaGGyfPUFpBItt2ZFjFEgpfXih5Y775Aow0iST).",
+          "stripePaymentId": "pi_3TYcPMFFNTyYdDlu0vEpa0oU",
+          "stripeSessionId": "cs_test_a1Q0EL0qRedcdJqEQwIYhaGGyfPUFpBItt2ZFjFEgpfXih5Y775Aow0iST"
+        },
+        {
+          "id": "22",
+          "createdAt": "2026-05-18T23:25:47.629Z",
+          "balanceAfter": 60000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1ARuOMJ0e6qTksu63gohOHvRWLLe5U2tdmGrVfZscPgrMS2Do57nWosIw).",
+          "stripePaymentId": "pi_3TYaXbFFNTyYdDlu0MiNM30h",
+          "stripeSessionId": "cs_test_a1ARuOMJ0e6qTksu63gohOHvRWLLe5U2tdmGrVfZscPgrMS2Do57nWosIw"
+        },
+        {
+          "id": "18",
+          "createdAt": "2026-05-17T09:48:55.864Z",
+          "balanceAfter": 55000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1VshKy2PujDjyFC8FeBY7JPJZttpSJ64bXibiDWmUTkqvn1zfL9FkCiLf).",
+          "stripePaymentId": "pi_3TY1JYFFNTyYdDlu0EeFbeHp",
+          "stripeSessionId": "cs_test_a1VshKy2PujDjyFC8FeBY7JPJZttpSJ64bXibiDWmUTkqvn1zfL9FkCiLf"
+        },
+        {
+          "id": "17",
+          "createdAt": "2026-05-16T23:54:17.222Z",
+          "balanceAfter": 50000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse).",
+          "stripePaymentId": "pi_3TXs27FFNTyYdDlu1hLILcMX",
+          "stripeSessionId": "cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse"
+        },
+        {
+          "id": "16",
+          "createdAt": "2026-05-16T23:53:10.508Z",
+          "balanceAfter": 45000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX).",
+          "stripePaymentId": "pi_3TXs12FFNTyYdDlu0J9Bz7Fj",
+          "stripeSessionId": "cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX"
+        },
+        {
+          "id": "15",
+          "createdAt": "2026-05-16T21:33:07.316Z",
+          "balanceAfter": 40000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+          "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+          "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+        },
+        {
+          "id": "14",
+          "createdAt": "2026-05-16T21:33:05.162Z",
+          "balanceAfter": 35000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+          "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+          "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+        },
+        {
+          "id": "13",
+          "createdAt": "2026-05-16T19:14:54.173Z",
+          "balanceAfter": 30000,
+          "kind": "topup",
+          "amount": 15000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun).",
+          "stripePaymentId": "pi_3TXnfiFFNTyYdDlu0R94H7m4",
+          "stripeSessionId": "cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun"
+        },
+        {
+          "id": "6",
+          "createdAt": "2026-05-16T00:25:51.064Z",
+          "balanceAfter": 15000,
+          "kind": "topup",
+          "amount": 15000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe).",
+          "stripePaymentId": "pi_3TXW35FFNTyYdDlu13OKbzNi",
+          "stripeSessionId": "cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe"
+        }
+      ]
+    },
+    "5": {
+      "balance": 0,
+      "transactions": []
+    },
+    "6": {
+      "balance": 0,
+      "transactions": []
+    },
+    "7": {
+      "balance": 0,
+      "transactions": []
+    },
+    "8": {
+      "balance": 0,
+      "transactions": []
+    },
+    "9": {
+      "balance": 15000,
+      "transactions": [
+        {
+          "id": "2",
+          "createdAt": "2026-05-11T19:39:56.776Z",
+          "balanceAfter": 15000,
+          "kind": "topup",
+          "amount": 15000,
+          "provider": "easypaisa",
+          "note": "Easypaisa wallet top-up (sandbox)."
+        }
+      ]
+    },
+    "10": {
+      "balance": 80000,
+      "transactions": [
+        {
+          "id": "19",
+          "createdAt": "2026-05-17T19:42:31.376Z",
+          "balanceAfter": 80000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1mkneiqSG7aEai73jcUOHCRdYEuUXhcXJKGZ2gMp8KlWtp12Eou9x9Kdw).",
+          "stripePaymentId": "pi_3TYAa1FFNTyYdDlu11vT8I7Y",
+          "stripeSessionId": "cs_test_a1mkneiqSG7aEai73jcUOHCRdYEuUXhcXJKGZ2gMp8KlWtp12Eou9x9Kdw"
+        },
+        {
+          "id": "12",
+          "createdAt": "2026-05-16T15:51:11.684Z",
+          "balanceAfter": 75000,
+          "kind": "topup",
+          "amount": 10000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1jiIkZXm6o22wQAeD9ZsMUGdyMTXdqFYAkZYFNQa0aAZdXRBGnohbiF09).",
+          "stripePaymentId": "pi_3TXkUbFFNTyYdDlu0zR3uBAL",
+          "stripeSessionId": "cs_test_a1jiIkZXm6o22wQAeD9ZsMUGdyMTXdqFYAkZYFNQa0aAZdXRBGnohbiF09"
+        },
+        {
+          "id": "11",
+          "createdAt": "2026-05-16T15:32:33.955Z",
+          "balanceAfter": 65000,
+          "kind": "topup",
+          "amount": 10000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ).",
+          "stripePaymentId": "pi_3TXkCWFFNTyYdDlu1hbLxJAm",
+          "stripeSessionId": "cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ"
+        },
+        {
+          "id": "10",
+          "createdAt": "2026-05-16T15:32:32.494Z",
+          "balanceAfter": 55000,
+          "kind": "topup",
+          "amount": 10000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ).",
+          "stripePaymentId": "pi_3TXkCWFFNTyYdDlu1hbLxJAm",
+          "stripeSessionId": "cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ"
+        },
+        {
+          "id": "9",
+          "createdAt": "2026-05-16T12:04:32.451Z",
+          "balanceAfter": 45000,
+          "kind": "topup",
+          "amount": 10000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0).",
+          "stripePaymentId": "pi_3TXgx4FFNTyYdDlu1h6THUJT",
+          "stripeSessionId": "cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0"
+        },
+        {
+          "id": "8",
+          "createdAt": "2026-05-16T11:44:01.338Z",
+          "balanceAfter": 35000,
+          "kind": "topup",
+          "amount": 15000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq).",
+          "stripePaymentId": "pi_3TXgdOFFNTyYdDlu0Kj0MpAt",
+          "stripeSessionId": "cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq"
+        },
+        {
+          "id": "7",
+          "createdAt": "2026-05-16T11:23:11.998Z",
+          "balanceAfter": 20000,
+          "kind": "topup",
+          "amount": 10000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7).",
+          "stripePaymentId": "pi_3TXgJFFFNTyYdDlu0NhnRZKi",
+          "stripeSessionId": "cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7"
+        },
+        {
+          "id": "5",
+          "createdAt": "2026-05-15T23:57:12.049Z",
+          "balanceAfter": 10000,
+          "kind": "topup",
+          "amount": 10000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5).",
+          "stripePaymentId": "pi_3TXVbLFFNTyYdDlu0FUjlq8U",
+          "stripeSessionId": "cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5"
+        }
+      ]
+    },
+    "11": {
+      "balance": 5000,
+      "transactions": [
+        {
+          "id": "4",
+          "createdAt": "2026-05-15T22:54:39.076Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1pGbdF9ihdSs5sKjcpDzCJGgl2CJo5hMJvvvrAboT8CaHGaqlJDeMFraP).",
+          "stripePaymentId": "pi_3TXUcoFFNTyYdDlu1ZSh0o7n",
+          "stripeSessionId": "cs_test_a1pGbdF9ihdSs5sKjcpDzCJGgl2CJo5hMJvvvrAboT8CaHGaqlJDeMFraP"
+        }
+      ]
+    },
+    "12": {
+      "balance": 20000,
+      "transactions": [
+        {
+          "id": "23",
+          "createdAt": "2026-05-18T23:26:45.749Z",
+          "balanceAfter": 20000,
+          "kind": "topup",
+          "amount": 10000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1uJ1x3dLaL8IvComWP4c0KDGLWZq44cEm9auDxK8Y3AKNd85yKJlZ6WTb).",
+          "stripePaymentId": "pi_3TYaYYFFNTyYdDlu1rT1W1b9",
+          "stripeSessionId": "cs_test_a1uJ1x3dLaL8IvComWP4c0KDGLWZq44cEm9auDxK8Y3AKNd85yKJlZ6WTb"
+        },
+        {
+          "id": "20",
+          "createdAt": "2026-05-17T20:49:48.739Z",
+          "balanceAfter": 10000,
+          "kind": "topup",
+          "amount": 10000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1zDVwPhIPBaaX3ebSB9LLvRZL2cb7tb6gf1zKSImYLRUImvTNuZz449fz).",
+          "stripePaymentId": "pi_3TYBd8FFNTyYdDlu01utkvPI",
+          "stripeSessionId": "cs_test_a1zDVwPhIPBaaX3ebSB9LLvRZL2cb7tb6gf1zKSImYLRUImvTNuZz449fz"
+        }
+      ]
+    },
+    "13": {
+      "balance": 10000,
+      "transactions": [
+        {
+          "id": "21",
+          "createdAt": "2026-05-17T22:40:49.690Z",
+          "balanceAfter": 10000,
+          "kind": "topup",
+          "amount": 10000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1JCHLpYyTVmpGukfCSqmPBDf2qNpIQPzG992Xo4W77OQWaNYn9mZMyl15).",
+          "stripePaymentId": "pi_3TYDMZFFNTyYdDlu1MmKRfJu",
+          "stripeSessionId": "cs_test_a1JCHLpYyTVmpGukfCSqmPBDf2qNpIQPzG992Xo4W77OQWaNYn9mZMyl15"
+        }
+      ]
+    },
+    "15": {
+      "balance": 55000,
+      "transactions": [
+        {
+          "id": "26",
+          "createdAt": "2026-05-19T01:21:57.513Z",
+          "balanceAfter": 55000,
+          "kind": "topup",
+          "amount": 50000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a17GnLXR4TO4RTNqHe3olas3KqnimfxFLSIKV2xTGi1PQgUulQLtC836P5).",
+          "stripePaymentId": "pi_3TYcM1FFNTyYdDlu0B3qfiXe",
+          "stripeSessionId": "cs_test_a17GnLXR4TO4RTNqHe3olas3KqnimfxFLSIKV2xTGi1PQgUulQLtC836P5"
+        },
+        {
+          "id": "24",
+          "createdAt": "2026-05-18T23:35:26.597Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1NJggOyx7HeVHfo72SKOPyiTexgYDb3zYkecxc7YnxNApmqYo8qm9YfbR).",
+          "stripePaymentId": "pi_3TYagwFFNTyYdDlu002JicB4",
+          "stripeSessionId": "cs_test_a1NJggOyx7HeVHfo72SKOPyiTexgYDb3zYkecxc7YnxNApmqYo8qm9YfbR"
+        }
+      ]
+    },
+    "16": {
+      "balance": 5000,
+      "transactions": [
+        {
+          "id": "25",
+          "createdAt": "2026-05-18T23:38:21.895Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1dsV1PSkf7PwYQx9xKXvtwEGpUOwRQCzC5PGyNrtGRnJtljySJjNOS8xh).",
+          "stripePaymentId": "pi_3TYajmFFNTyYdDlu0g6JeWmA",
+          "stripeSessionId": "cs_test_a1dsV1PSkf7PwYQx9xKXvtwEGpUOwRQCzC5PGyNrtGRnJtljySJjNOS8xh"
+        }
+      ]
+    },
+    "25": {
+      "balance": 0,
+      "transactions": []
+    },
+    "37": {
+      "balance": 5000,
+      "transactions": [
+        {
+          "id": "28",
+          "createdAt": "2026-05-20T02:42:47.976Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1bSOc4V9lOAPmow0VyWnrRMtUWaDWdsBa4FXD6BO0xVdMldrhfReVYFIq).",
+          "stripePaymentId": "pi_3TZ05oFFNTyYdDlu0pBOwZFX",
+          "stripeSessionId": "cs_test_a1bSOc4V9lOAPmow0VyWnrRMtUWaDWdsBa4FXD6BO0xVdMldrhfReVYFIq"
+        }
+      ]
+    },
+    "40": {
+      "balance": 10000,
+      "transactions": [
+        {
+          "id": "32",
+          "createdAt": "2026-05-22T10:38:22.720Z",
+          "balanceAfter": 10000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a17chnfj2GrGUj1xiuSiMLo50HJYTHg2jnSGKZQ6HfHdn1h4fkzXdMmuHJ).",
+          "stripePaymentId": "pi_3TZqT9FFNTyYdDlu1sUqIiM3",
+          "stripeSessionId": "cs_test_a17chnfj2GrGUj1xiuSiMLo50HJYTHg2jnSGKZQ6HfHdn1h4fkzXdMmuHJ"
+        },
+        {
+          "id": "29",
+          "createdAt": "2026-05-20T22:17:54.968Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1GMclKBHgZtNgEOFkIUtYW3TFN1LfkkiAYHwBpej2ntwL1D0UqGoQ25jb).",
+          "stripePaymentId": "pi_3TZIR1FFNTyYdDlu17mtAjIy",
+          "stripeSessionId": "cs_test_a1GMclKBHgZtNgEOFkIUtYW3TFN1LfkkiAYHwBpej2ntwL1D0UqGoQ25jb"
+        }
+      ]
+    },
+    "41": {
+      "balance": 5000,
+      "transactions": [
+        {
+          "id": "30",
+          "createdAt": "2026-05-21T00:49:05.962Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1cBxJ4WwP4QZl4cUyoqE03kYr5NaCzAHyCIje8CdNTAbiHf6Lml1MhXtA).",
+          "stripePaymentId": "pi_3TZKnKFFNTyYdDlu0eFk82vk",
+          "stripeSessionId": "cs_test_a1cBxJ4WwP4QZl4cUyoqE03kYr5NaCzAHyCIje8CdNTAbiHf6Lml1MhXtA"
+        }
+      ]
+    },
+    "43": {
+      "balance": 5000,
+      "transactions": [
+        {
+          "id": "31",
+          "createdAt": "2026-05-22T00:50:13.242Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1xXwLWhiUH3Hy16hz5rGQ9e4o4lRNQhzi2krMDGu2ZXctu5BThxdrpZv1).",
+          "stripePaymentId": "pi_3TZhHyFFNTyYdDlu11wlS27l",
+          "stripeSessionId": "cs_test_a1xXwLWhiUH3Hy16hz5rGQ9e4o4lRNQhzi2krMDGu2ZXctu5BThxdrpZv1"
+        }
+      ]
+    },
+    "6f6a5bbd-8e6e-47af-9033-eda6b75e6d58": {
+      "balance": 10000,
+      "transactions": [
+        {
+          "id": "36",
+          "createdAt": "2026-05-28T13:36:49.542Z",
+          "balanceAfter": 10000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1sYPdDV5UXQJEhidOlTwvutVT9Otvf7A9RlKaOArB3bCziRYTVg7N99Ay).",
+          "stripePaymentId": "pi_3Tc47BFFNTyYdDlu0Sl0yxza",
+          "stripeSessionId": "cs_test_a1sYPdDV5UXQJEhidOlTwvutVT9Otvf7A9RlKaOArB3bCziRYTVg7N99Ay"
+        },
+        {
+          "id": "33",
+          "createdAt": "2026-05-23T19:54:09.809Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1pgesM5UfcvOGHpBYEwt7eukXLrhaEu13GiR79s7QRzJFFXvUGBE6v3lp).",
+          "stripePaymentId": "pi_3TaLcXFFNTyYdDlu0IlSTFgc",
+          "stripeSessionId": "cs_test_a1pgesM5UfcvOGHpBYEwt7eukXLrhaEu13GiR79s7QRzJFFXvUGBE6v3lp"
+        }
+      ]
+    },
+    "960875f5-e3ed-4058-81e3-6cb51c3c8c45": {
+      "balance": 115000,
+      "transactions": [
+        {
+          "id": "40",
+          "createdAt": "2026-06-01T13:31:42.235Z",
+          "balanceAfter": 115000,
+          "kind": "topup",
+          "amount": 100000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1cPVAOPhMI13l2aWCGi0W87pCBoLKZFxw86Xj38sgu63NbLh739CsKfa6).",
+          "stripePaymentId": "pi_3TdVwOFFNTyYdDlu1bnpMWBa",
+          "stripeSessionId": "cs_test_a1cPVAOPhMI13l2aWCGi0W87pCBoLKZFxw86Xj38sgu63NbLh739CsKfa6"
+        },
+        {
+          "id": "35",
+          "createdAt": "2026-05-26T19:04:22.633Z",
+          "balanceAfter": 15000,
+          "kind": "topup",
+          "amount": 10000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1SRR0cUtDliR6AOUE9RIWmUEWLUH9laXJpyCsXywpWr9ogWjGc9JvFAQo).",
+          "stripePaymentId": "pi_3TbQH2FFNTyYdDlu1M4uAXnt",
+          "stripeSessionId": "cs_test_a1SRR0cUtDliR6AOUE9RIWmUEWLUH9laXJpyCsXywpWr9ogWjGc9JvFAQo"
+        },
+        {
+          "id": "34",
+          "createdAt": "2026-05-23T19:54:45.732Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q).",
+          "stripePaymentId": "pi_3TaLd8FFNTyYdDlu0pMu1mrm",
+          "stripeSessionId": "cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q"
+        }
+      ]
+    },
+    "ebfacd33-8676-4d7a-9cfb-fcedd93c2d03": {
+      "balance": 5000,
+      "transactions": [
+        {
+          "id": "37",
+          "createdAt": "2026-05-28T14:18:57.139Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1DUIszDfTLho7TYONBTNr68kzHkBeiigI3eeEWKkRTmFNJCZCXONgSKyt).",
+          "stripePaymentId": "pi_3Tc4lwFFNTyYdDlu19D3kAPe",
+          "stripeSessionId": "cs_test_a1DUIszDfTLho7TYONBTNr68kzHkBeiigI3eeEWKkRTmFNJCZCXONgSKyt"
+        }
+      ]
+    },
+    "8f512270-5de9-4524-b561-0ba0dfbbd9a0": {
+      "balance": 10000,
+      "transactions": [
+        {
+          "id": "39",
+          "createdAt": "2026-05-28T18:51:27.651Z",
+          "balanceAfter": 10000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1zodR1AT8Si7Lo3xQMtI0dqW2zOxpLp2KOSuMSofK6j4A65YhlbD3fukj).",
+          "stripePaymentId": "pi_3Tc91fFFNTyYdDlu0ozfxJe7",
+          "stripeSessionId": "cs_test_a1zodR1AT8Si7Lo3xQMtI0dqW2zOxpLp2KOSuMSofK6j4A65YhlbD3fukj"
+        },
+        {
+          "id": "38",
+          "createdAt": "2026-05-28T17:07:39.606Z",
+          "balanceAfter": 5000,
+          "kind": "topup",
+          "amount": 5000,
+          "provider": "stripe",
+          "note": "Stripe test top-up (cs_test_a1MTYmW3QReT7OoGAgCYCyQtpr85qubyaosp4gJCSxZUO2x1ISPY0JRMNK).",
+          "stripePaymentId": "pi_3Tc7PDFFNTyYdDlu1pCb0cFy",
+          "stripeSessionId": "cs_test_a1MTYmW3QReT7OoGAgCYCyQtpr85qubyaosp4gJCSxZUO2x1ISPY0JRMNK"
+        }
+      ]
+    }
+  },
+  "passwordOtps": {},
+  "nextUserId": 47,
+  "nextListingId": 102,
+  "nextConversationId": 4,
+  "nextMessageId": 3,
+  "nextWalletTxId": 41,
+  "paymentSessions": {
+    "STT-1-1778527604932": {
+      "id": "STT-1-1778527604932",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "due": 5000,
+      "heldCredit": 0,
+      "buyerId": "1",
+      "status": "completed",
+      "paymentId": "1778527604923-ljsmwlw",
+      "walletTxId": "1",
+      "walletBalanceAfter": 5000,
+      "createdAt": "2026-05-11T19:26:44.936Z"
+    },
+    "EAT-2-1778528396776": {
+      "id": "EAT-2-1778528396776",
+      "kind": "wallet_topup",
+      "provider": "easypaisa",
+      "amount": 15000,
+      "due": 15000,
+      "heldCredit": 0,
+      "buyerId": "9",
+      "status": "completed",
+      "paymentId": "1778528396776-eucs5kg",
+      "walletTxId": "2",
+      "walletBalanceAfter": 15000,
+      "createdAt": "2026-05-11T19:39:56.776Z"
+    },
+    "EA-3-1778532344223": {
+      "id": "EA-3-1778532344223",
+      "provider": "easypaisa",
+      "listingId": "100",
+      "listingTitle": "Image Render Test",
+      "amount": 2500,
+      "due": 2500,
+      "heldCredit": 0,
+      "buyerId": "1",
+      "status": "completed",
+      "paymentId": "1778532344222-e32q0et",
+      "createdAt": "2026-05-11T20:45:44.223Z"
+    },
+    "cs_test_a1pGbdF9ihdSs5sKjcpDzCJGgl2CJo5hMJvvvrAboT8CaHGaqlJDeMFraP": {
+      "id": "cs_test_a1pGbdF9ihdSs5sKjcpDzCJGgl2CJo5hMJvvvrAboT8CaHGaqlJDeMFraP",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "11",
+      "status": "completed",
+      "createdAt": "2026-05-15T22:53:03.451Z",
+      "walletBalanceAfter": 5000
+    },
+    "cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5": {
+      "id": "cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "10",
+      "status": "completed",
+      "createdAt": "2026-05-15T23:56:06.092Z",
+      "walletBalanceAfter": 10000
+    },
+    "cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe": {
+      "id": "cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 15000,
+      "buyerId": "4",
+      "status": "completed",
+      "createdAt": "2026-05-16T00:25:02.113Z",
+      "walletBalanceAfter": 15000
+    },
+    "cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7": {
+      "id": "cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "10",
+      "status": "completed",
+      "createdAt": "2026-05-16T11:22:29.075Z",
+      "walletBalanceAfter": 20000
+    },
+    "cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq": {
+      "id": "cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 15000,
+      "buyerId": "10",
+      "status": "completed",
+      "createdAt": "2026-05-16T11:43:12.134Z",
+      "walletBalanceAfter": 45000
+    },
+    "cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0": {
+      "id": "cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "10",
+      "status": "completed",
+      "createdAt": "2026-05-16T12:03:31.011Z",
+      "walletBalanceAfter": 45000
+    },
+    "cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ": {
+      "id": "cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "10",
+      "status": "pending",
+      "createdAt": "2026-05-16T15:31:48.214Z"
+    },
+    "cs_test_a1jiIkZXm6o22wQAeD9ZsMUGdyMTXdqFYAkZYFNQa0aAZdXRBGnohbiF09": {
+      "id": "cs_test_a1jiIkZXm6o22wQAeD9ZsMUGdyMTXdqFYAkZYFNQa0aAZdXRBGnohbiF09",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "10",
+      "status": "completed",
+      "createdAt": "2026-05-16T15:50:28.807Z",
+      "walletBalanceAfter": 10000
+    },
+    "cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun": {
+      "id": "cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 15000,
+      "buyerId": "4",
+      "status": "completed",
+      "createdAt": "2026-05-16T19:12:53.655Z",
+      "walletBalanceAfter": 15000
+    },
+    "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0": {
+      "id": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "4",
+      "status": "completed",
+      "createdAt": "2026-05-16T21:28:11.531Z",
+      "walletBalanceAfter": 20000
+    },
+    "cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX": {
+      "id": "cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "4",
+      "status": "completed",
+      "createdAt": "2026-05-16T23:52:27.661Z",
+      "walletBalanceAfter": 25000
+    },
+    "cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse": {
+      "id": "cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "4",
+      "status": "completed",
+      "createdAt": "2026-05-16T23:53:35.533Z",
+      "walletBalanceAfter": 30000
+    },
+    "cs_test_a17RBX7Obxd3HdJheEKb7zpSMkUhdw2rBYwUK3BjmXK6Q2wbiHizJHAUvH": {
+      "id": "cs_test_a17RBX7Obxd3HdJheEKb7zpSMkUhdw2rBYwUK3BjmXK6Q2wbiHizJHAUvH",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "4",
+      "status": "pending",
+      "createdAt": "2026-05-17T09:47:30.131Z"
+    },
+    "cs_test_a1VshKy2PujDjyFC8FeBY7JPJZttpSJ64bXibiDWmUTkqvn1zfL9FkCiLf": {
+      "id": "cs_test_a1VshKy2PujDjyFC8FeBY7JPJZttpSJ64bXibiDWmUTkqvn1zfL9FkCiLf",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "4",
+      "status": "completed",
+      "createdAt": "2026-05-17T09:48:13.458Z",
+      "walletBalanceAfter": 35000
+    },
+    "cs_test_a1mkneiqSG7aEai73jcUOHCRdYEuUXhcXJKGZ2gMp8KlWtp12Eou9x9Kdw": {
+      "id": "cs_test_a1mkneiqSG7aEai73jcUOHCRdYEuUXhcXJKGZ2gMp8KlWtp12Eou9x9Kdw",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "10",
+      "status": "completed",
+      "createdAt": "2026-05-17T19:41:38.936Z",
+      "walletBalanceAfter": 9000
+    },
+    "cs_test_a1zDVwPhIPBaaX3ebSB9LLvRZL2cb7tb6gf1zKSImYLRUImvTNuZz449fz": {
+      "id": "cs_test_a1zDVwPhIPBaaX3ebSB9LLvRZL2cb7tb6gf1zKSImYLRUImvTNuZz449fz",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "12",
+      "status": "completed",
+      "createdAt": "2026-05-17T20:48:10.282Z",
+      "walletBalanceAfter": 10000
+    },
+    "cs_test_a1CoSbKN4H2RS12h9mbs8k0yTqYuJaVKI76aKEk4ufoLpIqboWDCcOkVCW": {
+      "id": "cs_test_a1CoSbKN4H2RS12h9mbs8k0yTqYuJaVKI76aKEk4ufoLpIqboWDCcOkVCW",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "13",
+      "status": "pending",
+      "createdAt": "2026-05-17T20:48:10.519Z"
+    },
+    "cs_test_a1CqhV945eglPA3PPdxiwUYMljFHJQSVpLlvPs7Jwmhyotq2zGP6a2MMI9": {
+      "id": "cs_test_a1CqhV945eglPA3PPdxiwUYMljFHJQSVpLlvPs7Jwmhyotq2zGP6a2MMI9",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "13",
+      "status": "pending",
+      "createdAt": "2026-05-17T20:48:26.327Z"
+    },
+    "cs_test_a184yu0D6Gf1gXhHK8jiDclvUHR9Cyg0RAtLtMqNs3rxqAPkkS3I9ULL9N": {
+      "id": "cs_test_a184yu0D6Gf1gXhHK8jiDclvUHR9Cyg0RAtLtMqNs3rxqAPkkS3I9ULL9N",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "13",
+      "status": "pending",
+      "createdAt": "2026-05-17T21:10:21.508Z"
+    },
+    "cs_test_a1opS1n21KPd910WEYyAPzmccmaqcJq5RuFlrB4uPHlyA5Ax7vh9AQNHYn": {
+      "id": "cs_test_a1opS1n21KPd910WEYyAPzmccmaqcJq5RuFlrB4uPHlyA5Ax7vh9AQNHYn",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "13",
+      "status": "pending",
+      "createdAt": "2026-05-17T21:54:31.017Z"
+    },
+    "cs_test_a1RiffDHcYRqiTwHhMweg9vswVcAIfyQKR4c3eUxwasZq78VKI83TYYhBo": {
+      "id": "cs_test_a1RiffDHcYRqiTwHhMweg9vswVcAIfyQKR4c3eUxwasZq78VKI83TYYhBo",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "13",
+      "status": "pending",
+      "createdAt": "2026-05-17T21:54:41.573Z"
+    },
+    "cs_test_a1goQvtij3wQ0o96wrw6jmvtuBDeOf5XdLe4WLEt63aqThw3PUqFsgM8cx": {
+      "id": "cs_test_a1goQvtij3wQ0o96wrw6jmvtuBDeOf5XdLe4WLEt63aqThw3PUqFsgM8cx",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "14",
+      "status": "pending",
+      "createdAt": "2026-05-17T21:58:02.525Z"
+    },
+    "cs_test_a1Ohp9CosKNz23g6DQOaICe5RfGe4CMoLqir6dczfZBHIf7j2gl8NFyzVs": {
+      "id": "cs_test_a1Ohp9CosKNz23g6DQOaICe5RfGe4CMoLqir6dczfZBHIf7j2gl8NFyzVs",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "14",
+      "status": "pending",
+      "createdAt": "2026-05-17T21:58:09.057Z"
+    },
+    "cs_test_a1dCDfLmUOiSgCsBpV3276hnHyY3jMjJnjFxWzSlFeKkjdPwuDp1jYdgHE": {
+      "id": "cs_test_a1dCDfLmUOiSgCsBpV3276hnHyY3jMjJnjFxWzSlFeKkjdPwuDp1jYdgHE",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "13",
+      "status": "pending",
+      "createdAt": "2026-05-17T22:11:30.852Z"
+    },
+    "cs_test_a1T0IwvxNIYXrWOc6qnbPh5yV2rE80Hq3722g2e1mm1BqvWCld2lvOb57n": {
+      "id": "cs_test_a1T0IwvxNIYXrWOc6qnbPh5yV2rE80Hq3722g2e1mm1BqvWCld2lvOb57n",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "13",
+      "status": "pending",
+      "createdAt": "2026-05-17T22:11:48.691Z"
+    },
+    "cs_test_a11EYVO7wIH81zayYpNx2uep7DkSL1FB5DPilCgcWLvj21fYbnJD9ThUnM": {
+      "id": "cs_test_a11EYVO7wIH81zayYpNx2uep7DkSL1FB5DPilCgcWLvj21fYbnJD9ThUnM",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "12",
+      "status": "pending",
+      "createdAt": "2026-05-17T22:11:58.046Z"
+    },
+    "cs_test_a1JCHLpYyTVmpGukfCSqmPBDf2qNpIQPzG992Xo4W77OQWaNYn9mZMyl15": {
+      "id": "cs_test_a1JCHLpYyTVmpGukfCSqmPBDf2qNpIQPzG992Xo4W77OQWaNYn9mZMyl15",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "13",
+      "status": "completed",
+      "createdAt": "2026-05-17T22:40:16.231Z",
+      "walletBalanceAfter": 10000
+    },
+    "cs_test_a1ARuOMJ0e6qTksu63gohOHvRWLLe5U2tdmGrVfZscPgrMS2Do57nWosIw": {
+      "id": "cs_test_a1ARuOMJ0e6qTksu63gohOHvRWLLe5U2tdmGrVfZscPgrMS2Do57nWosIw",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "4",
+      "status": "pending",
+      "createdAt": "2026-05-18T23:25:06.155Z"
+    },
+    "cs_test_a1uJ1x3dLaL8IvComWP4c0KDGLWZq44cEm9auDxK8Y3AKNd85yKJlZ6WTb": {
+      "id": "cs_test_a1uJ1x3dLaL8IvComWP4c0KDGLWZq44cEm9auDxK8Y3AKNd85yKJlZ6WTb",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "12",
+      "status": "completed",
+      "createdAt": "2026-05-18T23:26:18.128Z",
+      "walletBalanceAfter": 17500
+    },
+    "cs_test_a1NJggOyx7HeVHfo72SKOPyiTexgYDb3zYkecxc7YnxNApmqYo8qm9YfbR": {
+      "id": "cs_test_a1NJggOyx7HeVHfo72SKOPyiTexgYDb3zYkecxc7YnxNApmqYo8qm9YfbR",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "15",
+      "status": "completed",
+      "createdAt": "2026-05-18T23:34:54.246Z",
+      "walletBalanceAfter": 5000
+    },
+    "cs_test_a1dsV1PSkf7PwYQx9xKXvtwEGpUOwRQCzC5PGyNrtGRnJtljySJjNOS8xh": {
+      "id": "cs_test_a1dsV1PSkf7PwYQx9xKXvtwEGpUOwRQCzC5PGyNrtGRnJtljySJjNOS8xh",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "16",
+      "status": "completed",
+      "createdAt": "2026-05-18T23:37:46.968Z",
+      "walletBalanceAfter": 5000
+    },
+    "cs_test_a1jvB54KqajG6aY3mPaKvj9VUu9nFPaOtoYM4XKlC97ZPbHKhzQZ2NhnWY": {
+      "id": "cs_test_a1jvB54KqajG6aY3mPaKvj9VUu9nFPaOtoYM4XKlC97ZPbHKhzQZ2NhnWY",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "12",
+      "status": "pending",
+      "createdAt": "2026-05-19T00:25:48.150Z"
+    },
+    "cs_test_a17GnLXR4TO4RTNqHe3olas3KqnimfxFLSIKV2xTGi1PQgUulQLtC836P5": {
+      "id": "cs_test_a17GnLXR4TO4RTNqHe3olas3KqnimfxFLSIKV2xTGi1PQgUulQLtC836P5",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 50000,
+      "buyerId": "15",
+      "status": "completed",
+      "createdAt": "2026-05-19T01:21:29.538Z",
+      "walletBalanceAfter": 53000
+    },
+    "cs_test_a1Q0EL0qRedcdJqEQwIYhaGGyfPUFpBItt2ZFjFEgpfXih5Y775Aow0iST": {
+      "id": "cs_test_a1Q0EL0qRedcdJqEQwIYhaGGyfPUFpBItt2ZFjFEgpfXih5Y775Aow0iST",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "4",
+      "status": "pending",
+      "createdAt": "2026-05-19T01:24:31.925Z"
+    },
+    "cs_test_a1bSOc4V9lOAPmow0VyWnrRMtUWaDWdsBa4FXD6BO0xVdMldrhfReVYFIq": {
+      "id": "cs_test_a1bSOc4V9lOAPmow0VyWnrRMtUWaDWdsBa4FXD6BO0xVdMldrhfReVYFIq",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "37",
+      "status": "completed",
+      "createdAt": "2026-05-20T02:42:10.702Z",
+      "walletBalanceAfter": 5000
+    },
+    "cs_test_a1yt83N1PAoPGpBqiDqxkVfNHmqrmm6vfQTP3IxVwaAIRjjCPIgMEsMZNb": {
+      "id": "cs_test_a1yt83N1PAoPGpBqiDqxkVfNHmqrmm6vfQTP3IxVwaAIRjjCPIgMEsMZNb",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "40",
+      "status": "pending",
+      "createdAt": "2026-05-20T21:45:55.295Z"
+    },
+    "cs_test_a1q0JOw7yeIIooDfYZvkx7Wjcpgu5OeAm7ht2S1THQakRrNsbiJvpHaEQu": {
+      "id": "cs_test_a1q0JOw7yeIIooDfYZvkx7Wjcpgu5OeAm7ht2S1THQakRrNsbiJvpHaEQu",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "40",
+      "status": "pending",
+      "createdAt": "2026-05-20T21:46:55.870Z"
+    },
+    "cs_test_a1h7UwVWb0YSZXHigPKEG4PkTzWiWbPw7XyTlUD3AIWHlPGZLCDTHa5ZJK": {
+      "id": "cs_test_a1h7UwVWb0YSZXHigPKEG4PkTzWiWbPw7XyTlUD3AIWHlPGZLCDTHa5ZJK",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "40",
+      "status": "pending",
+      "createdAt": "2026-05-20T21:50:37.723Z"
+    },
+    "cs_test_a1MZA7vtrrrk48bPok0h6IDtLv3zLLkQDtZX4XlH3jF1Fr4dfOl9uSRM5g": {
+      "id": "cs_test_a1MZA7vtrrrk48bPok0h6IDtLv3zLLkQDtZX4XlH3jF1Fr4dfOl9uSRM5g",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "40",
+      "status": "pending",
+      "createdAt": "2026-05-20T22:01:38.549Z"
+    },
+    "cs_test_a1GMclKBHgZtNgEOFkIUtYW3TFN1LfkkiAYHwBpej2ntwL1D0UqGoQ25jb": {
+      "id": "cs_test_a1GMclKBHgZtNgEOFkIUtYW3TFN1LfkkiAYHwBpej2ntwL1D0UqGoQ25jb",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "40",
+      "status": "completed",
+      "createdAt": "2026-05-20T22:17:09.373Z",
+      "walletBalanceAfter": 5000
+    },
+    "cs_test_a1cBxJ4WwP4QZl4cUyoqE03kYr5NaCzAHyCIje8CdNTAbiHf6Lml1MhXtA": {
+      "id": "cs_test_a1cBxJ4WwP4QZl4cUyoqE03kYr5NaCzAHyCIje8CdNTAbiHf6Lml1MhXtA",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "41",
+      "status": "completed",
+      "createdAt": "2026-05-21T00:48:33.373Z",
+      "walletBalanceAfter": 5000
+    },
+    "cs_test_a1xXwLWhiUH3Hy16hz5rGQ9e4o4lRNQhzi2krMDGu2ZXctu5BThxdrpZv1": {
+      "id": "cs_test_a1xXwLWhiUH3Hy16hz5rGQ9e4o4lRNQhzi2krMDGu2ZXctu5BThxdrpZv1",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "43",
+      "status": "completed",
+      "createdAt": "2026-05-22T00:49:32.117Z",
+      "walletBalanceAfter": 5000
+    },
+    "cs_test_a17chnfj2GrGUj1xiuSiMLo50HJYTHg2jnSGKZQ6HfHdn1h4fkzXdMmuHJ": {
+      "id": "cs_test_a17chnfj2GrGUj1xiuSiMLo50HJYTHg2jnSGKZQ6HfHdn1h4fkzXdMmuHJ",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "40",
+      "status": "completed",
+      "createdAt": "2026-05-22T10:37:07.094Z",
+      "walletBalanceAfter": 6000
+    },
+    "cs_test_a1pgesM5UfcvOGHpBYEwt7eukXLrhaEu13GiR79s7QRzJFFXvUGBE6v3lp": {
+      "id": "cs_test_a1pgesM5UfcvOGHpBYEwt7eukXLrhaEu13GiR79s7QRzJFFXvUGBE6v3lp",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "6f6a5bbd-8e6e-47af-9033-eda6b75e6d58",
+      "status": "completed",
+      "createdAt": "2026-05-23T19:52:19.449Z",
+      "walletBalanceAfter": 5000
+    },
+    "cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q": {
+      "id": "cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "960875f5-e3ed-4058-81e3-6cb51c3c8c45",
+      "status": "completed",
+      "createdAt": "2026-05-23T19:53:30.644Z",
+      "walletBalanceAfter": 5000
+    },
+    "cs_test_a1Rtde94dqBvGRhvSLeyEB3t14R5zuJSM9xmPtnL3Nrxjm9G6PLNk7I9dz": {
+      "id": "cs_test_a1Rtde94dqBvGRhvSLeyEB3t14R5zuJSM9xmPtnL3Nrxjm9G6PLNk7I9dz",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "960875f5-e3ed-4058-81e3-6cb51c3c8c45",
+      "status": "pending",
+      "createdAt": "2026-05-23T22:52:36.491Z"
+    },
+    "cs_test_a1suzU7jMH9MI3SiK3Wb8tkFpfVneHnyb5WzyBZbNf1DdAibyW03H0n31L": {
+      "id": "cs_test_a1suzU7jMH9MI3SiK3Wb8tkFpfVneHnyb5WzyBZbNf1DdAibyW03H0n31L",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 15000,
+      "buyerId": "960875f5-e3ed-4058-81e3-6cb51c3c8c45",
+      "status": "pending",
+      "createdAt": "2026-05-23T23:23:17.050Z"
+    },
+    "cs_test_a153sBgMJzYzCprlaEoO2j6x4o6zc6spOm7cjUCQMUd2HbdUcI9vsNJydf": {
+      "id": "cs_test_a153sBgMJzYzCprlaEoO2j6x4o6zc6spOm7cjUCQMUd2HbdUcI9vsNJydf",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "960875f5-e3ed-4058-81e3-6cb51c3c8c45",
+      "status": "pending",
+      "createdAt": "2026-05-24T03:41:14.750Z"
+    },
+    "cs_test_a1SRR0cUtDliR6AOUE9RIWmUEWLUH9laXJpyCsXywpWr9ogWjGc9JvFAQo": {
+      "id": "cs_test_a1SRR0cUtDliR6AOUE9RIWmUEWLUH9laXJpyCsXywpWr9ogWjGc9JvFAQo",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 10000,
+      "buyerId": "960875f5-e3ed-4058-81e3-6cb51c3c8c45",
+      "status": "completed",
+      "createdAt": "2026-05-26T19:03:40.198Z",
+      "walletBalanceAfter": 13500
+    },
+    "cs_test_a14dyApkrxU6dvBLocsJij4htTw3e6lTrXz133CvaMGgjytjq3mZm66W86": {
+      "id": "cs_test_a14dyApkrxU6dvBLocsJij4htTw3e6lTrXz133CvaMGgjytjq3mZm66W86",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "8f512270-5de9-4524-b561-0ba0dfbbd9a0",
+      "status": "pending",
+      "createdAt": "2026-05-26T21:03:05.117Z"
+    },
+    "cs_test_a1sYPdDV5UXQJEhidOlTwvutVT9Otvf7A9RlKaOArB3bCziRYTVg7N99Ay": {
+      "id": "cs_test_a1sYPdDV5UXQJEhidOlTwvutVT9Otvf7A9RlKaOArB3bCziRYTVg7N99Ay",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "6f6a5bbd-8e6e-47af-9033-eda6b75e6d58",
+      "status": "completed",
+      "createdAt": "2026-05-28T13:36:07.218Z",
+      "walletBalanceAfter": 10200
+    },
+    "cs_test_a1DUIszDfTLho7TYONBTNr68kzHkBeiigI3eeEWKkRTmFNJCZCXONgSKyt": {
+      "id": "cs_test_a1DUIszDfTLho7TYONBTNr68kzHkBeiigI3eeEWKkRTmFNJCZCXONgSKyt",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "ebfacd33-8676-4d7a-9cfb-fcedd93c2d03",
+      "status": "completed",
+      "createdAt": "2026-05-28T14:17:10.591Z",
+      "walletBalanceAfter": 5000
+    },
+    "cs_test_a1MTYmW3QReT7OoGAgCYCyQtpr85qubyaosp4gJCSxZUO2x1ISPY0JRMNK": {
+      "id": "cs_test_a1MTYmW3QReT7OoGAgCYCyQtpr85qubyaosp4gJCSxZUO2x1ISPY0JRMNK",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "8f512270-5de9-4524-b561-0ba0dfbbd9a0",
+      "status": "completed",
+      "createdAt": "2026-05-28T17:07:04.897Z",
+      "walletBalanceAfter": 5000
+    },
+    "cs_test_a1zodR1AT8Si7Lo3xQMtI0dqW2zOxpLp2KOSuMSofK6j4A65YhlbD3fukj": {
+      "id": "cs_test_a1zodR1AT8Si7Lo3xQMtI0dqW2zOxpLp2KOSuMSofK6j4A65YhlbD3fukj",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 5000,
+      "buyerId": "8f512270-5de9-4524-b561-0ba0dfbbd9a0",
+      "status": "completed",
+      "createdAt": "2026-05-28T18:50:38.830Z",
+      "walletBalanceAfter": 9500
+    },
+    "cs_test_a1cPVAOPhMI13l2aWCGi0W87pCBoLKZFxw86Xj38sgu63NbLh739CsKfa6": {
+      "id": "cs_test_a1cPVAOPhMI13l2aWCGi0W87pCBoLKZFxw86Xj38sgu63NbLh739CsKfa6",
+      "kind": "wallet_topup",
+      "provider": "stripe",
+      "amount": 100000,
+      "buyerId": "960875f5-e3ed-4058-81e3-6cb51c3c8c45",
+      "status": "completed",
+      "createdAt": "2026-06-01T13:31:08.772Z",
+      "walletBalanceAfter": 115500
+    }
+  },
+  "nextPaymentSessionId": 4,
+  "flags": {
+    "walletsResetAt": "2026-05-11T18:45:52.495Z"
+  },
+  "stripeProcessedSessions": {
+    "cs_test_a1pGbdF9ihdSs5sKjcpDzCJGgl2CJo5hMJvvvrAboT8CaHGaqlJDeMFraP": {
+      "wallet": {
+        "balance": 5000,
+        "transactions": [
+          {
+            "id": "4",
+            "createdAt": "2026-05-15T22:54:39.076Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1pGbdF9ihdSs5sKjcpDzCJGgl2CJo5hMJvvvrAboT8CaHGaqlJDeMFraP).",
+            "stripePaymentId": "pi_3TXUcoFFNTyYdDlu1ZSh0o7n",
+            "stripeSessionId": "cs_test_a1pGbdF9ihdSs5sKjcpDzCJGgl2CJo5hMJvvvrAboT8CaHGaqlJDeMFraP"
+          }
+        ]
+      },
+      "tx": {
+        "id": "4",
+        "createdAt": "2026-05-15T22:54:39.076Z",
+        "balanceAfter": 5000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1pGbdF9ihdSs5sKjcpDzCJGgl2CJo5hMJvvvrAboT8CaHGaqlJDeMFraP).",
+        "stripePaymentId": "pi_3TXUcoFFNTyYdDlu1ZSh0o7n",
+        "stripeSessionId": "cs_test_a1pGbdF9ihdSs5sKjcpDzCJGgl2CJo5hMJvvvrAboT8CaHGaqlJDeMFraP"
+      },
+      "at": "2026-05-15T22:54:39.079Z"
+    },
+    "cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5": {
+      "wallet": {
+        "balance": 45000,
+        "transactions": [
+          {
+            "id": "9",
+            "createdAt": "2026-05-16T12:04:32.451Z",
+            "balanceAfter": 45000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0).",
+            "stripePaymentId": "pi_3TXgx4FFNTyYdDlu1h6THUJT",
+            "stripeSessionId": "cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0"
+          },
+          {
+            "id": "8",
+            "createdAt": "2026-05-16T11:44:01.338Z",
+            "balanceAfter": 35000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq).",
+            "stripePaymentId": "pi_3TXgdOFFNTyYdDlu0Kj0MpAt",
+            "stripeSessionId": "cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq"
+          },
+          {
+            "id": "7",
+            "createdAt": "2026-05-16T11:23:11.998Z",
+            "balanceAfter": 20000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7).",
+            "stripePaymentId": "pi_3TXgJFFFNTyYdDlu0NhnRZKi",
+            "stripeSessionId": "cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7"
+          },
+          {
+            "id": "5",
+            "createdAt": "2026-05-15T23:57:12.049Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5).",
+            "stripePaymentId": "pi_3TXVbLFFNTyYdDlu0FUjlq8U",
+            "stripeSessionId": "cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5"
+          }
+        ]
+      },
+      "tx": {
+        "id": "5",
+        "createdAt": "2026-05-15T23:57:12.049Z",
+        "balanceAfter": 10000,
+        "kind": "topup",
+        "amount": 10000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5).",
+        "stripePaymentId": "pi_3TXVbLFFNTyYdDlu0FUjlq8U",
+        "stripeSessionId": "cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5"
+      },
+      "at": "2026-05-15T23:57:12.052Z"
+    },
+    "cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe": {
+      "wallet": {
+        "balance": 15000,
+        "transactions": [
+          {
+            "id": "6",
+            "createdAt": "2026-05-16T00:25:51.064Z",
+            "balanceAfter": 15000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe).",
+            "stripePaymentId": "pi_3TXW35FFNTyYdDlu13OKbzNi",
+            "stripeSessionId": "cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe"
+          }
+        ]
+      },
+      "tx": {
+        "id": "6",
+        "createdAt": "2026-05-16T00:25:51.064Z",
+        "balanceAfter": 15000,
+        "kind": "topup",
+        "amount": 15000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe).",
+        "stripePaymentId": "pi_3TXW35FFNTyYdDlu13OKbzNi",
+        "stripeSessionId": "cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe"
+      },
+      "at": "2026-05-16T00:25:51.067Z"
+    },
+    "cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7": {
+      "wallet": {
+        "balance": 45000,
+        "transactions": [
+          {
+            "id": "9",
+            "createdAt": "2026-05-16T12:04:32.451Z",
+            "balanceAfter": 45000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0).",
+            "stripePaymentId": "pi_3TXgx4FFNTyYdDlu1h6THUJT",
+            "stripeSessionId": "cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0"
+          },
+          {
+            "id": "8",
+            "createdAt": "2026-05-16T11:44:01.338Z",
+            "balanceAfter": 35000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq).",
+            "stripePaymentId": "pi_3TXgdOFFNTyYdDlu0Kj0MpAt",
+            "stripeSessionId": "cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq"
+          },
+          {
+            "id": "7",
+            "createdAt": "2026-05-16T11:23:11.998Z",
+            "balanceAfter": 20000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7).",
+            "stripePaymentId": "pi_3TXgJFFFNTyYdDlu0NhnRZKi",
+            "stripeSessionId": "cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7"
+          },
+          {
+            "id": "5",
+            "createdAt": "2026-05-15T23:57:12.049Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5).",
+            "stripePaymentId": "pi_3TXVbLFFNTyYdDlu0FUjlq8U",
+            "stripeSessionId": "cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5"
+          }
+        ]
+      },
+      "tx": {
+        "id": "7",
+        "createdAt": "2026-05-16T11:23:11.998Z",
+        "balanceAfter": 20000,
+        "kind": "topup",
+        "amount": 10000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7).",
+        "stripePaymentId": "pi_3TXgJFFFNTyYdDlu0NhnRZKi",
+        "stripeSessionId": "cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7"
+      },
+      "at": "2026-05-16T11:23:12.002Z"
+    },
+    "cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq": {
+      "wallet": {
+        "balance": 45000,
+        "transactions": [
+          {
+            "id": "9",
+            "createdAt": "2026-05-16T12:04:32.451Z",
+            "balanceAfter": 45000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0).",
+            "stripePaymentId": "pi_3TXgx4FFNTyYdDlu1h6THUJT",
+            "stripeSessionId": "cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0"
+          },
+          {
+            "id": "8",
+            "createdAt": "2026-05-16T11:44:01.338Z",
+            "balanceAfter": 35000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq).",
+            "stripePaymentId": "pi_3TXgdOFFNTyYdDlu0Kj0MpAt",
+            "stripeSessionId": "cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq"
+          },
+          {
+            "id": "7",
+            "createdAt": "2026-05-16T11:23:11.998Z",
+            "balanceAfter": 20000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7).",
+            "stripePaymentId": "pi_3TXgJFFFNTyYdDlu0NhnRZKi",
+            "stripeSessionId": "cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7"
+          },
+          {
+            "id": "5",
+            "createdAt": "2026-05-15T23:57:12.049Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5).",
+            "stripePaymentId": "pi_3TXVbLFFNTyYdDlu0FUjlq8U",
+            "stripeSessionId": "cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5"
+          }
+        ]
+      },
+      "tx": {
+        "id": "8",
+        "createdAt": "2026-05-16T11:44:01.338Z",
+        "balanceAfter": 35000,
+        "kind": "topup",
+        "amount": 15000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq).",
+        "stripePaymentId": "pi_3TXgdOFFNTyYdDlu0Kj0MpAt",
+        "stripeSessionId": "cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq"
+      },
+      "at": "2026-05-16T11:44:01.340Z"
+    },
+    "cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0": {
+      "wallet": {
+        "balance": 45000,
+        "transactions": [
+          {
+            "id": "9",
+            "createdAt": "2026-05-16T12:04:32.451Z",
+            "balanceAfter": 45000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0).",
+            "stripePaymentId": "pi_3TXgx4FFNTyYdDlu1h6THUJT",
+            "stripeSessionId": "cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0"
+          },
+          {
+            "id": "8",
+            "createdAt": "2026-05-16T11:44:01.338Z",
+            "balanceAfter": 35000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq).",
+            "stripePaymentId": "pi_3TXgdOFFNTyYdDlu0Kj0MpAt",
+            "stripeSessionId": "cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq"
+          },
+          {
+            "id": "7",
+            "createdAt": "2026-05-16T11:23:11.998Z",
+            "balanceAfter": 20000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7).",
+            "stripePaymentId": "pi_3TXgJFFFNTyYdDlu0NhnRZKi",
+            "stripeSessionId": "cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7"
+          },
+          {
+            "id": "5",
+            "createdAt": "2026-05-15T23:57:12.049Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5).",
+            "stripePaymentId": "pi_3TXVbLFFNTyYdDlu0FUjlq8U",
+            "stripeSessionId": "cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5"
+          }
+        ]
+      },
+      "tx": {
+        "id": "9",
+        "createdAt": "2026-05-16T12:04:32.451Z",
+        "balanceAfter": 45000,
+        "kind": "topup",
+        "amount": 10000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0).",
+        "stripePaymentId": "pi_3TXgx4FFNTyYdDlu1h6THUJT",
+        "stripeSessionId": "cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0"
+      },
+      "at": "2026-05-16T12:04:32.451Z"
+    },
+    "cs_test_a1jiIkZXm6o22wQAeD9ZsMUGdyMTXdqFYAkZYFNQa0aAZdXRBGnohbiF09": {
+      "wallet": {
+        "balance": 75000,
+        "transactions": [
+          {
+            "id": "12",
+            "createdAt": "2026-05-16T15:51:11.684Z",
+            "balanceAfter": 75000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1jiIkZXm6o22wQAeD9ZsMUGdyMTXdqFYAkZYFNQa0aAZdXRBGnohbiF09).",
+            "stripePaymentId": "pi_3TXkUbFFNTyYdDlu0zR3uBAL",
+            "stripeSessionId": "cs_test_a1jiIkZXm6o22wQAeD9ZsMUGdyMTXdqFYAkZYFNQa0aAZdXRBGnohbiF09"
+          },
+          {
+            "id": "11",
+            "createdAt": "2026-05-16T15:32:33.955Z",
+            "balanceAfter": 65000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ).",
+            "stripePaymentId": "pi_3TXkCWFFNTyYdDlu1hbLxJAm",
+            "stripeSessionId": "cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ"
+          },
+          {
+            "id": "10",
+            "createdAt": "2026-05-16T15:32:32.494Z",
+            "balanceAfter": 55000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ).",
+            "stripePaymentId": "pi_3TXkCWFFNTyYdDlu1hbLxJAm",
+            "stripeSessionId": "cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ"
+          },
+          {
+            "id": "9",
+            "createdAt": "2026-05-16T12:04:32.451Z",
+            "balanceAfter": 45000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0).",
+            "stripePaymentId": "pi_3TXgx4FFNTyYdDlu1h6THUJT",
+            "stripeSessionId": "cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0"
+          },
+          {
+            "id": "8",
+            "createdAt": "2026-05-16T11:44:01.338Z",
+            "balanceAfter": 35000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq).",
+            "stripePaymentId": "pi_3TXgdOFFNTyYdDlu0Kj0MpAt",
+            "stripeSessionId": "cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq"
+          },
+          {
+            "id": "7",
+            "createdAt": "2026-05-16T11:23:11.998Z",
+            "balanceAfter": 20000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7).",
+            "stripePaymentId": "pi_3TXgJFFFNTyYdDlu0NhnRZKi",
+            "stripeSessionId": "cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7"
+          },
+          {
+            "id": "5",
+            "createdAt": "2026-05-15T23:57:12.049Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5).",
+            "stripePaymentId": "pi_3TXVbLFFNTyYdDlu0FUjlq8U",
+            "stripeSessionId": "cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5"
+          }
+        ]
+      },
+      "tx": {
+        "id": "12",
+        "createdAt": "2026-05-16T15:51:11.684Z",
+        "balanceAfter": 75000,
+        "kind": "topup",
+        "amount": 10000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1jiIkZXm6o22wQAeD9ZsMUGdyMTXdqFYAkZYFNQa0aAZdXRBGnohbiF09).",
+        "stripePaymentId": "pi_3TXkUbFFNTyYdDlu0zR3uBAL",
+        "stripeSessionId": "cs_test_a1jiIkZXm6o22wQAeD9ZsMUGdyMTXdqFYAkZYFNQa0aAZdXRBGnohbiF09"
+      },
+      "at": "2026-05-16T15:51:13.126Z",
+      "supa": {
+        "ok": true,
+        "user_id": "600002b4-1d05-41e0-ba20-827ff9e9ae67",
+        "credited": 10000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 10000
+      }
+    },
+    "cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun": {
+      "wallet": {
+        "balance": 50000,
+        "transactions": [
+          {
+            "id": "17",
+            "createdAt": "2026-05-16T23:54:17.222Z",
+            "balanceAfter": 50000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse).",
+            "stripePaymentId": "pi_3TXs27FFNTyYdDlu1hLILcMX",
+            "stripeSessionId": "cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse"
+          },
+          {
+            "id": "16",
+            "createdAt": "2026-05-16T23:53:10.508Z",
+            "balanceAfter": 45000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX).",
+            "stripePaymentId": "pi_3TXs12FFNTyYdDlu0J9Bz7Fj",
+            "stripeSessionId": "cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX"
+          },
+          {
+            "id": "15",
+            "createdAt": "2026-05-16T21:33:07.316Z",
+            "balanceAfter": 40000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+            "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+            "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+          },
+          {
+            "id": "14",
+            "createdAt": "2026-05-16T21:33:05.162Z",
+            "balanceAfter": 35000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+            "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+            "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+          },
+          {
+            "id": "13",
+            "createdAt": "2026-05-16T19:14:54.173Z",
+            "balanceAfter": 30000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun).",
+            "stripePaymentId": "pi_3TXnfiFFNTyYdDlu0R94H7m4",
+            "stripeSessionId": "cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun"
+          },
+          {
+            "id": "6",
+            "createdAt": "2026-05-16T00:25:51.064Z",
+            "balanceAfter": 15000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe).",
+            "stripePaymentId": "pi_3TXW35FFNTyYdDlu13OKbzNi",
+            "stripeSessionId": "cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe"
+          }
+        ]
+      },
+      "tx": {
+        "id": "13",
+        "createdAt": "2026-05-16T19:14:54.173Z",
+        "balanceAfter": 30000,
+        "kind": "topup",
+        "amount": 15000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun).",
+        "stripePaymentId": "pi_3TXnfiFFNTyYdDlu0R94H7m4",
+        "stripeSessionId": "cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun"
+      },
+      "at": "2026-05-16T19:14:55.905Z",
+      "supa": {
+        "ok": true,
+        "user_id": "1a426902-98d3-41de-9842-1a1c2c97a122",
+        "credited": 15000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 15000
+      }
+    },
+    "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0": {
+      "wallet": {
+        "balance": 50000,
+        "transactions": [
+          {
+            "id": "17",
+            "createdAt": "2026-05-16T23:54:17.222Z",
+            "balanceAfter": 50000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse).",
+            "stripePaymentId": "pi_3TXs27FFNTyYdDlu1hLILcMX",
+            "stripeSessionId": "cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse"
+          },
+          {
+            "id": "16",
+            "createdAt": "2026-05-16T23:53:10.508Z",
+            "balanceAfter": 45000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX).",
+            "stripePaymentId": "pi_3TXs12FFNTyYdDlu0J9Bz7Fj",
+            "stripeSessionId": "cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX"
+          },
+          {
+            "id": "15",
+            "createdAt": "2026-05-16T21:33:07.316Z",
+            "balanceAfter": 40000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+            "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+            "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+          },
+          {
+            "id": "14",
+            "createdAt": "2026-05-16T21:33:05.162Z",
+            "balanceAfter": 35000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+            "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+            "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+          },
+          {
+            "id": "13",
+            "createdAt": "2026-05-16T19:14:54.173Z",
+            "balanceAfter": 30000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun).",
+            "stripePaymentId": "pi_3TXnfiFFNTyYdDlu0R94H7m4",
+            "stripeSessionId": "cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun"
+          },
+          {
+            "id": "6",
+            "createdAt": "2026-05-16T00:25:51.064Z",
+            "balanceAfter": 15000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe).",
+            "stripePaymentId": "pi_3TXW35FFNTyYdDlu13OKbzNi",
+            "stripeSessionId": "cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe"
+          }
+        ]
+      },
+      "tx": {
+        "id": "15",
+        "createdAt": "2026-05-16T21:33:07.316Z",
+        "balanceAfter": 40000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+        "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+        "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+      },
+      "at": "2026-05-16T21:33:08.265Z",
+      "supa": {
+        "ok": true,
+        "duplicate": true,
+        "wallet_balance": 20000
+      }
+    },
+    "cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX": {
+      "wallet": {
+        "balance": 50000,
+        "transactions": [
+          {
+            "id": "17",
+            "createdAt": "2026-05-16T23:54:17.222Z",
+            "balanceAfter": 50000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse).",
+            "stripePaymentId": "pi_3TXs27FFNTyYdDlu1hLILcMX",
+            "stripeSessionId": "cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse"
+          },
+          {
+            "id": "16",
+            "createdAt": "2026-05-16T23:53:10.508Z",
+            "balanceAfter": 45000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX).",
+            "stripePaymentId": "pi_3TXs12FFNTyYdDlu0J9Bz7Fj",
+            "stripeSessionId": "cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX"
+          },
+          {
+            "id": "15",
+            "createdAt": "2026-05-16T21:33:07.316Z",
+            "balanceAfter": 40000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+            "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+            "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+          },
+          {
+            "id": "14",
+            "createdAt": "2026-05-16T21:33:05.162Z",
+            "balanceAfter": 35000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+            "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+            "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+          },
+          {
+            "id": "13",
+            "createdAt": "2026-05-16T19:14:54.173Z",
+            "balanceAfter": 30000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun).",
+            "stripePaymentId": "pi_3TXnfiFFNTyYdDlu0R94H7m4",
+            "stripeSessionId": "cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun"
+          },
+          {
+            "id": "6",
+            "createdAt": "2026-05-16T00:25:51.064Z",
+            "balanceAfter": 15000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe).",
+            "stripePaymentId": "pi_3TXW35FFNTyYdDlu13OKbzNi",
+            "stripeSessionId": "cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe"
+          }
+        ]
+      },
+      "tx": {
+        "id": "16",
+        "createdAt": "2026-05-16T23:53:10.508Z",
+        "balanceAfter": 45000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX).",
+        "stripePaymentId": "pi_3TXs12FFNTyYdDlu0J9Bz7Fj",
+        "stripeSessionId": "cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX"
+      },
+      "at": "2026-05-16T23:53:11.581Z",
+      "supa": {
+        "ok": true,
+        "user_id": "1a426902-98d3-41de-9842-1a1c2c97a122",
+        "credited": 5000,
+        "duplicate": false,
+        "wallet_balance": 25000
+      }
+    },
+    "cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse": {
+      "wallet": {
+        "balance": 50000,
+        "transactions": [
+          {
+            "id": "17",
+            "createdAt": "2026-05-16T23:54:17.222Z",
+            "balanceAfter": 50000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse).",
+            "stripePaymentId": "pi_3TXs27FFNTyYdDlu1hLILcMX",
+            "stripeSessionId": "cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse"
+          },
+          {
+            "id": "16",
+            "createdAt": "2026-05-16T23:53:10.508Z",
+            "balanceAfter": 45000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX).",
+            "stripePaymentId": "pi_3TXs12FFNTyYdDlu0J9Bz7Fj",
+            "stripeSessionId": "cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX"
+          },
+          {
+            "id": "15",
+            "createdAt": "2026-05-16T21:33:07.316Z",
+            "balanceAfter": 40000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+            "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+            "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+          },
+          {
+            "id": "14",
+            "createdAt": "2026-05-16T21:33:05.162Z",
+            "balanceAfter": 35000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+            "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+            "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+          },
+          {
+            "id": "13",
+            "createdAt": "2026-05-16T19:14:54.173Z",
+            "balanceAfter": 30000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun).",
+            "stripePaymentId": "pi_3TXnfiFFNTyYdDlu0R94H7m4",
+            "stripeSessionId": "cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun"
+          },
+          {
+            "id": "6",
+            "createdAt": "2026-05-16T00:25:51.064Z",
+            "balanceAfter": 15000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe).",
+            "stripePaymentId": "pi_3TXW35FFNTyYdDlu13OKbzNi",
+            "stripeSessionId": "cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe"
+          }
+        ]
+      },
+      "tx": {
+        "id": "17",
+        "createdAt": "2026-05-16T23:54:17.222Z",
+        "balanceAfter": 50000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse).",
+        "stripePaymentId": "pi_3TXs27FFNTyYdDlu1hLILcMX",
+        "stripeSessionId": "cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse"
+      },
+      "at": "2026-05-16T23:54:18.229Z",
+      "supa": {
+        "ok": true,
+        "user_id": "1a426902-98d3-41de-9842-1a1c2c97a122",
+        "credited": 5000,
+        "duplicate": false,
+        "wallet_balance": 30000
+      }
+    },
+    "cs_test_a1VshKy2PujDjyFC8FeBY7JPJZttpSJ64bXibiDWmUTkqvn1zfL9FkCiLf": {
+      "wallet": {
+        "balance": 55000,
+        "transactions": [
+          {
+            "id": "18",
+            "createdAt": "2026-05-17T09:48:55.864Z",
+            "balanceAfter": 55000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1VshKy2PujDjyFC8FeBY7JPJZttpSJ64bXibiDWmUTkqvn1zfL9FkCiLf).",
+            "stripePaymentId": "pi_3TY1JYFFNTyYdDlu0EeFbeHp",
+            "stripeSessionId": "cs_test_a1VshKy2PujDjyFC8FeBY7JPJZttpSJ64bXibiDWmUTkqvn1zfL9FkCiLf"
+          },
+          {
+            "id": "17",
+            "createdAt": "2026-05-16T23:54:17.222Z",
+            "balanceAfter": 50000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse).",
+            "stripePaymentId": "pi_3TXs27FFNTyYdDlu1hLILcMX",
+            "stripeSessionId": "cs_test_a1z9QoewtxcZnMafgqtgfbtXLvGkLa5n3enykdvmAAfUIkmNddiq7dgKse"
+          },
+          {
+            "id": "16",
+            "createdAt": "2026-05-16T23:53:10.508Z",
+            "balanceAfter": 45000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX).",
+            "stripePaymentId": "pi_3TXs12FFNTyYdDlu0J9Bz7Fj",
+            "stripeSessionId": "cs_test_a1A5zCpyZRqufwJKeWE0UJiiwFFlfhoI852oqSf19SQxTQRdtaFzipEdCX"
+          },
+          {
+            "id": "15",
+            "createdAt": "2026-05-16T21:33:07.316Z",
+            "balanceAfter": 40000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+            "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+            "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+          },
+          {
+            "id": "14",
+            "createdAt": "2026-05-16T21:33:05.162Z",
+            "balanceAfter": 35000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0).",
+            "stripePaymentId": "pi_3TXppTFFNTyYdDlu0bHWk1Pe",
+            "stripeSessionId": "cs_test_a1lLY8hmOGTQkvjLfNrQ8v94dbRMCAYzrB2mGFCjasq1x6gY0RJTKIbIe0"
+          },
+          {
+            "id": "13",
+            "createdAt": "2026-05-16T19:14:54.173Z",
+            "balanceAfter": 30000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun).",
+            "stripePaymentId": "pi_3TXnfiFFNTyYdDlu0R94H7m4",
+            "stripeSessionId": "cs_test_a1NnLZxPgXlcRxmlW6v7Kyfpuq6mun3HGcW0q0ds1PQ1sxPWmyFrhXwtun"
+          },
+          {
+            "id": "6",
+            "createdAt": "2026-05-16T00:25:51.064Z",
+            "balanceAfter": 15000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe).",
+            "stripePaymentId": "pi_3TXW35FFNTyYdDlu13OKbzNi",
+            "stripeSessionId": "cs_test_a1u0CVn4hrSW3zzfYbeC3IJHwzJQTs9K4X442CNRyZe0jY6lnyNsxpENpe"
+          }
+        ]
+      },
+      "tx": {
+        "id": "18",
+        "createdAt": "2026-05-17T09:48:55.864Z",
+        "balanceAfter": 55000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1VshKy2PujDjyFC8FeBY7JPJZttpSJ64bXibiDWmUTkqvn1zfL9FkCiLf).",
+        "stripePaymentId": "pi_3TY1JYFFNTyYdDlu0EeFbeHp",
+        "stripeSessionId": "cs_test_a1VshKy2PujDjyFC8FeBY7JPJZttpSJ64bXibiDWmUTkqvn1zfL9FkCiLf"
+      },
+      "at": "2026-05-17T09:48:56.949Z",
+      "supa": {
+        "ok": true,
+        "user_id": "1a426902-98d3-41de-9842-1a1c2c97a122",
+        "credited": 5000,
+        "duplicate": false,
+        "wallet_balance": 35000
+      }
+    },
+    "cs_test_a1mkneiqSG7aEai73jcUOHCRdYEuUXhcXJKGZ2gMp8KlWtp12Eou9x9Kdw": {
+      "wallet": {
+        "balance": 80000,
+        "transactions": [
+          {
+            "id": "19",
+            "createdAt": "2026-05-17T19:42:31.376Z",
+            "balanceAfter": 80000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1mkneiqSG7aEai73jcUOHCRdYEuUXhcXJKGZ2gMp8KlWtp12Eou9x9Kdw).",
+            "stripePaymentId": "pi_3TYAa1FFNTyYdDlu11vT8I7Y",
+            "stripeSessionId": "cs_test_a1mkneiqSG7aEai73jcUOHCRdYEuUXhcXJKGZ2gMp8KlWtp12Eou9x9Kdw"
+          },
+          {
+            "id": "12",
+            "createdAt": "2026-05-16T15:51:11.684Z",
+            "balanceAfter": 75000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1jiIkZXm6o22wQAeD9ZsMUGdyMTXdqFYAkZYFNQa0aAZdXRBGnohbiF09).",
+            "stripePaymentId": "pi_3TXkUbFFNTyYdDlu0zR3uBAL",
+            "stripeSessionId": "cs_test_a1jiIkZXm6o22wQAeD9ZsMUGdyMTXdqFYAkZYFNQa0aAZdXRBGnohbiF09"
+          },
+          {
+            "id": "11",
+            "createdAt": "2026-05-16T15:32:33.955Z",
+            "balanceAfter": 65000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ).",
+            "stripePaymentId": "pi_3TXkCWFFNTyYdDlu1hbLxJAm",
+            "stripeSessionId": "cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ"
+          },
+          {
+            "id": "10",
+            "createdAt": "2026-05-16T15:32:32.494Z",
+            "balanceAfter": 55000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ).",
+            "stripePaymentId": "pi_3TXkCWFFNTyYdDlu1hbLxJAm",
+            "stripeSessionId": "cs_test_a17uiuG1JBxOEhk5Cfez8Ao7WG72XuRbHcUGpLZtoU8l02FdZge49l3jcZ"
+          },
+          {
+            "id": "9",
+            "createdAt": "2026-05-16T12:04:32.451Z",
+            "balanceAfter": 45000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0).",
+            "stripePaymentId": "pi_3TXgx4FFNTyYdDlu1h6THUJT",
+            "stripeSessionId": "cs_test_a1WniXTiP4tZdQmUF0e5VSLd7EMXzFly8MGuCRATfyEDMUIjOpD49wrql0"
+          },
+          {
+            "id": "8",
+            "createdAt": "2026-05-16T11:44:01.338Z",
+            "balanceAfter": 35000,
+            "kind": "topup",
+            "amount": 15000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq).",
+            "stripePaymentId": "pi_3TXgdOFFNTyYdDlu0Kj0MpAt",
+            "stripeSessionId": "cs_test_a1vzca3WIftjyrtyqh25diuk527e9xLBPJCcGWbDkMnnu2KyFYtUEMbytq"
+          },
+          {
+            "id": "7",
+            "createdAt": "2026-05-16T11:23:11.998Z",
+            "balanceAfter": 20000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7).",
+            "stripePaymentId": "pi_3TXgJFFFNTyYdDlu0NhnRZKi",
+            "stripeSessionId": "cs_test_a1LcJWaZSQPZKYrXiFNLQpCT8XqFexxS7sz6vw4T89kPzvyKh9KDA1Cmv7"
+          },
+          {
+            "id": "5",
+            "createdAt": "2026-05-15T23:57:12.049Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5).",
+            "stripePaymentId": "pi_3TXVbLFFNTyYdDlu0FUjlq8U",
+            "stripeSessionId": "cs_test_a1CbhWpuX53ngpfCmt6OvOuE8s2batkHKmSUnKcl900XGuvkdcY4dvK4X5"
+          }
+        ]
+      },
+      "tx": {
+        "id": "19",
+        "createdAt": "2026-05-17T19:42:31.376Z",
+        "balanceAfter": 80000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1mkneiqSG7aEai73jcUOHCRdYEuUXhcXJKGZ2gMp8KlWtp12Eou9x9Kdw).",
+        "stripePaymentId": "pi_3TYAa1FFNTyYdDlu11vT8I7Y",
+        "stripeSessionId": "cs_test_a1mkneiqSG7aEai73jcUOHCRdYEuUXhcXJKGZ2gMp8KlWtp12Eou9x9Kdw"
+      },
+      "at": "2026-05-17T19:42:32.667Z",
+      "supa": {
+        "ok": true,
+        "user_id": "600002b4-1d05-41e0-ba20-827ff9e9ae67",
+        "credited": 5000,
+        "duplicate": false,
+        "wallet_balance": 9000
+      }
+    },
+    "cs_test_a1zDVwPhIPBaaX3ebSB9LLvRZL2cb7tb6gf1zKSImYLRUImvTNuZz449fz": {
+      "wallet": {
+        "balance": 10000,
+        "transactions": [
+          {
+            "id": "20",
+            "createdAt": "2026-05-17T20:49:48.739Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1zDVwPhIPBaaX3ebSB9LLvRZL2cb7tb6gf1zKSImYLRUImvTNuZz449fz).",
+            "stripePaymentId": "pi_3TYBd8FFNTyYdDlu01utkvPI",
+            "stripeSessionId": "cs_test_a1zDVwPhIPBaaX3ebSB9LLvRZL2cb7tb6gf1zKSImYLRUImvTNuZz449fz"
+          }
+        ]
+      },
+      "tx": {
+        "id": "20",
+        "createdAt": "2026-05-17T20:49:48.739Z",
+        "balanceAfter": 10000,
+        "kind": "topup",
+        "amount": 10000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1zDVwPhIPBaaX3ebSB9LLvRZL2cb7tb6gf1zKSImYLRUImvTNuZz449fz).",
+        "stripePaymentId": "pi_3TYBd8FFNTyYdDlu01utkvPI",
+        "stripeSessionId": "cs_test_a1zDVwPhIPBaaX3ebSB9LLvRZL2cb7tb6gf1zKSImYLRUImvTNuZz449fz"
+      },
+      "at": "2026-05-17T20:49:53.326Z",
+      "supa": {
+        "ok": true,
+        "user_id": "fb071574-f696-466f-a3c8-780190509acf",
+        "credited": 10000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 10000
+      }
+    },
+    "cs_test_a1JCHLpYyTVmpGukfCSqmPBDf2qNpIQPzG992Xo4W77OQWaNYn9mZMyl15": {
+      "wallet": {
+        "balance": 10000,
+        "transactions": [
+          {
+            "id": "21",
+            "createdAt": "2026-05-17T22:40:49.690Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1JCHLpYyTVmpGukfCSqmPBDf2qNpIQPzG992Xo4W77OQWaNYn9mZMyl15).",
+            "stripePaymentId": "pi_3TYDMZFFNTyYdDlu1MmKRfJu",
+            "stripeSessionId": "cs_test_a1JCHLpYyTVmpGukfCSqmPBDf2qNpIQPzG992Xo4W77OQWaNYn9mZMyl15"
+          }
+        ]
+      },
+      "tx": {
+        "id": "21",
+        "createdAt": "2026-05-17T22:40:49.690Z",
+        "balanceAfter": 10000,
+        "kind": "topup",
+        "amount": 10000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1JCHLpYyTVmpGukfCSqmPBDf2qNpIQPzG992Xo4W77OQWaNYn9mZMyl15).",
+        "stripePaymentId": "pi_3TYDMZFFNTyYdDlu1MmKRfJu",
+        "stripeSessionId": "cs_test_a1JCHLpYyTVmpGukfCSqmPBDf2qNpIQPzG992Xo4W77OQWaNYn9mZMyl15"
+      },
+      "at": "2026-05-17T22:40:50.727Z",
+      "supa": {
+        "ok": true,
+        "user_id": "5a95c536-7757-47f8-94f6-65c90e003bcf",
+        "credited": 10000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 10000
+      }
+    },
+    "cs_test_a1uJ1x3dLaL8IvComWP4c0KDGLWZq44cEm9auDxK8Y3AKNd85yKJlZ6WTb": {
+      "wallet": {
+        "balance": 20000,
+        "transactions": [
+          {
+            "id": "23",
+            "createdAt": "2026-05-18T23:26:45.749Z",
+            "balanceAfter": 20000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1uJ1x3dLaL8IvComWP4c0KDGLWZq44cEm9auDxK8Y3AKNd85yKJlZ6WTb).",
+            "stripePaymentId": "pi_3TYaYYFFNTyYdDlu1rT1W1b9",
+            "stripeSessionId": "cs_test_a1uJ1x3dLaL8IvComWP4c0KDGLWZq44cEm9auDxK8Y3AKNd85yKJlZ6WTb"
+          },
+          {
+            "id": "20",
+            "createdAt": "2026-05-17T20:49:48.739Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1zDVwPhIPBaaX3ebSB9LLvRZL2cb7tb6gf1zKSImYLRUImvTNuZz449fz).",
+            "stripePaymentId": "pi_3TYBd8FFNTyYdDlu01utkvPI",
+            "stripeSessionId": "cs_test_a1zDVwPhIPBaaX3ebSB9LLvRZL2cb7tb6gf1zKSImYLRUImvTNuZz449fz"
+          }
+        ]
+      },
+      "tx": {
+        "id": "23",
+        "createdAt": "2026-05-18T23:26:45.749Z",
+        "balanceAfter": 20000,
+        "kind": "topup",
+        "amount": 10000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1uJ1x3dLaL8IvComWP4c0KDGLWZq44cEm9auDxK8Y3AKNd85yKJlZ6WTb).",
+        "stripePaymentId": "pi_3TYaYYFFNTyYdDlu1rT1W1b9",
+        "stripeSessionId": "cs_test_a1uJ1x3dLaL8IvComWP4c0KDGLWZq44cEm9auDxK8Y3AKNd85yKJlZ6WTb"
+      },
+      "at": "2026-05-18T23:26:46.672Z",
+      "supa": {
+        "ok": true,
+        "user_id": "fb071574-f696-466f-a3c8-780190509acf",
+        "credited": 10000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 17500
+      }
+    },
+    "cs_test_a1NJggOyx7HeVHfo72SKOPyiTexgYDb3zYkecxc7YnxNApmqYo8qm9YfbR": {
+      "wallet": {
+        "balance": 55000,
+        "transactions": [
+          {
+            "id": "26",
+            "createdAt": "2026-05-19T01:21:57.513Z",
+            "balanceAfter": 55000,
+            "kind": "topup",
+            "amount": 50000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a17GnLXR4TO4RTNqHe3olas3KqnimfxFLSIKV2xTGi1PQgUulQLtC836P5).",
+            "stripePaymentId": "pi_3TYcM1FFNTyYdDlu0B3qfiXe",
+            "stripeSessionId": "cs_test_a17GnLXR4TO4RTNqHe3olas3KqnimfxFLSIKV2xTGi1PQgUulQLtC836P5"
+          },
+          {
+            "id": "24",
+            "createdAt": "2026-05-18T23:35:26.597Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1NJggOyx7HeVHfo72SKOPyiTexgYDb3zYkecxc7YnxNApmqYo8qm9YfbR).",
+            "stripePaymentId": "pi_3TYagwFFNTyYdDlu002JicB4",
+            "stripeSessionId": "cs_test_a1NJggOyx7HeVHfo72SKOPyiTexgYDb3zYkecxc7YnxNApmqYo8qm9YfbR"
+          }
+        ]
+      },
+      "tx": {
+        "id": "24",
+        "createdAt": "2026-05-18T23:35:26.597Z",
+        "balanceAfter": 5000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1NJggOyx7HeVHfo72SKOPyiTexgYDb3zYkecxc7YnxNApmqYo8qm9YfbR).",
+        "stripePaymentId": "pi_3TYagwFFNTyYdDlu002JicB4",
+        "stripeSessionId": "cs_test_a1NJggOyx7HeVHfo72SKOPyiTexgYDb3zYkecxc7YnxNApmqYo8qm9YfbR"
+      },
+      "at": "2026-05-18T23:35:27.596Z",
+      "supa": {
+        "ok": true,
+        "user_id": "e7e5928c-b7c2-4a30-9027-863ffe50ad01",
+        "credited": 5000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 5000
+      }
+    },
+    "cs_test_a1dsV1PSkf7PwYQx9xKXvtwEGpUOwRQCzC5PGyNrtGRnJtljySJjNOS8xh": {
+      "wallet": {
+        "balance": 5000,
+        "transactions": [
+          {
+            "id": "25",
+            "createdAt": "2026-05-18T23:38:21.895Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1dsV1PSkf7PwYQx9xKXvtwEGpUOwRQCzC5PGyNrtGRnJtljySJjNOS8xh).",
+            "stripePaymentId": "pi_3TYajmFFNTyYdDlu0g6JeWmA",
+            "stripeSessionId": "cs_test_a1dsV1PSkf7PwYQx9xKXvtwEGpUOwRQCzC5PGyNrtGRnJtljySJjNOS8xh"
+          }
+        ]
+      },
+      "tx": {
+        "id": "25",
+        "createdAt": "2026-05-18T23:38:21.895Z",
+        "balanceAfter": 5000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1dsV1PSkf7PwYQx9xKXvtwEGpUOwRQCzC5PGyNrtGRnJtljySJjNOS8xh).",
+        "stripePaymentId": "pi_3TYajmFFNTyYdDlu0g6JeWmA",
+        "stripeSessionId": "cs_test_a1dsV1PSkf7PwYQx9xKXvtwEGpUOwRQCzC5PGyNrtGRnJtljySJjNOS8xh"
+      },
+      "at": "2026-05-18T23:38:22.390Z",
+      "supa": {
+        "ok": true,
+        "user_id": "3c5b6b56-f968-46d4-918a-4ceadeab7c34",
+        "credited": 5000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 5000
+      }
+    },
+    "cs_test_a17GnLXR4TO4RTNqHe3olas3KqnimfxFLSIKV2xTGi1PQgUulQLtC836P5": {
+      "wallet": {
+        "balance": 55000,
+        "transactions": [
+          {
+            "id": "26",
+            "createdAt": "2026-05-19T01:21:57.513Z",
+            "balanceAfter": 55000,
+            "kind": "topup",
+            "amount": 50000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a17GnLXR4TO4RTNqHe3olas3KqnimfxFLSIKV2xTGi1PQgUulQLtC836P5).",
+            "stripePaymentId": "pi_3TYcM1FFNTyYdDlu0B3qfiXe",
+            "stripeSessionId": "cs_test_a17GnLXR4TO4RTNqHe3olas3KqnimfxFLSIKV2xTGi1PQgUulQLtC836P5"
+          },
+          {
+            "id": "24",
+            "createdAt": "2026-05-18T23:35:26.597Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1NJggOyx7HeVHfo72SKOPyiTexgYDb3zYkecxc7YnxNApmqYo8qm9YfbR).",
+            "stripePaymentId": "pi_3TYagwFFNTyYdDlu002JicB4",
+            "stripeSessionId": "cs_test_a1NJggOyx7HeVHfo72SKOPyiTexgYDb3zYkecxc7YnxNApmqYo8qm9YfbR"
+          }
+        ]
+      },
+      "tx": {
+        "id": "26",
+        "createdAt": "2026-05-19T01:21:57.513Z",
+        "balanceAfter": 55000,
+        "kind": "topup",
+        "amount": 50000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a17GnLXR4TO4RTNqHe3olas3KqnimfxFLSIKV2xTGi1PQgUulQLtC836P5).",
+        "stripePaymentId": "pi_3TYcM1FFNTyYdDlu0B3qfiXe",
+        "stripeSessionId": "cs_test_a17GnLXR4TO4RTNqHe3olas3KqnimfxFLSIKV2xTGi1PQgUulQLtC836P5"
+      },
+      "at": "2026-05-19T01:21:58.459Z",
+      "supa": {
+        "ok": true,
+        "user_id": "e7e5928c-b7c2-4a30-9027-863ffe50ad01",
+        "credited": 50000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 53000
+      }
+    },
+    "cs_test_a1bSOc4V9lOAPmow0VyWnrRMtUWaDWdsBa4FXD6BO0xVdMldrhfReVYFIq": {
+      "wallet": {
+        "balance": 5000,
+        "transactions": [
+          {
+            "id": "28",
+            "createdAt": "2026-05-20T02:42:47.976Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1bSOc4V9lOAPmow0VyWnrRMtUWaDWdsBa4FXD6BO0xVdMldrhfReVYFIq).",
+            "stripePaymentId": "pi_3TZ05oFFNTyYdDlu0pBOwZFX",
+            "stripeSessionId": "cs_test_a1bSOc4V9lOAPmow0VyWnrRMtUWaDWdsBa4FXD6BO0xVdMldrhfReVYFIq"
+          }
+        ]
+      },
+      "tx": {
+        "id": "28",
+        "createdAt": "2026-05-20T02:42:47.976Z",
+        "balanceAfter": 5000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1bSOc4V9lOAPmow0VyWnrRMtUWaDWdsBa4FXD6BO0xVdMldrhfReVYFIq).",
+        "stripePaymentId": "pi_3TZ05oFFNTyYdDlu0pBOwZFX",
+        "stripeSessionId": "cs_test_a1bSOc4V9lOAPmow0VyWnrRMtUWaDWdsBa4FXD6BO0xVdMldrhfReVYFIq"
+      },
+      "at": "2026-05-20T02:42:48.893Z",
+      "supa": {
+        "ok": true,
+        "user_id": "6102f4b6-6b8e-4062-a9c0-523dc02b915d",
+        "credited": 5000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 5000
+      }
+    },
+    "cs_test_a1GMclKBHgZtNgEOFkIUtYW3TFN1LfkkiAYHwBpej2ntwL1D0UqGoQ25jb": {
+      "wallet": {
+        "balance": 5000,
+        "transactions": [
+          {
+            "id": "29",
+            "createdAt": "2026-05-20T22:17:54.968Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1GMclKBHgZtNgEOFkIUtYW3TFN1LfkkiAYHwBpej2ntwL1D0UqGoQ25jb).",
+            "stripePaymentId": "pi_3TZIR1FFNTyYdDlu17mtAjIy",
+            "stripeSessionId": "cs_test_a1GMclKBHgZtNgEOFkIUtYW3TFN1LfkkiAYHwBpej2ntwL1D0UqGoQ25jb"
+          }
+        ]
+      },
+      "tx": {
+        "id": "29",
+        "createdAt": "2026-05-20T22:17:54.968Z",
+        "balanceAfter": 5000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1GMclKBHgZtNgEOFkIUtYW3TFN1LfkkiAYHwBpej2ntwL1D0UqGoQ25jb).",
+        "stripePaymentId": "pi_3TZIR1FFNTyYdDlu17mtAjIy",
+        "stripeSessionId": "cs_test_a1GMclKBHgZtNgEOFkIUtYW3TFN1LfkkiAYHwBpej2ntwL1D0UqGoQ25jb"
+      },
+      "at": "2026-05-20T22:17:55.385Z",
+      "supa": {
+        "ok": true,
+        "user_id": "e56cbfd2-265c-4682-a350-54a6719ba7f0",
+        "credited": 5000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 5000
+      }
+    },
+    "cs_test_a1cBxJ4WwP4QZl4cUyoqE03kYr5NaCzAHyCIje8CdNTAbiHf6Lml1MhXtA": {
+      "wallet": {
+        "balance": 5000,
+        "transactions": [
+          {
+            "id": "30",
+            "createdAt": "2026-05-21T00:49:05.962Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1cBxJ4WwP4QZl4cUyoqE03kYr5NaCzAHyCIje8CdNTAbiHf6Lml1MhXtA).",
+            "stripePaymentId": "pi_3TZKnKFFNTyYdDlu0eFk82vk",
+            "stripeSessionId": "cs_test_a1cBxJ4WwP4QZl4cUyoqE03kYr5NaCzAHyCIje8CdNTAbiHf6Lml1MhXtA"
+          }
+        ]
+      },
+      "tx": {
+        "id": "30",
+        "createdAt": "2026-05-21T00:49:05.962Z",
+        "balanceAfter": 5000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1cBxJ4WwP4QZl4cUyoqE03kYr5NaCzAHyCIje8CdNTAbiHf6Lml1MhXtA).",
+        "stripePaymentId": "pi_3TZKnKFFNTyYdDlu0eFk82vk",
+        "stripeSessionId": "cs_test_a1cBxJ4WwP4QZl4cUyoqE03kYr5NaCzAHyCIje8CdNTAbiHf6Lml1MhXtA"
+      },
+      "at": "2026-05-21T00:49:06.365Z",
+      "supa": {
+        "ok": true,
+        "user_id": "284bc3cf-71d5-4747-9ce8-42171fe90964",
+        "credited": 5000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 5000
+      }
+    },
+    "cs_test_a1xXwLWhiUH3Hy16hz5rGQ9e4o4lRNQhzi2krMDGu2ZXctu5BThxdrpZv1": {
+      "wallet": {
+        "balance": 5000,
+        "transactions": [
+          {
+            "id": "31",
+            "createdAt": "2026-05-22T00:50:13.242Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1xXwLWhiUH3Hy16hz5rGQ9e4o4lRNQhzi2krMDGu2ZXctu5BThxdrpZv1).",
+            "stripePaymentId": "pi_3TZhHyFFNTyYdDlu11wlS27l",
+            "stripeSessionId": "cs_test_a1xXwLWhiUH3Hy16hz5rGQ9e4o4lRNQhzi2krMDGu2ZXctu5BThxdrpZv1"
+          }
+        ]
+      },
+      "tx": {
+        "id": "31",
+        "createdAt": "2026-05-22T00:50:13.242Z",
+        "balanceAfter": 5000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1xXwLWhiUH3Hy16hz5rGQ9e4o4lRNQhzi2krMDGu2ZXctu5BThxdrpZv1).",
+        "stripePaymentId": "pi_3TZhHyFFNTyYdDlu11wlS27l",
+        "stripeSessionId": "cs_test_a1xXwLWhiUH3Hy16hz5rGQ9e4o4lRNQhzi2krMDGu2ZXctu5BThxdrpZv1"
+      },
+      "at": "2026-05-22T00:50:13.653Z",
+      "supa": {
+        "ok": true,
+        "user_id": "e2a33254-2b1e-4725-885a-e5f1b72c8602",
+        "credited": 5000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 5000
+      }
+    },
+    "cs_test_a17chnfj2GrGUj1xiuSiMLo50HJYTHg2jnSGKZQ6HfHdn1h4fkzXdMmuHJ": {
+      "wallet": {
+        "balance": 10000,
+        "transactions": [
+          {
+            "id": "32",
+            "createdAt": "2026-05-22T10:38:22.720Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a17chnfj2GrGUj1xiuSiMLo50HJYTHg2jnSGKZQ6HfHdn1h4fkzXdMmuHJ).",
+            "stripePaymentId": "pi_3TZqT9FFNTyYdDlu1sUqIiM3",
+            "stripeSessionId": "cs_test_a17chnfj2GrGUj1xiuSiMLo50HJYTHg2jnSGKZQ6HfHdn1h4fkzXdMmuHJ"
+          },
+          {
+            "id": "29",
+            "createdAt": "2026-05-20T22:17:54.968Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1GMclKBHgZtNgEOFkIUtYW3TFN1LfkkiAYHwBpej2ntwL1D0UqGoQ25jb).",
+            "stripePaymentId": "pi_3TZIR1FFNTyYdDlu17mtAjIy",
+            "stripeSessionId": "cs_test_a1GMclKBHgZtNgEOFkIUtYW3TFN1LfkkiAYHwBpej2ntwL1D0UqGoQ25jb"
+          }
+        ]
+      },
+      "tx": {
+        "id": "32",
+        "createdAt": "2026-05-22T10:38:22.720Z",
+        "balanceAfter": 10000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a17chnfj2GrGUj1xiuSiMLo50HJYTHg2jnSGKZQ6HfHdn1h4fkzXdMmuHJ).",
+        "stripePaymentId": "pi_3TZqT9FFNTyYdDlu1sUqIiM3",
+        "stripeSessionId": "cs_test_a17chnfj2GrGUj1xiuSiMLo50HJYTHg2jnSGKZQ6HfHdn1h4fkzXdMmuHJ"
+      },
+      "at": "2026-05-22T10:38:23.090Z",
+      "supa": {
+        "ok": true,
+        "user_id": "e56cbfd2-265c-4682-a350-54a6719ba7f0",
+        "credited": 5000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 6000
+      }
+    },
+    "cs_test_a1pgesM5UfcvOGHpBYEwt7eukXLrhaEu13GiR79s7QRzJFFXvUGBE6v3lp": {
+      "wallet": {
+        "balance": 5000,
+        "transactions": [
+          {
+            "id": "33",
+            "createdAt": "2026-05-23T19:54:09.809Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1pgesM5UfcvOGHpBYEwt7eukXLrhaEu13GiR79s7QRzJFFXvUGBE6v3lp).",
+            "stripePaymentId": "pi_3TaLcXFFNTyYdDlu0IlSTFgc",
+            "stripeSessionId": "cs_test_a1pgesM5UfcvOGHpBYEwt7eukXLrhaEu13GiR79s7QRzJFFXvUGBE6v3lp"
+          }
+        ]
+      },
+      "tx": {
+        "id": "33",
+        "createdAt": "2026-05-23T19:54:09.809Z",
+        "balanceAfter": 5000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1pgesM5UfcvOGHpBYEwt7eukXLrhaEu13GiR79s7QRzJFFXvUGBE6v3lp).",
+        "stripePaymentId": "pi_3TaLcXFFNTyYdDlu0IlSTFgc",
+        "stripeSessionId": "cs_test_a1pgesM5UfcvOGHpBYEwt7eukXLrhaEu13GiR79s7QRzJFFXvUGBE6v3lp"
+      },
+      "at": "2026-05-23T19:54:10.306Z",
+      "supa": {
+        "ok": true,
+        "user_id": "6f6a5bbd-8e6e-47af-9033-eda6b75e6d58",
+        "credited": 5000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 5000
+      }
+    },
+    "cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q": {
+      "wallet": {
+        "balance": 5000,
+        "transactions": [
+          {
+            "id": "34",
+            "createdAt": "2026-05-23T19:54:45.732Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q).",
+            "stripePaymentId": "pi_3TaLd8FFNTyYdDlu0pMu1mrm",
+            "stripeSessionId": "cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q"
+          }
+        ]
+      },
+      "tx": {
+        "id": "34",
+        "createdAt": "2026-05-23T19:54:45.732Z",
+        "balanceAfter": 5000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q).",
+        "stripePaymentId": "pi_3TaLd8FFNTyYdDlu0pMu1mrm",
+        "stripeSessionId": "cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q"
+      },
+      "at": "2026-05-23T19:54:46.177Z",
+      "supa": {
+        "ok": true,
+        "user_id": "960875f5-e3ed-4058-81e3-6cb51c3c8c45",
+        "credited": 5000,
+        "provider": "stripe",
+        "duplicate": false,
+        "wallet_balance": 5000
+      }
+    },
+    "cs_test_a1SRR0cUtDliR6AOUE9RIWmUEWLUH9laXJpyCsXywpWr9ogWjGc9JvFAQo": {
+      "wallet": {
+        "balance": 15000,
+        "transactions": [
+          {
+            "id": "35",
+            "createdAt": "2026-05-26T19:04:22.633Z",
+            "balanceAfter": 15000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1SRR0cUtDliR6AOUE9RIWmUEWLUH9laXJpyCsXywpWr9ogWjGc9JvFAQo).",
+            "stripePaymentId": "pi_3TbQH2FFNTyYdDlu1M4uAXnt",
+            "stripeSessionId": "cs_test_a1SRR0cUtDliR6AOUE9RIWmUEWLUH9laXJpyCsXywpWr9ogWjGc9JvFAQo"
+          },
+          {
+            "id": "34",
+            "createdAt": "2026-05-23T19:54:45.732Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q).",
+            "stripePaymentId": "pi_3TaLd8FFNTyYdDlu0pMu1mrm",
+            "stripeSessionId": "cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q"
+          }
+        ]
+      },
+      "tx": {
+        "id": "35",
+        "createdAt": "2026-05-26T19:04:22.633Z",
+        "balanceAfter": 15000,
+        "kind": "topup",
+        "amount": 10000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1SRR0cUtDliR6AOUE9RIWmUEWLUH9laXJpyCsXywpWr9ogWjGc9JvFAQo).",
+        "stripePaymentId": "pi_3TbQH2FFNTyYdDlu1M4uAXnt",
+        "stripeSessionId": "cs_test_a1SRR0cUtDliR6AOUE9RIWmUEWLUH9laXJpyCsXywpWr9ogWjGc9JvFAQo"
+      },
+      "at": "2026-05-26T19:04:23.047Z",
+      "supa": {
+        "ok": true,
+        "user_id": "960875f5-e3ed-4058-81e3-6cb51c3c8c45",
+        "credited": 10000,
+        "duplicate": false,
+        "wallet_balance": 13500
+      }
+    },
+    "cs_test_a1sYPdDV5UXQJEhidOlTwvutVT9Otvf7A9RlKaOArB3bCziRYTVg7N99Ay": {
+      "wallet": {
+        "balance": 10000,
+        "transactions": [
+          {
+            "id": "36",
+            "createdAt": "2026-05-28T13:36:49.542Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1sYPdDV5UXQJEhidOlTwvutVT9Otvf7A9RlKaOArB3bCziRYTVg7N99Ay).",
+            "stripePaymentId": "pi_3Tc47BFFNTyYdDlu0Sl0yxza",
+            "stripeSessionId": "cs_test_a1sYPdDV5UXQJEhidOlTwvutVT9Otvf7A9RlKaOArB3bCziRYTVg7N99Ay"
+          },
+          {
+            "id": "33",
+            "createdAt": "2026-05-23T19:54:09.809Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1pgesM5UfcvOGHpBYEwt7eukXLrhaEu13GiR79s7QRzJFFXvUGBE6v3lp).",
+            "stripePaymentId": "pi_3TaLcXFFNTyYdDlu0IlSTFgc",
+            "stripeSessionId": "cs_test_a1pgesM5UfcvOGHpBYEwt7eukXLrhaEu13GiR79s7QRzJFFXvUGBE6v3lp"
+          }
+        ]
+      },
+      "tx": {
+        "id": "36",
+        "createdAt": "2026-05-28T13:36:49.542Z",
+        "balanceAfter": 10000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1sYPdDV5UXQJEhidOlTwvutVT9Otvf7A9RlKaOArB3bCziRYTVg7N99Ay).",
+        "stripePaymentId": "pi_3Tc47BFFNTyYdDlu0Sl0yxza",
+        "stripeSessionId": "cs_test_a1sYPdDV5UXQJEhidOlTwvutVT9Otvf7A9RlKaOArB3bCziRYTVg7N99Ay"
+      },
+      "at": "2026-05-28T13:36:50.070Z",
+      "supa": {
+        "ok": true,
+        "user_id": "6f6a5bbd-8e6e-47af-9033-eda6b75e6d58",
+        "credited": 5000,
+        "duplicate": false,
+        "wallet_balance": 10200
+      }
+    },
+    "cs_test_a1DUIszDfTLho7TYONBTNr68kzHkBeiigI3eeEWKkRTmFNJCZCXONgSKyt": {
+      "wallet": {
+        "balance": 5000,
+        "transactions": [
+          {
+            "id": "37",
+            "createdAt": "2026-05-28T14:18:57.139Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1DUIszDfTLho7TYONBTNr68kzHkBeiigI3eeEWKkRTmFNJCZCXONgSKyt).",
+            "stripePaymentId": "pi_3Tc4lwFFNTyYdDlu19D3kAPe",
+            "stripeSessionId": "cs_test_a1DUIszDfTLho7TYONBTNr68kzHkBeiigI3eeEWKkRTmFNJCZCXONgSKyt"
+          }
+        ]
+      },
+      "tx": {
+        "id": "37",
+        "createdAt": "2026-05-28T14:18:57.139Z",
+        "balanceAfter": 5000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1DUIszDfTLho7TYONBTNr68kzHkBeiigI3eeEWKkRTmFNJCZCXONgSKyt).",
+        "stripePaymentId": "pi_3Tc4lwFFNTyYdDlu19D3kAPe",
+        "stripeSessionId": "cs_test_a1DUIszDfTLho7TYONBTNr68kzHkBeiigI3eeEWKkRTmFNJCZCXONgSKyt"
+      },
+      "at": "2026-05-28T14:18:57.557Z",
+      "supa": {
+        "ok": true,
+        "user_id": "ebfacd33-8676-4d7a-9cfb-fcedd93c2d03",
+        "credited": 5000,
+        "duplicate": false,
+        "wallet_balance": 5000
+      }
+    },
+    "cs_test_a1MTYmW3QReT7OoGAgCYCyQtpr85qubyaosp4gJCSxZUO2x1ISPY0JRMNK": {
+      "wallet": {
+        "balance": 10000,
+        "transactions": [
+          {
+            "id": "39",
+            "createdAt": "2026-05-28T18:51:27.651Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1zodR1AT8Si7Lo3xQMtI0dqW2zOxpLp2KOSuMSofK6j4A65YhlbD3fukj).",
+            "stripePaymentId": "pi_3Tc91fFFNTyYdDlu0ozfxJe7",
+            "stripeSessionId": "cs_test_a1zodR1AT8Si7Lo3xQMtI0dqW2zOxpLp2KOSuMSofK6j4A65YhlbD3fukj"
+          },
+          {
+            "id": "38",
+            "createdAt": "2026-05-28T17:07:39.606Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1MTYmW3QReT7OoGAgCYCyQtpr85qubyaosp4gJCSxZUO2x1ISPY0JRMNK).",
+            "stripePaymentId": "pi_3Tc7PDFFNTyYdDlu1pCb0cFy",
+            "stripeSessionId": "cs_test_a1MTYmW3QReT7OoGAgCYCyQtpr85qubyaosp4gJCSxZUO2x1ISPY0JRMNK"
+          }
+        ]
+      },
+      "tx": {
+        "id": "38",
+        "createdAt": "2026-05-28T17:07:39.606Z",
+        "balanceAfter": 5000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1MTYmW3QReT7OoGAgCYCyQtpr85qubyaosp4gJCSxZUO2x1ISPY0JRMNK).",
+        "stripePaymentId": "pi_3Tc7PDFFNTyYdDlu1pCb0cFy",
+        "stripeSessionId": "cs_test_a1MTYmW3QReT7OoGAgCYCyQtpr85qubyaosp4gJCSxZUO2x1ISPY0JRMNK"
+      },
+      "at": "2026-05-28T17:07:40.068Z",
+      "supa": {
+        "ok": true,
+        "user_id": "8f512270-5de9-4524-b561-0ba0dfbbd9a0",
+        "credited": 5000,
+        "duplicate": false,
+        "wallet_balance": 5000
+      }
+    },
+    "cs_test_a1zodR1AT8Si7Lo3xQMtI0dqW2zOxpLp2KOSuMSofK6j4A65YhlbD3fukj": {
+      "wallet": {
+        "balance": 10000,
+        "transactions": [
+          {
+            "id": "39",
+            "createdAt": "2026-05-28T18:51:27.651Z",
+            "balanceAfter": 10000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1zodR1AT8Si7Lo3xQMtI0dqW2zOxpLp2KOSuMSofK6j4A65YhlbD3fukj).",
+            "stripePaymentId": "pi_3Tc91fFFNTyYdDlu0ozfxJe7",
+            "stripeSessionId": "cs_test_a1zodR1AT8Si7Lo3xQMtI0dqW2zOxpLp2KOSuMSofK6j4A65YhlbD3fukj"
+          },
+          {
+            "id": "38",
+            "createdAt": "2026-05-28T17:07:39.606Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1MTYmW3QReT7OoGAgCYCyQtpr85qubyaosp4gJCSxZUO2x1ISPY0JRMNK).",
+            "stripePaymentId": "pi_3Tc7PDFFNTyYdDlu1pCb0cFy",
+            "stripeSessionId": "cs_test_a1MTYmW3QReT7OoGAgCYCyQtpr85qubyaosp4gJCSxZUO2x1ISPY0JRMNK"
+          }
+        ]
+      },
+      "tx": {
+        "id": "39",
+        "createdAt": "2026-05-28T18:51:27.651Z",
+        "balanceAfter": 10000,
+        "kind": "topup",
+        "amount": 5000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1zodR1AT8Si7Lo3xQMtI0dqW2zOxpLp2KOSuMSofK6j4A65YhlbD3fukj).",
+        "stripePaymentId": "pi_3Tc91fFFNTyYdDlu0ozfxJe7",
+        "stripeSessionId": "cs_test_a1zodR1AT8Si7Lo3xQMtI0dqW2zOxpLp2KOSuMSofK6j4A65YhlbD3fukj"
+      },
+      "at": "2026-05-28T18:51:28.109Z",
+      "supa": {
+        "ok": true,
+        "user_id": "8f512270-5de9-4524-b561-0ba0dfbbd9a0",
+        "credited": 5000,
+        "duplicate": false,
+        "wallet_balance": 9500
+      }
+    },
+    "cs_test_a1cPVAOPhMI13l2aWCGi0W87pCBoLKZFxw86Xj38sgu63NbLh739CsKfa6": {
+      "wallet": {
+        "balance": 115000,
+        "transactions": [
+          {
+            "id": "40",
+            "createdAt": "2026-06-01T13:31:42.235Z",
+            "balanceAfter": 115000,
+            "kind": "topup",
+            "amount": 100000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1cPVAOPhMI13l2aWCGi0W87pCBoLKZFxw86Xj38sgu63NbLh739CsKfa6).",
+            "stripePaymentId": "pi_3TdVwOFFNTyYdDlu1bnpMWBa",
+            "stripeSessionId": "cs_test_a1cPVAOPhMI13l2aWCGi0W87pCBoLKZFxw86Xj38sgu63NbLh739CsKfa6"
+          },
+          {
+            "id": "35",
+            "createdAt": "2026-05-26T19:04:22.633Z",
+            "balanceAfter": 15000,
+            "kind": "topup",
+            "amount": 10000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a1SRR0cUtDliR6AOUE9RIWmUEWLUH9laXJpyCsXywpWr9ogWjGc9JvFAQo).",
+            "stripePaymentId": "pi_3TbQH2FFNTyYdDlu1M4uAXnt",
+            "stripeSessionId": "cs_test_a1SRR0cUtDliR6AOUE9RIWmUEWLUH9laXJpyCsXywpWr9ogWjGc9JvFAQo"
+          },
+          {
+            "id": "34",
+            "createdAt": "2026-05-23T19:54:45.732Z",
+            "balanceAfter": 5000,
+            "kind": "topup",
+            "amount": 5000,
+            "provider": "stripe",
+            "note": "Stripe test top-up (cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q).",
+            "stripePaymentId": "pi_3TaLd8FFNTyYdDlu0pMu1mrm",
+            "stripeSessionId": "cs_test_a18FgYVvr7csHW0qumA8dZQfZ37KGxgmpxaDERD62ATdTZgdXkeeDxGV8Q"
+          }
+        ]
+      },
+      "tx": {
+        "id": "40",
+        "createdAt": "2026-06-01T13:31:42.235Z",
+        "balanceAfter": 115000,
+        "kind": "topup",
+        "amount": 100000,
+        "provider": "stripe",
+        "note": "Stripe test top-up (cs_test_a1cPVAOPhMI13l2aWCGi0W87pCBoLKZFxw86Xj38sgu63NbLh739CsKfa6).",
+        "stripePaymentId": "pi_3TdVwOFFNTyYdDlu1bnpMWBa",
+        "stripeSessionId": "cs_test_a1cPVAOPhMI13l2aWCGi0W87pCBoLKZFxw86Xj38sgu63NbLh739CsKfa6"
+      },
+      "at": "2026-06-01T13:31:43.213Z",
+      "supa": {
+        "ok": true,
+        "user_id": "960875f5-e3ed-4058-81e3-6cb51c3c8c45",
+        "credited": 100000,
+        "duplicate": false,
+        "wallet_balance": 115500
+      }
+    }
+  }
+}
