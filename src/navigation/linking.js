@@ -1,9 +1,19 @@
 import * as Linking from 'expo-linking';
+import { getPublicWebOrigin } from '../services/supabase/authRedirect';
 
 const prefix = Linking.createURL('/');
 
+function buildLinkingPrefixes() {
+  const prefixes = [prefix, 'bidify://', 'exp://', 'http://localhost:8086'];
+  const webOrigin = getPublicWebOrigin();
+  if (webOrigin && !prefixes.includes(webOrigin)) {
+    prefixes.unshift(webOrigin);
+  }
+  return [...new Set(prefixes.filter(Boolean))];
+}
+
 export const linking = {
-  prefixes: [prefix, 'bidify://', 'http://localhost:8086', 'exp://'],
+  prefixes: buildLinkingPrefixes(),
   config: {
     screens: {
       AuthStack: {

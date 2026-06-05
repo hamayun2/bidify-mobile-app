@@ -1,6 +1,7 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Platform } from 'react-native';
+import { isTunnelWebHost } from '../services/supabase/authRedirect';
 import { getSupabase, isSupabaseConfigured } from '../services/supabaseClient';
 import {
   isLikelyOffline,
@@ -23,17 +24,29 @@ import {
  *     LAN IP (e.g. 192.168.1.3) OR put that IP directly in EXPO_PUBLIC_API_URL.
  *     localhost on a real device always means the phone itself — Stripe/wallet fail.
  */
+function normalizeApiUrlString(value) {
+  const s = String(value || '').trim();
+  if (!s) return '';
+  return /^https?:\/\//i.test(s) ? s : `https://${s}`;
+}
+
 function resolveApiBaseUrl() {
   const env = process.env.EXPO_PUBLIC_API_URL;
-  let raw = env && env.trim() ? env.trim() : '';
+  let raw = env && env.trim() ? normalizeApiUrlString(env.trim()) : '';
   const devHost = String(process.env.EXPO_PUBLIC_API_DEV_HOST || '').trim();
 
   if (Platform.OS === 'web' && typeof window !== 'undefined' && window.location) {
     if (!raw) return '';
     try {
       const u = new URL(raw);
-      const host = window.location.hostname || u.hostname;
-      u.hostname = host;
+      const pageHost = window.location.hostname || '';
+      const apiHost = u.hostname;
+      const pageIsLoopback = pageHost === 'localhost' || pageHost === '127.0.0.1';
+      const apiIsLoopback = apiHost === 'localhost' || apiHost === '127.0.0.1';
+      // Local Expo web: map localhost API env to the page host. Tunnel hosts (ngrok) keep the deployed API URL.
+      if (pageIsLoopback && apiIsLoopback && !isTunnelWebHost(pageHost)) {
+        u.hostname = pageHost;
+      }
       return u.toString().replace(/\/$/, '');
     } catch (_) {
       return raw;
