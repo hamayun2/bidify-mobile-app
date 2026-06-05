@@ -27,7 +27,26 @@ export function isTunnelWebHost(hostname) {
  */
 export function getPublicWebOrigin() {
   if (typeof window !== 'undefined' && window.location?.origin) {
-    return window.location.origin.replace(/\/$/, '');
+    const live = window.location.origin.replace(/\/$/, '');
+    const env = String(process.env.EXPO_PUBLIC_WEB_APP_URL || '').trim();
+    if (env && __DEV__) {
+      try {
+        const envOrigin = new URL(/^https?:\/\//i.test(env) ? env : `https://${env}`).origin.replace(
+          /\/$/,
+          ''
+        );
+        if (envOrigin !== live) {
+          console.warn(
+            '[Bidify/auth] EXPO_PUBLIC_WEB_APP_URL differs from browser origin — OAuth uses live origin:',
+            live,
+            '(update .env or Supabase Redirect URLs if ngrok URL changed)'
+          );
+        }
+      } catch {
+        /* ignore */
+      }
+    }
+    return live;
   }
   const env = String(process.env.EXPO_PUBLIC_WEB_APP_URL || '').trim();
   if (!env) return null;
@@ -41,7 +60,7 @@ export function getPublicWebOrigin() {
 
 function getWebAuthReturnUrl() {
   const origin = getPublicWebOrigin();
-  return origin ? `${origin}/login` : null;
+  return origin ? `${origin}/auth/callback` : null;
 }
 
 export function getSupabaseAuthRedirectUrl() {
@@ -71,6 +90,8 @@ export function logSupabaseRedirectAllowListHints() {
   const hints = [getSupabaseAuthRedirectUrl(), getWebOAuthRedirectUrl()];
   const origin = getPublicWebOrigin();
   if (origin) {
+    hints.push(`${origin}/auth/callback`);
+    hints.push(`${origin}/auth/callback/`);
     hints.push(`${origin}/login`);
     hints.push(`${origin}/login/`);
     hints.push(`${origin}/`);

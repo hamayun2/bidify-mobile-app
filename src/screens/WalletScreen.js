@@ -23,6 +23,13 @@ import {
   presentStripeWalletPaymentSheet,
 } from '../services/stripePaymentSheet';
 import { getApiPublicRoot, isAuxiliaryApiConfigured } from '../api/client';
+import {
+  clearStripeTopupQueryFromLocation,
+  getStripeWebReturnUrl,
+  markStripeTopupPending,
+  readStripeTopupReturnFromLocation,
+  shouldUseStripeRedirectCheckout,
+} from '../utils/stripeWebCheckout';
 import { WALLET_TOPUP_PRESETS_PKR } from '../constants/walletRules';
 import { backToHome } from '../utils/safeBack';
 import { colors, radius, spacing } from '../theme';
@@ -397,6 +404,29 @@ const WalletScreen = () => {
   useFocusEffect(
     useCallback(() => {
       void (async () => {
+        if (Platform.OS === 'web' && typeof window !== 'undefined') {
+          const stripeReturn = readStripeTopupReturnFromLocation();
+          if (stripeReturn) {
+            clearStripeTopupQueryFromLocation();
+            await Promise.all([refresh(), reloadLockedBalance(), loadActivity()]);
+            const credited = stripeReturn.amount;
+            Alert.alert(
+              'Payment Successful!',
+              credited != null && Number.isFinite(credited)
+                ? `Funds added to your wallet.\nRs. ${credited.toLocaleString()} credited.${
+                    stripeReturn.balance != null
+                      ? `\nNew balance: Rs. ${Number(stripeReturn.balance).toLocaleString()}.`
+                      : ''
+                  }`
+                : 'Your wallet top-up was completed.',
+              [{ text: 'OK' }]
+            );
+            setTopupAmount('5000');
+            setSelectedPaymentMethod(null);
+            setMainTab('add');
+            return;
+          }
+        }
         await Promise.all([refresh(), reloadLockedBalance(), loadActivity()]);
       })();
     }, [refresh, reloadLockedBalance, loadActivity])
@@ -559,7 +589,10 @@ const WalletScreen = () => {
         );
       }
 
-      const session = await createWalletTopupSession(provider, pendingAmount);
+      const webReturnUrl = getStripeWebReturnUrl();
+      const session = await createWalletTopupSession(provider, pendingAmount, {
+        returnTo: webReturnUrl || undefined,
+      });
       if (!session.url) throw new Error('Server did not return a payment URL.');
 
       const returnBase = getApiPublicRoot();
@@ -570,6 +603,11 @@ const WalletScreen = () => {
         session.walletBalance != null ? Number(session.walletBalance) : null;
 
       if (Platform.OS === 'web' && typeof window !== 'undefined') {
+        if (shouldUseStripeRedirectCheckout()) {
+          markStripeTopupPending(pendingAmount, session.sessionId);
+          window.location.assign(session.url);
+          return;
+        }
         const popup = window.open(session.url, 'bidify_stripe_checkout', 'width=480,height=720');
         if (!popup) {
           throw new Error('Pop-up blocked. Allow pop-ups for this site and try again.');

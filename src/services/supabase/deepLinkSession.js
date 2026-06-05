@@ -4,6 +4,7 @@
  */
 
 import { logSupabaseError } from './postgrestErrors';
+import { restorePkceKeysAfterOAuth } from './webPkceStorage';
 
 function parseQueryOrHashParams(url) {
   const out = {};
@@ -157,6 +158,7 @@ export async function applySupabaseAuthUrl(supabase, url) {
     const params = parseQueryOrHashParams(url);
     const code = params.code;
     if (code) {
+      restorePkceKeysAfterOAuth();
       const { data, error } = await supabase.auth.exchangeCodeForSession(code);
       if (error) {
         logSupabaseError('applySupabaseAuthUrl.exchangeCodeForSession', error);
@@ -187,7 +189,11 @@ export async function applySupabaseAuthUrl(supabase, url) {
 function formatAuthCallbackError(error) {
   const msg = String(error?.message || error || 'Auth callback failed');
   const err = new Error(msg);
-  if (/redirect_uri/i.test(msg)) {
+  if (/code verifier/i.test(msg) || /pkce/i.test(msg)) {
+    err.code = 'pkce_verifier_missing';
+    err.message =
+      'OAuth PKCE verifier missing — complete sign-in on the same URL you started from (your ngrok link, not localhost). Hard-refresh and try again.';
+  } else if (/redirect_uri/i.test(msg)) {
     err.code = 'redirect_uri_mismatch';
   } else if (/invalid_client/i.test(msg)) {
     err.code = 'invalid_client';

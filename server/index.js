@@ -22,6 +22,7 @@ const bidsRouter = require('./routes/bids');
 const profileRouter = require('./routes/profile');
 const usersRouter = require('./routes/users');
 const registrationRouter = require('./routes/registration');
+const supabaseAuthCallbackRouter = require('./routes/supabaseAuthCallback');
 const { startAuctionResolverCron } = require('./auctionResolver');
 const { startKycAutoVerifyCron } = require('./kycAutoVerifyCron');
 const { isDeleteListingConfigured } = require('./services/deleteListing');
@@ -60,6 +61,7 @@ if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true });
 app.use('/uploads', express.static(uploadsDir));
 
 app.use('/api/auth', authRouter);
+app.use('/auth', supabaseAuthCallbackRouter);
 app.use('/api/listings', listingsRouter);
 app.use('/api/chat', chatRouter);
 app.use('/api/wallet', walletRouter);

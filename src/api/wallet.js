@@ -86,7 +86,7 @@ export async function topUpWalletAPI(amount) {
 
 export const TOPUP_PROVIDERS = ['stripe', 'easypaisa', 'jazzcash'];
 
-export async function createWalletTopupSession(provider, amount) {
+export async function createWalletTopupSession(provider, amount, options = {}) {
   const p = String(provider || '').toLowerCase();
   if (!TOPUP_PROVIDERS.includes(p)) throw new Error(`Unknown payment provider: ${provider}`);
   const n = Math.floor(Number(amount));
@@ -96,10 +96,14 @@ export async function createWalletTopupSession(provider, amount) {
       'Hosted checkout needs the Express API. Set EXPO_PUBLIC_API_URL (e.g. http://LAN_IP:4000/api) and start the server with npm run api.'
     );
   }
+  const body = { amount: n, currency: 'PKR' };
+  if (options.returnTo && typeof options.returnTo === 'string') {
+    body.returnTo = options.returnTo.trim();
+  }
   try {
     const r = await client.post(
       `/payments/${encodeURIComponent(p)}/wallet-topup`,
-      { amount: n, currency: 'PKR' },
+      body,
       { timeout: 10000 }
     );
     const data = parseJson(r.data) || {};

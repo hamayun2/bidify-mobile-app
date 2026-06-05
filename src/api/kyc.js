@@ -1,7 +1,37 @@
 import { Platform } from 'react-native';
-import client, { isAuxiliaryApiConfigured } from './client';
+import client, { isAuxiliaryApiConfigured, API_URL } from './client';
 import { formatPakistaniCnic } from '../utils/cnicFormat';
 import { extractKycSessionToken } from '../utils/kycPostSubmitAuth';
+
+function formatScanCnicNetworkError(error) {
+  const base = API_URL || '(EXPO_PUBLIC_API_URL not set)';
+  const msg = String(error?.message || '');
+  const isNetwork =
+    msg === 'Network Error' ||
+    error?.code === 'ERR_NETWORK' ||
+    msg.includes('Network Error');
+
+  if (isNetwork) {
+    return (
+      `Cannot reach the CNIC scan API (${base}). ` +
+      'For ngrok testing: run `npm run api` on your PC, tunnel port 4000 with ngrok, and set EXPO_PUBLIC_API_TUNNEL_URL in .env. ' +
+      'Note: bidify-mobile-app-production.up.railway.app currently serves the Expo web app, not the Express API.'
+    );
+  }
+
+  const status = error?.response?.status;
+  const body = error?.response?.data;
+  const contentType = String(error?.response?.headers?.['content-type'] || '');
+  if (status && contentType.includes('text/html')) {
+    return (
+      `API at ${base} returned a web page instead of JSON (HTTP ${status}). ` +
+      'Deploy the Express server (server/) to Railway, or use a local API + ngrok tunnel on port 4000.'
+    );
+  }
+  if (body?.message) return body.message;
+  if (body?.error) return body.error;
+  return msg || 'CNIC scan failed.';
+}
 
 async function appendImageWeb(fd, field, uri, filename) {
   const res = await fetch(uri);
@@ -93,6 +123,16 @@ export async function scanCnicAPI(imageUri, { registration } = {}) {
     timeout: 45000,
     headers: { 'Content-Type': 'multipart/form-data' },
     __skipAuth: true,
+  }).catch((err) => {
+    const friendly = formatScanCnicNetworkError(err);
+    if (__DEV__) {
+      console.error('[Bidify/kyc] scan-cnic failed', {
+        apiBase: API_URL,
+        status: err?.response?.status,
+        message: err?.message,
+      });
+    }
+    throw new Error(friendly);
   });
 
   if (!data?.success) {

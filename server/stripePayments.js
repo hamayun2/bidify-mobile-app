@@ -117,6 +117,33 @@ async function createCheckoutSession(stripe, params) {
   return stripe.checkout.sessions.create(params);
 }
 
+function sanitizeWebReturnTo(raw) {
+  const s = String(raw || '').trim();
+  if (!s || !/^https?:\/\//i.test(s)) return '';
+  return s;
+}
+
+function defaultWebReturnTo() {
+  const web = String(process.env.EXPO_PUBLIC_WEB_APP_URL || '').trim();
+  if (!web) return '';
+  try {
+    const u = new URL(/^https?:\/\//i.test(web) ? web : `https://${web}`);
+    return `${u.origin.replace(/\/$/, '')}/wallet`;
+  } catch {
+    return '';
+  }
+}
+
+function resolveStripeReturnTo(req) {
+  const fromBody = sanitizeWebReturnTo(req?.body?.returnTo);
+  if (fromBody) return fromBody;
+  const fromQuery = sanitizeWebReturnTo(req?.query?.returnTo);
+  if (fromQuery) return fromQuery;
+  const fromEnv = defaultWebReturnTo();
+  if (fromEnv) return fromEnv;
+  return process.env.PAYMENT_RETURN_URL || 'bidify://wallet';
+}
+
 async function createStripeWalletCheckout(req, amountPkr) {
   const stripe = getStripe();
   if (!stripe) return null;
@@ -124,6 +151,15 @@ async function createStripeWalletCheckout(req, amountPkr) {
   const amount = Math.floor(Number(amountPkr));
   const base = publicBase(req);
   const userId = String(req.authUser?.id || req.user?.supabaseUserId || req.user?.id);
+  const returnTo = resolveStripeReturnTo(req);
+  const returnQ =
+    returnTo && /^https?:\/\//i.test(returnTo)
+      ? `&returnTo=${encodeURIComponent(returnTo)}`
+      : '';
+  const cancelReturnQ =
+    returnTo && /^https?:\/\//i.test(returnTo)
+      ? `?returnTo=${encodeURIComponent(returnTo)}`
+      : '';
 
   const sessionPayload = (currency) => ({
     mode: 'payment',
@@ -147,8 +183,8 @@ async function createStripeWalletCheckout(req, amountPkr) {
       profileUserId: req.user.supabaseUserId && isUuid(req.user.supabaseUserId) ? req.user.supabaseUserId : '',
       amountPkr: String(amount),
     },
-    success_url: `${base}/payments/stripe/wallet-return?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${base}/payments/stripe/wallet-cancel`,
+    success_url: `${base}/payments/stripe/wallet-return?session_id={CHECKOUT_SESSION_ID}${returnQ}`,
+    cancel_url: `${base}/payments/stripe/wallet-cancel${cancelReturnQ}`,
   });
 
   let session;
@@ -257,16 +293,32 @@ async function resolveProfileUserId(metadata, expressUserId, explicitProfileId) 
 function walletReturnHtml({ success, amount, balance, message, returnUrl }) {
   const safeMsg = String(message || '').replace(/</g, '&lt;');
   const title = success ? 'Payment successful' : 'Payment';
+  const safeReturn = String(returnUrl || '');
+  const isWebReturn = /^https?:\/\//i.test(safeReturn);
+  const separator = safeReturn.includes('?') ? '&' : '?';
+  const redirectTarget = isWebReturn
+    ? `${safeReturn}${separator}stripeTopup=${success ? 'success' : 'cancel'}&amount=${Number(amount) || 0}${
+        balance != null ? `&balance=${Number(balance)}` : ''
+      }`
+    : safeReturn;
   const notifyScript = success
     ? `<script>
 try {
-  if (window.opener) {
+  if (window.opener && !window.opener.closed) {
     window.opener.postMessage({ type: 'bidify-wallet-topup', success: true, amount: ${Number(amount) || 0}, balance: ${balance != null ? Number(balance) : 'null'} }, '*');
     setTimeout(function(){ window.close(); }, 1200);
+  } else if (${JSON.stringify(isWebReturn)}) {
+    setTimeout(function(){ window.location.replace(${JSON.stringify(redirectTarget)}); }, 600);
   }
-} catch (e) {}
+} catch (e) {
+  if (${JSON.stringify(isWebReturn)}) {
+    window.location.replace(${JSON.stringify(redirectTarget)});
+  }
+}
 </script>`
-    : '';
+    : isWebReturn
+      ? `<script>setTimeout(function(){ window.location.replace(${JSON.stringify(redirectTarget)}); }, 800);</script>`
+      : '';
   return `<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>${title}</title>
 <style>
@@ -539,6 +591,7 @@ module.exports = {
   fulfillStripeWalletPaymentIntent: fulfillStripePaymentIntent,
   fulfillStripeWalletSession,
   completeStripeWalletTopup,
+  resolveStripeReturnTo,
   walletReturnHtml,
   handleStripeWebhook,
 };

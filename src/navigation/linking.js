@@ -5,6 +5,18 @@ const prefix = Linking.createURL('/');
 
 function buildLinkingPrefixes() {
   const prefixes = [prefix, 'bidify://', 'exp://', 'http://localhost:8086'];
+  const envTunnel = String(process.env.EXPO_PUBLIC_WEB_APP_URL || '').trim();
+  if (envTunnel) {
+    try {
+      const withProto = /^https?:\/\//i.test(envTunnel) ? envTunnel : `https://${envTunnel}`;
+      const envOrigin = new URL(withProto).origin.replace(/\/$/, '');
+      if (envOrigin && !prefixes.includes(envOrigin)) {
+        prefixes.unshift(envOrigin);
+      }
+    } catch {
+      /* ignore malformed env */
+    }
+  }
   const webOrigin = getPublicWebOrigin();
   if (webOrigin && !prefixes.includes(webOrigin)) {
     prefixes.unshift(webOrigin);
@@ -19,6 +31,7 @@ export const linking = {
       AuthStack: {
         screens: {
           Login: 'login',
+          AuthCallback: 'auth/callback',
           Register: 'register',
           ForgotPassword: 'forgot-password',
           OtpVerify: 'otp',

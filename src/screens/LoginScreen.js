@@ -29,6 +29,8 @@ const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordHidden, setPasswordHidden] = useState(true);
+  const [emailFocused, setEmailFocused] = useState(false);
+  const [passwordFocused, setPasswordFocused] = useState(false);
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
   const [googleRedirecting, setGoogleRedirecting] = useState(false);
@@ -155,9 +157,9 @@ const LoginScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.safe}>
       <LinearGradient
-        colors={['#0F172A', '#020617']}
-        start={{ x: 0.5, y: 0 }}
-        end={{ x: 0.5, y: 1 }}
+        colors={['#050B14', '#0A1628', '#0F2744', '#050B14']}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
         style={styles.gradient}
       >
         <KeyboardAvoidingView
@@ -169,38 +171,49 @@ const LoginScreen = ({ navigation }) => {
             keyboardShouldPersistTaps="handled"
             showsVerticalScrollIndicator={false}
           >
+            <LinearGradient
+              colors={['#C9A227', '#F4E4BC', '#B8860B', '#D4AF37']}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 1 }}
+              style={styles.cardGlow}
+            >
             <View style={styles.card}>
               <Text style={styles.brandLogo}>Bidify</Text>
+              <View style={styles.brandAccentLine} />
               <Text style={styles.title}>Welcome back</Text>
               <Text style={styles.subtitle}>Sign in to continue bidding on unique treasures.</Text>
 
-            <View style={styles.inputContainer}>
-              <Ionicons name="mail-outline" size={20} color="#94A3B8" style={styles.inputIcon} />
+            <View style={[styles.inputContainer, emailFocused && styles.inputContainerFocused]}>
+              <Ionicons name="mail-outline" size={20} color={emailFocused ? '#D4AF37' : '#64748B'} style={styles.inputIcon} />
               <TextInput
                 style={styles.inputField}
                 placeholder="you@example.com"
-                placeholderTextColor="#94A3B8"
+                placeholderTextColor="#64748B"
                 keyboardType="email-address"
                 autoCapitalize="none"
                 value={email}
                 onChangeText={setEmail}
+                onFocus={() => setEmailFocused(true)}
+                onBlur={() => setEmailFocused(false)}
               />
             </View>
 
-            <View style={styles.inputContainer}>
+            <View style={[styles.inputContainer, passwordFocused && styles.inputContainerFocused]}>
               <Ionicons
                 name="lock-closed-outline"
                 size={20}
-                color="#94A3B8"
+                color={passwordFocused ? '#D4AF37' : '#64748B'}
                 style={styles.inputIcon}
               />
               <TextInput
                 style={styles.inputField}
                 placeholder="Enter your password"
-                placeholderTextColor="#94A3B8"
+                placeholderTextColor="#64748B"
                 secureTextEntry={passwordHidden}
                 value={password}
                 onChangeText={setPassword}
+                onFocus={() => setPasswordFocused(true)}
+                onBlur={() => setPasswordFocused(false)}
               />
               <TouchableOpacity
                 onPress={() => setPasswordHidden((h) => !h)}
@@ -210,7 +223,7 @@ const LoginScreen = ({ navigation }) => {
                 <Ionicons
                   name={passwordHidden ? 'eye-off-outline' : 'eye-outline'}
                   size={20}
-                  color="#94A3B8"
+                  color="#64748B"
                 />
               </TouchableOpacity>
             </View>
@@ -228,16 +241,23 @@ const LoginScreen = ({ navigation }) => {
             {errorMessage ? <Text style={styles.error}>{errorMessage}</Text> : null}
 
             <TouchableOpacity
-              style={[styles.loginBtn, authBusy && styles.loginBtnDisabled]}
+              style={[styles.loginBtnWrap, authBusy && styles.loginBtnDisabled]}
               onPress={handleLogin}
               disabled={authBusy}
               activeOpacity={0.88}
             >
-              {loading ? (
-                <ActivityIndicator color="#FFFFFF" />
-              ) : (
-                <Text style={styles.loginBtnText}>Login</Text>
-              )}
+              <LinearGradient
+                colors={authBusy ? ['#475569', '#334155'] : ['#C9A227', '#D4AF37', '#B8860B']}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={styles.loginBtn}
+              >
+                {loading ? (
+                  <ActivityIndicator color="#0A1628" />
+                ) : (
+                  <Text style={styles.loginBtnText}>Login</Text>
+                )}
+              </LinearGradient>
             </TouchableOpacity>
 
             <View style={styles.googleSection}>
@@ -265,7 +285,8 @@ const LoginScreen = ({ navigation }) => {
                 <Text style={styles.footerLink}>Sign Up</Text>
               </TouchableOpacity>
             </View>
-          </View>
+            </View>
+            </LinearGradient>
           </ScrollView>
         </KeyboardAvoidingView>
       </LinearGradient>
@@ -276,7 +297,7 @@ const LoginScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#0B1120',
+    backgroundColor: '#050B14',
   },
   gradient: {
     flex: 1,
@@ -286,60 +307,90 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingVertical: 32,
-    paddingHorizontal: 16,
+    paddingVertical: 36,
+    paddingHorizontal: 20,
   },
-  card: {
-    backgroundColor: '#FFFFFF',
-    width: '90%',
+  cardGlow: {
+    width: '100%',
     maxWidth: 420,
-    paddingHorizontal: 32,
-    paddingVertical: 40,
-    borderRadius: 24,
+    padding: 1.5,
+    borderRadius: 26,
     ...Platform.select({
       ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 15 },
-        shadowOpacity: 0.25,
-        shadowRadius: 35,
+        shadowColor: '#D4AF37',
+        shadowOffset: { width: 0, height: 12 },
+        shadowOpacity: 0.35,
+        shadowRadius: 24,
       },
-      android: { elevation: 20 },
+      android: { elevation: 18 },
       default: {},
     }),
   },
+  card: {
+    backgroundColor: '#0A1628',
+    width: '100%',
+    paddingHorizontal: 32,
+    paddingVertical: 40,
+    borderRadius: 24.5,
+    borderWidth: 1,
+    borderColor: 'rgba(212, 175, 55, 0.12)',
+  },
   brandLogo: {
-    fontSize: 44,
-    fontWeight: '900',
-    letterSpacing: 2,
-    color: '#1E3A8A',
+    fontSize: 46,
+    fontWeight: '800',
+    letterSpacing: 4,
+    color: '#F4E4BC',
     textAlign: 'center',
-    marginBottom: 16,
+    marginBottom: 8,
+  },
+  brandAccentLine: {
+    alignSelf: 'center',
+    width: 56,
+    height: 3,
+    borderRadius: 2,
+    backgroundColor: '#D4AF37',
+    marginBottom: 20,
+    opacity: 0.9,
   },
   title: {
     fontSize: 24,
-    fontWeight: '800',
-    color: '#0F172A',
+    fontWeight: '700',
+    color: '#F8FAFC',
     marginBottom: 8,
     textAlign: 'center',
-    letterSpacing: -0.3,
+    letterSpacing: -0.2,
   },
   subtitle: {
     fontSize: 15,
-    color: '#64748B',
+    color: '#94A3B8',
     textAlign: 'center',
     marginBottom: 32,
     lineHeight: 22,
   },
   inputContainer: {
-    backgroundColor: '#F8FAFC',
+    backgroundColor: '#0F2744',
     borderWidth: 1.5,
-    borderColor: '#E2E8F0',
-    borderRadius: 16,
+    borderColor: '#1E3A5C',
+    borderRadius: 14,
     height: 56,
     paddingHorizontal: 16,
-    marginBottom: 20,
+    marginBottom: 18,
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  inputContainerFocused: {
+    borderColor: '#C9A227',
+    backgroundColor: '#132238',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#D4AF37',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.35,
+        shadowRadius: 10,
+      },
+      android: { elevation: 4 },
+      default: {},
+    }),
   },
   inputIcon: {
     marginRight: 12,
@@ -347,7 +398,7 @@ const styles = StyleSheet.create({
   inputField: {
     flex: 1,
     fontSize: 16,
-    color: '#0F172A',
+    color: '#F1F5F9',
     paddingVertical: 0,
     fontWeight: '500',
   },
@@ -358,39 +409,43 @@ const styles = StyleSheet.create({
   },
   forgotWrap: {
     alignSelf: 'flex-end',
-    marginTop: -4,
-    marginBottom: 8,
+    marginTop: -2,
+    marginBottom: 10,
   },
   forgot: {
-    color: '#0F172A',
+    color: '#D4AF37',
     fontSize: 14,
     fontWeight: '600',
   },
   error: {
-    color: '#DC2626',
+    color: '#F87171',
     fontSize: 13,
     fontWeight: '600',
     marginBottom: 12,
     textAlign: 'center',
   },
+  loginBtnWrap: {
+    borderRadius: 14,
+    overflow: 'hidden',
+    marginTop: 8,
+  },
   loginBtn: {
-    backgroundColor: '#0F172A',
-    borderRadius: 16,
     height: 56,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 10,
+    borderRadius: 14,
   },
   loginBtnDisabled: {
     opacity: 0.75,
   },
   loginBtnText: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#FFFFFF',
+    fontSize: 17,
+    fontWeight: '800',
+    color: '#0A1628',
+    letterSpacing: 0.6,
   },
   googleSection: {
-    marginTop: 20,
+    marginTop: 22,
     width: '100%',
   },
   googleRedirectHint: {
@@ -410,13 +465,13 @@ const styles = StyleSheet.create({
   dividerLine: {
     flex: 1,
     height: 1,
-    backgroundColor: '#E2E8F0',
+    backgroundColor: 'rgba(212, 175, 55, 0.25)',
   },
   dividerText: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: '700',
-    color: '#94A3B8',
-    letterSpacing: 1.2,
+    color: '#64748B',
+    letterSpacing: 1.4,
   },
   footer: {
     flexDirection: 'row',
@@ -430,7 +485,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   footerLink: {
-    color: '#0F172A',
+    color: '#D4AF37',
     fontSize: 14,
     fontWeight: '700',
   },

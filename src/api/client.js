@@ -1,8 +1,12 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Platform } from 'react-native';
-import { isTunnelWebHost } from '../services/supabase/authRedirect';
 import { getSupabase, isSupabaseConfigured } from '../services/supabaseClient';
+import {
+  API_URL,
+  getApiPublicRoot,
+  getTunnelBypassHeaders,
+  isAuxiliaryApiConfigured,
+} from '../config/apiBase';
 import {
   isLikelyOffline,
   markOffline,
@@ -11,105 +15,24 @@ import {
   isNetworkError,
 } from './networkStatus';
 
-/**
- * Resolve the API base URL from `.env`.
- *
- * When `EXPO_PUBLIC_API_URL` is empty, axios has no baseURL and auxiliary
- * features (chat, hosted payments, wallet API) stay in local/mock mode.
- *
- * Host mapping:
- *   - Web: uses `window.location.hostname` (Expo web on same PC).
- *   - Android emulator: localhost → 10.0.2.2 (host machine).
- *   - Physical phone (iOS/Android): set EXPO_PUBLIC_API_DEV_HOST to your PC
- *     LAN IP (e.g. 192.168.1.3) OR put that IP directly in EXPO_PUBLIC_API_URL.
- *     localhost on a real device always means the phone itself — Stripe/wallet fail.
- */
-function normalizeApiUrlString(value) {
-  const s = String(value || '').trim();
-  if (!s) return '';
-  return /^https?:\/\//i.test(s) ? s : `https://${s}`;
-}
-
-function resolveApiBaseUrl() {
-  const env = process.env.EXPO_PUBLIC_API_URL;
-  let raw = env && env.trim() ? normalizeApiUrlString(env.trim()) : '';
-  const devHost = String(process.env.EXPO_PUBLIC_API_DEV_HOST || '').trim();
-
-  if (Platform.OS === 'web' && typeof window !== 'undefined' && window.location) {
-    if (!raw) return '';
-    try {
-      const u = new URL(raw);
-      const pageHost = window.location.hostname || '';
-      const apiHost = u.hostname;
-      const pageIsLoopback = pageHost === 'localhost' || pageHost === '127.0.0.1';
-      const apiIsLoopback = apiHost === 'localhost' || apiHost === '127.0.0.1';
-      // Local Expo web: map localhost API env to the page host. Tunnel hosts (ngrok) keep the deployed API URL.
-      if (pageIsLoopback && apiIsLoopback && !isTunnelWebHost(pageHost)) {
-        u.hostname = pageHost;
-      }
-      return u.toString().replace(/\/$/, '');
-    } catch (_) {
-      return raw;
-    }
-  }
-
-  if (!raw) return '';
-
-  try {
-    const u = new URL(raw);
-    const isLoopback = u.hostname === 'localhost' || u.hostname === '127.0.0.1';
-
-    if (Platform.OS === 'android' && isLoopback) {
-      u.hostname = '10.0.2.2';
-      return u.toString().replace(/\/$/, '');
-    }
-
-    if (Platform.OS !== 'web' && isLoopback && devHost) {
-      u.hostname = devHost;
-      if (__DEV__) {
-        console.log(
-          '[Bidify] EXPO_PUBLIC_API_DEV_HOST applied — API base URL for device:',
-          u.toString().replace(/\/$/, '')
-        );
-      }
-      return u.toString().replace(/\/$/, '');
-    }
-
-    if (Platform.OS !== 'web' && isLoopback && __DEV__) {
-      console.warn(
-        '[Bidify] EXPO_PUBLIC_API_URL uses localhost — a physical phone cannot reach your PC. ' +
-          'Set EXPO_PUBLIC_API_URL=http://YOUR_PC_LAN_IP:4000/api or EXPO_PUBLIC_API_DEV_HOST=YOUR_PC_LAN_IP then restart with npx expo start --clear.'
-      );
-    }
-
-    return u.toString().replace(/\/$/, '');
-  } catch (_) {
-    return raw;
-  }
-}
-
-const API_URL = resolveApiBaseUrl();
-
-if (typeof console !== 'undefined') {
-  if (API_URL) {
-    console.log('[Bidify] Auxiliary API base URL ->', API_URL);
-  } else {
-    console.log(
-      '[Bidify] No EXPO_PUBLIC_API_URL — auxiliary API calls use mocks or clear errors until you set a base URL and run npm run api.'
-    );
-  }
-}
+export { API_URL, getApiPublicRoot, isAuxiliaryApiConfigured };
 
 const client = axios.create({
   baseURL: API_URL || undefined,
   timeout: 6000,
   headers: {
     'Content-Type': 'application/json',
+    ...getTunnelBypassHeaders(),
   },
 });
 
 client.interceptors.request.use(
   async (config) => {
+    const tunnelHeaders = getTunnelBypassHeaders();
+    if (Object.keys(tunnelHeaders).length) {
+      config.headers = config.headers || {};
+      Object.assign(config.headers, tunnelHeaders);
+    }
     try {
       if (config.__skipAuth) {
         delete config.headers.Authorization;
@@ -120,7 +43,6 @@ client.interceptors.request.use(
       if (existingAuth) {
         return config;
       }
-      // Escrow/OTP/dispute routes need Supabase JWT (auth.uid() in RPCs).
       if (isSupabaseConfigured()) {
         try {
           const supabase = getSupabase();
@@ -142,10 +64,7 @@ client.interceptors.request.use(
     } catch (error) {
       console.error('Error fetching token', error);
     }
-    if (
-      config.data &&
-      typeof config.data.append === 'function'
-    ) {
+    if (config.data && typeof config.data.append === 'function') {
       delete config.headers['Content-Type'];
     }
     if (isLikelyOffline() && !config.__bypassOfflineCache) {
@@ -198,24 +117,6 @@ client.interceptors.response.use(
   }
 );
 
-/** True when `EXPO_PUBLIC_API_URL` is set (Express auxiliary API for chat, payments, bid tokens). */
-export function isAuxiliaryApiConfigured() {
-  return typeof API_URL === 'string' && API_URL.length > 0;
-}
-
-/** Express server origin without `/api` — Stripe return URLs and hosted checkout redirects. */
-export function getApiPublicRoot() {
-  if (!API_URL) return 'http://localhost:4000';
-  return API_URL.replace(/\/api\/?$/i, '').replace(/\/$/, '') || 'http://localhost:4000';
-}
-
-export { API_URL };
-
-/**
- * Absolute URL for POST account deletion (must match server POST /api/account/delete).
- * - EXPO_PUBLIC_API_URL=http://host:4000/api → http://host:4000/api/account/delete
- * - EXPO_PUBLIC_API_URL=http://host:4000 → http://host:4000/api/account/delete
- */
 export function buildAccountDeleteUrl() {
   const custom =
     typeof process !== 'undefined' ? process.env?.EXPO_PUBLIC_ACCOUNT_DELETE_PATH : null;
@@ -227,14 +128,14 @@ export function buildAccountDeleteUrl() {
     return base ? `${base}${path}` : path;
   }
 
-  const base = (API_URL || 'http://127.0.0.1:4000').replace(/\/$/, '');
+  if (!API_URL) return '/api/account/delete';
+  const base = API_URL.replace(/\/$/, '');
   if (base.endsWith('/api')) {
     return `${base}/account/delete`;
   }
   return `${base}/api/account/delete`;
 }
 
-/** @deprecated use buildAccountDeleteUrl — relative path for logging only */
 export function getAccountDeletePath() {
   const url = buildAccountDeleteUrl();
   if (!API_URL) {

@@ -9,6 +9,7 @@ const {
   createStripeWalletPaymentSheet,
   fulfillStripeWalletPaymentIntent,
   fulfillStripeWalletSession,
+  resolveStripeReturnTo,
   walletReturnHtml,
 } = require('../stripePayments');
 
@@ -364,10 +365,7 @@ router.post('/stripe/payment-sheet/confirm', authRequiredSupabaseOrExpress, asyn
 /** Browser redirect from Stripe — no JWT; user id comes from Checkout session metadata. */
 router.get('/stripe/wallet-return', async (req, res) => {
   const sessionId = req.query?.session_id;
-  const returnUrl =
-    (typeof req.query?.returnTo === 'string' && req.query.returnTo.trim()) ||
-    process.env.PAYMENT_RETURN_URL ||
-    'bidify://wallet';
+  const returnUrl = resolveStripeReturnTo(req);
 
   if (!sessionId || !isStripeTestConfigured()) {
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
@@ -435,7 +433,7 @@ router.get('/stripe/status', (_req, res) => {
 });
 
 router.get('/stripe/wallet-cancel', (req, res) => {
-  const returnUrl = process.env.PAYMENT_RETURN_URL || 'bidify://wallet';
+  const returnUrl = resolveStripeReturnTo(req);
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
   res.send(
     walletReturnHtml({

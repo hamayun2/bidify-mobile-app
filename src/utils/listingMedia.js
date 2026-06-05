@@ -2,32 +2,20 @@
  * Normalize listing image fields from various backend JSON shapes so the app
  * always gets absolute `image` + `images[]` URLs React Native can load.
  */
+import { getApiOrigin, isLoopbackHost } from '../config/apiBase';
+import { isTunnelWebHost } from '../services/supabase/authRedirect';
+import { Platform } from 'react-native';
 
 /**
- * Returns the origin of the optional auxiliary Express server (`EXPO_PUBLIC_API_URL`).
- * Returns '' when no auxiliary server is configured — relative `/uploads/...`
- * paths cannot be resolved without a known host.
- *
- * NO HARDCODED LAN FALLBACK. The previous `192.168.1.100`/`192.168.1.13`
- * defaults caused images to silently resolve to a dev box that the user
- * device couldn't reach.
+ * Static file origin for `/uploads/...` paths (Express auxiliary server).
+ * Override with EXPO_PUBLIC_API_STATIC_URL when CDN/static host differs from API.
  */
-export function getApiOrigin() {
-  const raw = (process.env.EXPO_PUBLIC_API_URL || '').trim();
-  if (!raw) return '';
-  try {
-    const u = new URL(raw);
-    return `${u.protocol}//${u.host}`;
-  } catch {
-    return String(raw).replace(/\/?api\/?$/i, '').replace(/\/$/, '');
-  }
-}
-
 export function getStaticOrigin() {
   const custom = (process.env.EXPO_PUBLIC_API_STATIC_URL || '').trim();
   if (custom) {
     try {
-      const u = new URL(custom);
+      const withProto = /^https?:\/\//i.test(custom) ? custom : `https://${custom}`;
+      const u = new URL(withProto);
       return `${u.protocol}//${u.host}`;
     } catch {
       return custom.replace(/\/$/, '');
@@ -60,14 +48,12 @@ function encodeHttpUrlSpaces(urlStr) {
 function rewriteLoopbackMediaUrl(urlStr) {
   try {
     const u = new URL(urlStr);
-    const loopback =
-      u.hostname === 'localhost' ||
-      u.hostname === '127.0.0.1' ||
-      u.hostname === '[::1]' ||
-      u.hostname === '10.0.2.2';
+    const loopback = isLoopbackHost(u.hostname) || u.hostname === '10.0.2.2';
     if (!loopback) return urlStr;
 
-    const origin = getApiOrigin();
+    const origin = getStaticOrigin();
+    if (!origin) return urlStr;
+
     const base = /^https?:\/\//i.test(origin) ? origin : `http://${origin}`;
     const api = new URL(base);
     u.protocol = api.protocol;
@@ -77,6 +63,35 @@ function rewriteLoopbackMediaUrl(urlStr) {
   } catch {
     return urlStr;
   }
+}
+
+/** When viewing via ngrok, rewrite LAN-only hosts in stored media URLs if we have a public API origin. */
+function rewriteStaleDevMediaUrl(urlStr) {
+  if (Platform.OS !== 'web' || typeof window === 'undefined') return urlStr;
+  const pageHost = window.location.hostname || '';
+  if (!isTunnelWebHost(pageHost)) return urlStr;
+
+  try {
+    const u = new URL(urlStr);
+    const origin = getStaticOrigin();
+    if (!origin) return urlStr;
+
+    const target = new URL(/^https?:\/\//i.test(origin) ? origin : `https://${origin}`);
+    const urlIsDevHost =
+      isLoopbackHost(u.hostname) ||
+      u.hostname === '10.0.2.2' ||
+      /^192\.168\.\d+\.\d+$/.test(u.hostname);
+
+    if (urlIsDevHost && u.hostname !== target.hostname) {
+      u.protocol = target.protocol;
+      u.hostname = target.hostname;
+      u.port = target.port;
+      return u.toString();
+    }
+  } catch {
+    /* ignore */
+  }
+  return urlStr;
 }
 
 /**
@@ -107,9 +122,13 @@ export function resolveMediaUrl(input) {
 
   if (s.startsWith('data:image/')) return s;
 
-  if (s.startsWith('//')) return rewriteLoopbackMediaUrl(encodeHttpUrlSpaces(`https:${s}`));
+  if (s.startsWith('//')) {
+    return rewriteStaleDevMediaUrl(rewriteLoopbackMediaUrl(encodeHttpUrlSpaces(`https:${s}`)));
+  }
 
-  if (/^https?:\/\//i.test(s)) return rewriteLoopbackMediaUrl(encodeHttpUrlSpaces(s));
+  if (/^https?:\/\//i.test(s)) {
+    return rewriteStaleDevMediaUrl(rewriteLoopbackMediaUrl(encodeHttpUrlSpaces(s)));
+  }
 
   if (s.startsWith('file://')) return s;
   if (s.startsWith('content://')) return s;
@@ -125,11 +144,13 @@ export function resolveMediaUrl(input) {
   if (!base) return null;
 
   if (/^[^/]+\.(jpe?g|png|gif|webp|avif)$/i.test(s)) {
-    return rewriteLoopbackMediaUrl(encodeHttpUrlSpaces(`${base}/uploads/${s}`));
+    return rewriteStaleDevMediaUrl(
+      rewriteLoopbackMediaUrl(encodeHttpUrlSpaces(`${base}/uploads/${s}`))
+    );
   }
 
   const path = s.startsWith('/') ? s : `/${s}`;
-  return rewriteLoopbackMediaUrl(encodeHttpUrlSpaces(`${base}${path}`));
+  return rewriteStaleDevMediaUrl(rewriteLoopbackMediaUrl(encodeHttpUrlSpaces(`${base}${path}`)));
 }
 
 function pushUniqueUrls(seen, out, raw) {

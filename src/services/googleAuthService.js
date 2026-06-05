@@ -12,7 +12,10 @@ import {
   stripAuthParamsFromBrowserUrl,
   urlLooksLikeSupabaseAuthCallback,
 } from './supabase/deepLinkSession';
-import { logSupabaseError } from './supabaseErrors';
+import {
+  persistPkceKeysAfterOAuthStart,
+  restorePkceKeysAfterOAuth,
+} from './supabase/webPkceStorage';
 import { fetchProfileById, mapProfileRowToAppUser } from './profileService';
 import { finalizePendingRegistration } from './registrationService';
 import { resolvePostAuthNavigation } from '../utils/postAuthNavigation';
@@ -96,6 +99,7 @@ export async function completeGoogleOAuthFromCallback() {
   const supabase = getSupabase();
   console.log('[Bidify/googleAuth] completing OAuth from browser URL');
 
+  restorePkceKeysAfterOAuth();
   await processWebAuthCallbackFromLocation(supabase);
 
   const {
@@ -151,6 +155,8 @@ export async function signInWithGoogle() {
       if (!authUrl) {
         throw new Error('Could not start Google sign-in (no OAuth URL returned).');
       }
+      // Must run AFTER signInWithOAuth — that is when Supabase writes the PKCE verifier.
+      persistPkceKeysAfterOAuthStart();
       if (typeof window !== 'undefined') {
         window.location.assign(authUrl);
       }

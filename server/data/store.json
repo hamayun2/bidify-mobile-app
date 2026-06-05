@@ -416,6 +416,15 @@
       "role": "user",
       "supabaseUserId": "ccf7d7f9-3189-4451-80d3-4359267e6101",
       "createdAt": "2026-06-01T04:07:26.068Z"
+    },
+    {
+      "id": "47",
+      "email": "hamayunawan00@gmail.com",
+      "passwordHash": "$2a$10$LVhCSXIwPe/tzq5WavQZCOudo6tKPo./tzEhE099ttJi42Yi3yk8u",
+      "fullName": "hamayun awan",
+      "role": "user",
+      "supabaseUserId": "8f0cf4e6-c6a2-4675-891d-fd6813b6afe2",
+      "createdAt": "2026-06-05T13:43:54.888Z"
     }
   ],
   "listings": [
@@ -1569,7 +1578,7 @@
     }
   },
   "passwordOtps": {},
-  "nextUserId": 47,
+  "nextUserId": 48,
   "nextListingId": 102,
   "nextConversationId": 4,
   "nextMessageId": 3,

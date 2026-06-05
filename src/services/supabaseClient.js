@@ -1,9 +1,9 @@
 import 'react-native-url-polyfill/auto';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Platform } from 'react-native';
 import { createClient } from '@supabase/supabase-js';
-import { webAuthStorage } from './supabase/webAuthStorage';
+import { webPkceStorage } from './supabase/webPkceStorage';
+import { isWebRuntime } from './supabase/ssrCookies';
 
 function readEnv(name) {
   try {
@@ -79,17 +79,29 @@ export function getSupabase() {
       );
     }
   }
-  const isWeb = Platform.OS === 'web';
-  _client = createClient(url, key, {
-    auth: {
-      storage: isWeb ? webAuthStorage : AsyncStorage,
-      autoRefreshToken: true,
-      persistSession: true,
-      // Manual callback handling in deepLinkSession (avoids double PKCE exchange on mobile web).
-      detectSessionInUrl: false,
-      flowType: 'pkce',
-    },
-  });
+  const isWeb = isWebRuntime();
+  if (isWeb) {
+    // Expo web SPA (incl. ngrok): localStorage PKCE survives same-origin OAuth on mobile Safari.
+    _client = createClient(url, key, {
+      auth: {
+        storage: webPkceStorage,
+        autoRefreshToken: true,
+        persistSession: true,
+        flowType: 'pkce',
+        detectSessionInUrl: false,
+      },
+    });
+  } else {
+    _client = createClient(url, key, {
+      auth: {
+        storage: AsyncStorage,
+        autoRefreshToken: true,
+        persistSession: true,
+        detectSessionInUrl: false,
+        flowType: 'pkce',
+      },
+    });
+  }
   return _client;
 }
 

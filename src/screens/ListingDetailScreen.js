@@ -13,6 +13,7 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { LinearGradient } from 'expo-linear-gradient';
 import { useFocusEffect } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import useCountdown from '../hooks/useCountdown';
@@ -147,6 +148,7 @@ const ListingDetailScreen = ({ route, navigation }) => {
     setImageIndex((i) => Math.min(Math.max(0, galleryUrls.length - 1), i + 1));
 
   const [bidAmount, setBidAmount] = useState('');
+  const [bidInputFocused, setBidInputFocused] = useState(false);
   const [loading, setLoading] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [bidConfirmVisible, setBidConfirmVisible] = useState(false);
@@ -921,16 +923,23 @@ const ListingDetailScreen = ({ route, navigation }) => {
           <View style={styles.bidActionContainer}>
             <View style={styles.bidActionRow}>
               <TextInput
-                style={styles.bidInput}
+                style={[
+                  styles.bidInput,
+                  bidInputFocused && styles.bidInputFocused,
+                  (tokenAmountForListing > 0 && !tokenPaid) && styles.bidInputLocked,
+                ]}
                 placeholder="Enter bid amount"
+                placeholderTextColor="#94A3B8"
                 keyboardType={Platform.OS === 'ios' ? 'number-pad' : 'numeric'}
                 value={bidAmount}
                 onChangeText={(t) => setBidAmount(t.replace(/\D/g, ''))}
                 editable={tokenAmountForListing === 0 || tokenPaid}
+                onFocus={() => setBidInputFocused(true)}
+                onBlur={() => setBidInputFocused(false)}
               />
               <Pressable
                 style={({ pressed }) => [
-                  styles.bidButton,
+                  styles.bidButtonWrap,
                   (loading || (tokenAmountForListing > 0 && !tokenPaid)) &&
                     styles.bidButtonDisabled,
                   pressed &&
@@ -941,7 +950,18 @@ const ListingDetailScreen = ({ route, navigation }) => {
                 onPress={handlePlaceBid}
                 disabled={loading || (tokenAmountForListing > 0 && !tokenPaid)}
               >
-                <Text style={styles.buttonText}>{loading ? 'Wait...' : 'Place Bid'}</Text>
+                <LinearGradient
+                  colors={
+                    loading || (tokenAmountForListing > 0 && !tokenPaid)
+                      ? ['#64748B', '#475569']
+                      : ['#0F2744', '#1B3A5C', '#0A1628']
+                  }
+                  start={{ x: 0, y: 0 }}
+                  end={{ x: 1, y: 1 }}
+                  style={styles.bidButton}
+                >
+                  <Text style={styles.buttonText}>{loading ? 'Wait...' : 'Place Bid'}</Text>
+                </LinearGradient>
               </Pressable>
             </View>
           </View>
@@ -1228,14 +1248,28 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   actionBottomBar: {
-    padding: 15,
-    backgroundColor: '#fff',
+    paddingHorizontal: 16,
+    paddingTop: 16,
+    paddingBottom: Platform.OS === 'ios' ? 10 : 14,
+    backgroundColor: 'rgba(255, 255, 255, 0.98)',
+    borderTopLeftRadius: 22,
+    borderTopRightRadius: 22,
     borderTopWidth: 1,
-    borderColor: '#e0e0e0',
+    borderTopColor: 'rgba(201, 162, 39, 0.28)',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#0A1628',
+        shadowOffset: { width: 0, height: -12 },
+        shadowOpacity: 0.12,
+        shadowRadius: 24,
+      },
+      android: { elevation: 18 },
+      default: {},
+    }),
   },
   bidActionContainer: {
     flexDirection: 'column',
-    marginBottom: 10,
+    marginBottom: 4,
     gap: 10,
   },
   walletBidHint: {
@@ -1248,7 +1282,8 @@ const styles = StyleSheet.create({
   },
   bidActionRow: {
     flexDirection: 'row',
-    gap: 10,
+    alignItems: 'center',
+    gap: 12,
     width: '100%',
   },
   bidGateWarning: {
@@ -1267,27 +1302,49 @@ const styles = StyleSheet.create({
   },
   bidInput: {
     flex: 1,
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 8,
-    paddingHorizontal: 15,
+    height: 52,
+    borderWidth: 1.5,
+    borderColor: '#E2E8F0',
+    borderRadius: 14,
+    paddingHorizontal: 16,
     fontSize: 16,
-    backgroundColor: '#f9f9f9',
+    fontWeight: '600',
+    color: '#0F172A',
+    backgroundColor: '#FAFBFD',
+  },
+  bidInputFocused: {
+    borderColor: '#C9A227',
+    backgroundColor: '#FFFCF5',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#C9A227',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.25,
+        shadowRadius: 8,
+      },
+      android: { elevation: 3 },
+      default: {},
+    }),
   },
   bidInputLocked: {
-    backgroundColor: '#E2E8F0',
+    backgroundColor: '#F1F5F9',
     borderColor: '#CBD5E1',
     color: '#64748B',
   },
+  bidButtonWrap: {
+    borderRadius: 14,
+    overflow: 'hidden',
+    minWidth: 128,
+  },
   bidButton: {
-    backgroundColor: '#007AFF',
-    paddingHorizontal: 20,
+    height: 52,
+    paddingHorizontal: 22,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 8,
+    borderRadius: 14,
   },
   bidButtonDisabled: {
-    backgroundColor: '#9ec3f0',
+    opacity: 0.72,
   },
   bidButtonUnderReview: {
     opacity: 0.4,
@@ -1344,9 +1401,10 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   buttonText: {
-    color: '#fff',
-    fontWeight: 'bold',
-    fontSize: 16,
+    color: '#F8FAFC',
+    fontWeight: '700',
+    fontSize: 15,
+    letterSpacing: 0.4,
   },
   buyNowButton: {
     backgroundColor: '#4caf50',
