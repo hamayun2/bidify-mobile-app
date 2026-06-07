@@ -11,6 +11,7 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 import useAuth from '../hooks/useAuth';
@@ -98,6 +99,26 @@ const LoginScreen = ({ navigation }) => {
     const storedErr = consumeOAuthErrorFromStorage();
     if (storedErr) setErrorMessage(storedErr);
     return undefined;
+  }, []);
+
+  useEffect(() => {
+    // Clear stale PKCE flow state on mount to prevent "invalid flow state" errors on mobile
+    if (Platform.OS === 'web') return;
+    const clearStaleAuthFlow = async () => {
+      try {
+        const keys = await AsyncStorage.getAllKeys();
+        const flowKeys = keys.filter(k => k.includes('-code-verifier'));
+        if (flowKeys.length > 0) {
+          await AsyncStorage.multiRemove(flowKeys);
+          if (__DEV__) {
+            console.log('[Bidify/Login] Cleared stale PKCE flow keys to prevent session mismatch:', flowKeys);
+          }
+        }
+      } catch (e) {
+        console.warn('Failed to clear stale auth state', e);
+      }
+    };
+    void clearStaleAuthFlow();
   }, []);
 
   useEffect(() => {

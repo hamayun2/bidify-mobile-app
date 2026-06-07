@@ -220,9 +220,7 @@ export default function AdminSupportChatScreen({ route, navigation }) {
     [orderId, activeTicketId, navigation]
   );
 
-  // 🚀 WEB-SAFE POPUP LOGIC ADDED HERE
   const onReleaseFundsPress = useCallback(() => {
-    console.log('--- TOUCH DETECTED ---');
     if (Platform.OS === 'web') {
       const confirmAction = window.confirm('Confirm Payout: Are you sure you want to release the escrow funds to the Seller?');
       if (confirmAction) {
@@ -242,7 +240,6 @@ export default function AdminSupportChatScreen({ route, navigation }) {
   }, [executeSettlement]);
 
   const onRefundFundsPress = useCallback(() => {
-    console.log('--- TOUCH DETECTED ---');
     if (Platform.OS === 'web') {
       const confirmAction = window.confirm('Confirm Refund: Are you sure you want to refund the escrow funds back to the Buyer?');
       if (confirmAction) {
@@ -390,6 +387,8 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: 'rgba(255,255,255,0.1)',
     backgroundColor: BG,
+    zIndex: 10,
+    elevation: 10,
   },
   headerTop: {
     flexDirection: 'row',
@@ -402,11 +401,12 @@ const styles = StyleSheet.create({
   headerTitle: { color: TEXT, fontWeight: '800', fontSize: 16 },
   headerSub: { color: MUTED, fontSize: 12, marginTop: 2 },
   
-  // 🚀 Z-Index has been removed to fix Web/Mobile Layout Touch issues
   settlementBar: {
     paddingHorizontal: 12,
     paddingBottom: 12,
     paddingTop: 4,
+    zIndex: 10,
+    elevation: 10,
   },
   settlementHint: {
     color: MUTED,
